@@ -1,2 +1,4 @@
-.venv
-test_embeddings.npy
+.venv/
+.env
+test.py
+*.npy

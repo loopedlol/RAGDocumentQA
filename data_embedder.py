@@ -2,13 +2,9 @@ import pandas as pd
 import numpy as np
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
-#from sentence_transformers import SentenceTransformer
 
 df = pd.read_parquet("hf://datasets/LGAI-EXAONE/Ko-LongRAG/data/test-00000-of-00001.parquet")
 passage1 = df["context"][0]
-
-def count_words(text: str) -> int: #Not used currently because apparently korean words are not separated by spaces
-    return len(text.split())
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size = 400,
