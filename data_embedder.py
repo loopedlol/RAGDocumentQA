@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
+from langchain_huggingface import HuggingFaceEmbeddings
+#from sentence_transformers import SentenceTransformer
 
 df = pd.read_parquet("hf://datasets/LGAI-EXAONE/Ko-LongRAG/data/test-00000-of-00001.parquet")
 passage1 = df["context"][0]
 
-def count_words(text: str) -> int: #Not used currently because korean text is different
+def count_words(text: str) -> int: #Not used currently because apparently korean words are not separated by spaces
     return len(text.split())
 
 text_splitter = RecursiveCharacterTextSplitter(
@@ -16,12 +17,16 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 texts = text_splitter.split_text(passage1)
 
-model = SentenceTransformer("intfloat/multilingual-e5-small")
+model = HuggingFaceEmbeddings(
+    model_name = "intfloat/multilingual-e5-small",
+    encode_kwargs = {"normalize_embeddings": True}
+)
 
 editted_texts = []
 for text in texts:
     editted_texts.append(f"passage: {text}")
 
-embeddings = model.encode(editted_texts, show_progress_bar = True, normalize_embeddings = True)
+document_embeddings = model.embed_documents(editted_texts)
+document_embeddings_array = np.array(document_embeddings, dtype = np.float32)
 
-np.save("test_embeddings.npy", embeddings)
+np.save("test_embeddings.npy", document_embeddings_array)
