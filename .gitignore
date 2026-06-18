@@ -1,4 +1,9 @@
 .venv/
+venv/
+
 .env
-test.py
-*.npy
+
+__pycache__/
+*.pyc
+
+chroma_dbs/
