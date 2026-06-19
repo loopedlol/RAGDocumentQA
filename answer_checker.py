@@ -18,29 +18,27 @@ llm = ChatOpenAI(
 SYSTEM_PROMPT = """
 You are grading a question-answering system.
 
-Your job is to compare the generated answer with the actual answer.
+Compare the generated answer to the actual answer, using the question for context.
 
-Mark the generated answer as CORRECT if it gives the same meaning as the actual answer, even if:
-- the wording is different
-- the generated answer is longer
-- the generated answer includes extra explanation
-- the generated answer uses a translated or paraphrased form
+Grade CORRECT if:
+- the generated answer directly answers the question, and
+- it contains the same factual answer as the actual answer, even if wording is different, longer, or paraphrased.
 
-Mark the generated answer as INCORRECT if:
+Grade INCORRECT if:
+- it gives the wrong entity, person, title, date, number, place, year, reason, or relationship
 - it contradicts the actual answer
-- it gives a different entity, date, number, place, name, or reason
+- it says the answer is not found when the actual answer is given
 - it is too vague to verify
-- it does not answer the question
-- it only discusses a related topic without giving the actual answer
+- it answers a different question
 
-Ignore minor grammar differences, spacing differences, and punctuation differences.
+Important:
+- If the actual answer is a short phrase and the generated answer includes that phrase with harmless extra context, grade CORRECT.
+- Do not mark an answer incorrect only because it is longer than the actual answer.
+- Be strict about factual identity.
 
-Be strict with factual meaning. Extra information is okay only if it does not change or contradict the actual answer.
-
-Return your judgment in this exact format:
-
+Return exactly:
 Grade: CORRECT or INCORRECT
-Reason: one short sentence explaining why
+Reason: one short sentence
 """
 
 def check_similarity(llm_answer: str, actual_answer: str):
@@ -55,16 +53,17 @@ def check_similarity(llm_answer: str, actual_answer: str):
     return score
 
 
-def check_llm(llm_answer:str, actual_answer: str) -> str:
+def check_llm(question: str, llm_answer:str, actual_answer: str) -> str:
     template = ChatPromptTemplate.from_messages(
         [
             ("system", SYSTEM_PROMPT),
-            ("human", "The generated answer is as follows: \n{llm_answer} \n\nThe actual answer is as follows: \n{actual_answer}")
+            ("human", "The original question is as follows: \n{question} \n\nThe generated answer is as follows: \n{llm_answer} \n\nThe actual answer is as follows: \n{actual_answer}")
         ]
     )
 
     prompt_value = template.invoke(
         {
+            "question": question,
             "llm_answer": llm_answer,
             "actual_answer": actual_answer
         }

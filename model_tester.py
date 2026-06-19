@@ -38,12 +38,12 @@ def main():
         results = engine.search_chroma(query, persist_directory, k)
 
         combined_context = ""
-        for passage in results:
-            combined_context += f"\n\n {passage.page_content}"
+        for j, passage in enumerate(results):
+            combined_context += f"\n\n[Passage Chunk {j+1}]\n{passage.page_content}"
 
         response = engine.query_llm(query, combined_context)
         semantic_score = check_similarity(response, answer)
-        llm_score = check_llm(response, answer)
+        llm_score = check_llm(query, response, answer)
 
         print(f"The AI Responsed with: {response}")
         print(f"The correct answer was: {answer}")
@@ -62,7 +62,8 @@ def main():
                 "actual_answer": answer,
                 "semantic_score": semantic_score,
                 "llm_grade": word,
-                "llm_reason": llm_score.partition("Reason:")[2].strip()
+                "llm_reason": llm_score.partition("Reason:")[2].strip(),
+                "found_context": combined_context
             }
         )
 

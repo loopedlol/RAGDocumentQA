@@ -4,8 +4,8 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 700,
-    chunk_overlap = 100,
+    chunk_size = 400,
+    chunk_overlap = 80,
     length_function = len
 )
 

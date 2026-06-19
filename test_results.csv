@@ -1,108 +1,4624 @@
-test_number,question,generated_answer,actual_answer,semantic_score,llm_grade,llm_reason
-0,알파시르는 어느 주의 주도인가요?,알파시르는 수단 북다르푸르 주의 주도입니다.,북다르푸르 주,0.9188252091407776,CORRECT,"The generated answer correctly identifies Al-Fashir as the capital of North Darfur state, matching the actual answer's reference to North Darfur state."
-1,한국 신발 산업에서 1985년 이후 수출이 증가한 원인은 무엇인가요?,"1985년 이후 아시안과 올림픽 특수, 국내업계의 이미지 제고, 연구개발 및 소재개발 노력으로 인해 1988년까지 연평균 30% 이상의 수출신장이 기록되었기 때문입니다.","아시안게임과 올림픽 특수에 힘입어 이미지 제고, 연구개발 및 소재개발 노력 때문입니다.",0.8869003653526306,CORRECT,"The generated answer provides the same reasons as the actual answer, with additional details and context that do not contradict the original meaning."
-2,게르하르트 슈퇴크가 1936년 베를린 올림픽에서 창던지기에서 이룬 성과는 무엇인가요?,게르하르트 슈퇴크는 1936년 베를린 올림픽에서 창던지기 금메달을 획득하였다.,금메달을 획득하였습니다.,0.8619783520698547,CORRECT,"The generated answer confirms winning the gold medal, matching the actual answer's meaning."
-3,무엇이 DME를 통해 조종사에게 제공됩니까?,DME는 항공기와 VOR 기지국과의 거리를 조종사에게 알려준다.,거리 정보,0.8452292084693909,CORRECT,Both answers indicate that DME provides distance information to the pilot.
-4,히틀러가 괴벨스와 총력전에 관해 이야기를 나눈 후 법령에 서명하는 데에 소요된 시간은 얼마였나요?,히틀러가 괴벨스와 총력전 개념에 대해 이야기한 후 법령에 서명하는 데 약 1년이 걸렸다.,거의 1년.,0.8638720512390137,CORRECT,"Both answers indicate that it took about one year, with the generated answer providing additional context without contradicting the actual answer."
-5,"""장미의 고백""의 감독 이름이 뭐예요?","""장미의 고백""의 감독 이름은 김영식입니다.",김영식,0.8878951668739319,CORRECT,"The generated answer correctly identifies 김영식 as the director, matching the actual answer."
-6,한국잠종협회 설립 연도는?,한국잠종협회는 1961년 12월 6일 설립되었다.,1961년.,0.8438531756401062,CORRECT,"The generated answer specifies the exact founding date in 1961, which aligns with the actual answer's year."
-7,도리이 다다하루의 아버지 이름은 무엇인가요?.,도리이 다다하루의 아버지 이름은 도리이 다다마사입니다.,도리이 다다마사,0.8905684947967529,CORRECT,"The generated answer correctly provides the father's name, matching the actual answer."
-8,2016년에 개봉한 '테러'라는 영화의 감독은 누구인가?,2016년에 개봉한 '테러'라는 영화의 감독은 사티시 카세티이다.,사티시 카세티,0.8286138772964478,CORRECT,"The generated answer correctly identifies 사티시 카세티 as the director, matching the actual answer."
-9,"최소영은 고백, 화려한 휴가, 빙점, 과다수면 중 어떤 작품에 등장하지 않나요?",최소영은 과다수면에 등장하지 않습니다.,최소영은 '과다수면'에 등장하지 않습니다.,0.9920193552970886,CORRECT,"Both answers state that 최소영 does not appear in '과다수면', differing only in punctuation."
-10,지니 프랜시스는 어떤 민족적 배경을 가지고 있나요?,"지니 프랜시스는 잉글랜드계, 리투아니아계, 캐나다계 미국인 민족적 배경을 가지고 있습니다.","잉글랜드계, 리투아니아계, 캐나다계 미국인입니다.",0.8898858428001404,CORRECT,The generated answer conveys the same ethnic background information as the actual answer.
-11,보나파르트가의 가문 설립자의 조카는 누구인가요?,보나파르트가의 가문 설립자 나폴레옹 1세의 조카는 나폴레옹 3세입니다.,나폴레옹 3세,0.895293116569519,CORRECT,"The generated answer correctly identifies Napoleon III as the nephew of Napoleon I, matching the actual answer."
-12,무라야마 도모히코는 어느 포지션에서 뛴다고 기록되어 있나요?,무라야마 도모히코는 남자 축구 골키퍼 포지션에서 뛴다고 기록되어 있습니다.,골키퍼,0.8599573969841003,CORRECT,Both answers indicate that Murayama Tomohiko plays as a goalkeeper.
-13,친황다오 올림픽 스포츠 센터 스타디움은 어떤 특별한 해에 개장했나요?,"친황다오 올림픽 스포츠 센터 스타디움은 2008년 하계 올림픽 경기장으로 활용되었으며, 2004년에 설립되었습니다.",2004년.,0.8070536851882935,CORRECT,"The generated answer correctly states the establishment year as 2004, matching the actual answer."
-14,파이널 판타지 XVI 게임의 주요 인물 중 한 명인 클라이브 로즈필드의 목표는 무엇인가요?,클라이브 로즈필드의 목표는 사건의 원인을 밝혀 복수하는 것입니다.,복수하는 것.,0.880054235458374,CORRECT,"The generated answer conveys the same meaning about the goal being revenge, with additional context that does not change the meaning."
-15,도라지 민요의 주된 내용은 무엇에 관한 것인가?.,도라지 민요의 주된 내용은 도라지를 캐는데 도라지가 많고 커서 좋다는 내용이다.,도라지가 많고 커서 좋다는 내용입니다.,0.9191319346427917,CORRECT,"The generated answer conveys the same meaning, stating that the content is about the abundance and size of doraji being good."
-16,애너글리프 방식은 다른 방식과 구별될 수 있는 특징이 하나입니다. 그 특징은 무엇인가요?,애너글리프 방식의 특징은 안경 외에 별도의 장비 없이 입체효과를 느낄 수 있다는 점입니다.,색 필터를 통해 입체 효과를 느낄 수 있다는 점입니다.,0.8960656523704529,INCORRECT,"The generated answer incorrectly states that no special equipment besides glasses is needed, while the actual answer specifies the use of color filters to achieve the 3D effect."
-17,권영철(실존 인물)은 어느 스포츠 팀과 관련이 있나요?,권영철(실존 인물)은 전 KBO 리그 삼성 라이온즈의 선수와 관련이 있습니다.,삼성 라이온즈,0.8680902719497681,CORRECT,"The generated answer correctly identifies the association with 삼성 라이온즈, matching the actual answer's meaning."
-18,아이오나섬은 과거 3세기 동안 무엇의 중심지였나요?,아이오나섬은 과거 3세기 동안 게일 수도자들의 중심지였다.,게일 수도자들의 중심지.,0.9063684344291687,CORRECT,"The generated answer conveys the same meaning, specifying that Iona Island was the center of Gaelic monks, with additional time detail that does not contradict the actual answer."
-19,사무편람을 작성할 때 민간수탁기관이 반드시 받아야 하는 것은 무엇인가?.,민간수탁기관은 사무편람을 작성하였을 때 위탁기관의 승인을 받아야 한다.,위탁기관의 승인,0.9152508974075317,CORRECT,"The generated answer correctly states that approval from the entrusting organization is required, matching the actual answer's meaning."
-20,그린란드 민주당의 독립에 대한 입장은 무엇인가요?,"그린란드 민주당은 그린란드의 독립이나 자치에 대해 부정적인 입장을 갖고 있으며, 그린란드가 페로 제도와 함께 덴마크 왕국에 남아 있어야 한다는 입장을 갖고 있다.",부정적인 입장을 갖고 있으며 덴마크 왕국에 남아야 한다는 입장입니다,0.9041488766670227,CORRECT,"The generated answer conveys the same meaning as the actual answer, stating the party's negative stance on independence and support for remaining in the Kingdom of Denmark."
-21,문서에 소개된 송암동이 행정동인 구역은 어디인가요?,송암동이 행정동인 구역은 광주광역시 남구입니다.,광주광역시 남구.,0.9031735062599182,CORRECT,Both answers identify 광주광역시 남구 as the administrative district for 송암동.
-22,태극 품새에서 몇 개의 품새를 알고 있어야 검은띠를 받을 수 있나요? 그리고 모든 품새를 수행할 때 어떻게 해야 하나요?.,"태극 품새에서 검은띠를 받으려면 일반적으로 8개의 태극 품새를 모두 알고 있어야 하며, 중간에 쉬지 않고 연속적으로 모든 품새를 수행할 수 있어야 합니다.","8개의 태극 품새를 모두 알고 있어야 하며, 중간에 쉬지 않고 연속적으로 수행할 수 있어야 합니다.",0.9565315842628479,CORRECT,The generated answer conveys the same meaning as the actual answer with additional context about receiving a black belt.
-23,데비카 라니는 어느 나라의 배우인가요?,데비카 라니는 인도의 배우입니다.,인도,0.8456881642341614,INCORRECT,"The generated answer specifies ""Indian actress"" while the actual answer only states ""India,"" so the generated answer provides more specific information than requested."
-24,메달 오브 아너: 라이징 선의 온라인 다인용 기능이 중단된 연도는 언제입니까?,메달 오브 아너: 라이징 선의 온라인 다인용 기능은 2006년 11월에 중단되었습니다.,2006년.,0.8368242383003235,CORRECT,"The generated answer specifies the year 2006, matching the actual answer's year."
-25,탈활건칠과 목심건칠의 주요 차이는 무엇인가요? 그리고 현대 제작법에서 찰흙과 석고는 어떤 역할을 하나요?,"탈활건칠은 찰흙으로 대강의 형상을 만들고 그 위에 마포를 칠로 칠하여 여러 번 경화시킨 후 내부의 흙을 빼내어 공동을 만들고, 나무 뼈대로 보강하는 방법이다. 반면 목심건칠은 나무로 대체적인 형상을 새기며, 여러 나무를 합쳐서 만들 수도 있다. 
+test_number,question,generated_answer,actual_answer,semantic_score,llm_grade,llm_reason,found_context
+2,알파시르는 어느 주의 주도인가요?,북다르푸르주,북다르푸르 주,0.9781433343887329,CORRECT,The generated answer matches the actual answer with only minor spacing differences.,"
 
-현대 제작법에서 찰흙은 원형을 만드는 데 사용되고, 석고는 그 원형을 본떠 맞추기형 외형을 만들어 내부에 칠을 바르기 쉽게 하는 역할을 한다.","탈활건칠은 찰흙으로 대강의 형상을 만들고 마포를 옻으로 붙인 뒤 내부의 흙을 제거하는 방식이며, 목심건칠은 나무를 이용하여 형상을 만들고 그 위에 칠과 마포를 씌우는 방식입니다. 현대 제작법에서는 찰흙이 원형을 만드는 소재로 사용되며, 석고는 외형을 만들어 내부에 칠을 바르기 쉽게 하는 역할을 합니다.",0.9837533235549927,CORRECT,"The generated answer conveys the same meaning as the actual answer, describing the methods of 탈활건칠 and 목심건칠 and the role of 찰흙 and 석고 in modern production, despite minor differences in wording and additional details."
-26,마나도의 공식 언어는?.,마나도의 공식 언어는 마나도말레이어이다.,마나도말레이어.,0.9235717058181763,CORRECT,"The generated answer correctly identifies the official language as Manado Malay, matching the actual answer."
-27,"정경호는 영화 ""별빛 속으로""에서 어떤 역할을 맡았나요?","정경호는 영화 ""별빛 속으로""에서 현수영 역을 맡았습니다.",현수영 역.,0.8773345947265625,CORRECT,The generated answer correctly identifies the role 현수영 and adds context without contradicting the actual answer.
-28,제3회 전국동시지방선거에서 충청북도의회 지역구위원의 인원은 몇 명인가요?,제3회 전국동시지방선거에서 충청북도의회 지역구의원은 24명입니다.,24명입니다.,0.8620676398277283,CORRECT,"The generated answer correctly states the number as 24, matching the actual answer."
-29,로이스 가문의 형계에서는 몇 세가 넘으면 이름 숫자가 1부터 다시 시작하나요?,로이스 가문의 형계에서는 숫자가 100까지 매겨지면 그 다음부터 태어나는 남아부터 다시 1세로 돌아가 숫자를 붙입니다.,100세,0.865227460861206,INCORRECT,"The generated answer explains the numbering system but does not directly state the age ""100세"" as the actual answer does."
-30,제이미 머리는 몇 년도에 첫 번째 '덱스터' 시리즈에 출연했나요?,제이미 머리는 2006년에 첫 번째 '덱스터' 시리즈에 출연했습니다.,2006년,0.8199998140335083,CORRECT,Both answers indicate the year 2006 as the relevant date.
-31,정암터널은 어떤 중요한 변화를 가져왔나요?,정암터널이 완공된 이후로 영동선 열차의 운행거리가 50km 단축되는 중요한 변화가 있었다.,영동선 열차의 운행거리가 50km 단축되었습니다.,0.9420804977416992,CORRECT,Both answers state that the travel distance of the Yeongdong Line trains was shortened by 50 km.
-32,"조슈아 체프테게이는 2020년 몇 월에 5,000m 세계 신기록을 세웠나요?","조슈아 체프테게이는 2020년 8월에 5,000m 세계 신기록을 세웠습니다.",8월.,0.8034239411354065,CORRECT,"The generated answer specifies the month ""August"" (8월) as in the actual answer, providing the same key information."
-33,프랑스 모음곡의 두 번째와 다섯 번째 모음곡에서 사용된 스타일은 무엇인가요?,프랑스 모음곡의 두 번째와 다섯 번째 모음곡의 쿠랑테는 모두 이탈리아 스타일이다.,두 모음곡 모두 이탈리아 스타일이다.,0.927175760269165,CORRECT,"Both answers state that the two suites are in the Italian style, with the generated answer specifying which suites."
-34,김선희의 그대 창가는 매일 몇 시에 방송되나요?,김선희의 그대 창가는 매일 깊은 밤 2시부터 3시까지 방송됩니다.,깊은 밤 2시 ~ 3시,0.8863363265991211,CORRECT,"Both answers state the broadcast time as from 2 AM to 3 AM, matching in meaning."
-35,울라라는 이름은 어느 지역 이름의 기원이 되었나요?,울라라는 이름은 오늘날 아일랜드 북부를 가리키는 얼스터라는 말의 기원이 되었습니다.,얼스터(아일랜드 북부),0.8852391839027405,CORRECT,"Both answers indicate that 울라라 is the origin of the name 얼스터, referring to Northern Ireland."
-36,오카다 류는 어느 지역 출신의 축구선수인가요?,오카다 류가 어느 지역 출신인지에 대한 정보는 passage에 없습니다.,시즈오카현,0.8603198528289795,INCORRECT,"The generated answer states that the information is not available, while the actual answer specifies Shizuoka Prefecture."
-37,이규형 외교관이 주 방글라데시 대사로 근무한 기간은 언제인가요?.,이규형 외교관은 2002년부터 2004년까지 주 방글라데시 대사로 근무했습니다.,2002년부터 2004년까지입니다.,0.8583778142929077,CORRECT,"The generated answer provides the same time period as the actual answer, with additional context that does not contradict the original information."
-38,신지정은 어느 행정 구역과 합병되어 현재의 마쓰에시가 되었나요?,"신지정은 마쓰에시, 가시마정, 미호노세키정, 야쿠모촌, 다마유정, 시마네정, 야쓰카정과 합병되어 현재의 마쓰에시가 되었다.","마쓰에시, 가시마정, 미호노세키정, 야쿠모촌, 다마유정, 시마네정, 야쓰카정과 합병되었습니다.",0.9430895447731018,CORRECT,"The generated answer conveys the same information about the merger with the listed places, adding that it formed the current Matsue city without contradicting the actual answer."
-39,파올라의 면적은 몇 km2인가요?,파올라의 면적은 42km2입니다.,42km²입니다.,0.8612966537475586,CORRECT,"Both answers state the area as 42 square kilometers, with the generated answer adding the location name without changing the meaning."
-40,신티아 파뇌프는 2006년에 부상으로 어떤 대회를 놓쳤나요?,신티아 파뇌프는 2006년에 부상으로 2006년 동계 올림픽 출전권이 걸린 캐나다 선수권 대회에 참가하지 못했습니다.,2006년 동계 올림픽 출전권이 걸린 캐나다 선수권.,0.8953455686569214,CORRECT,"The generated answer correctly states that Cynthia Phaneuf missed the 2006 Canadian Championships, which were the Olympic qualifiers, due to injury, matching the actual answer's key information."
-41,"크메르 루주는 어느 나라의 공산당 무장 집단이었으며, 그들의 주요 후원자는 누구였습니까?","크메르 루주는 캄푸치아 공산당의 무장 군사조직이었으며, 주요 후원자는 1973년부터 중국이었다.","크메르 루주는 캄보디아의 공산당 무장집단이었으며, 중국의 후원을 받았습니다.",0.9535199999809265,CORRECT,Both answers state that the Khmer Rouge was a communist armed group in Cambodia and received support from China.
-42,"드라큘라, DC 타이탄, 행성탈출, 앵무새 죽이기 중 빌리 캠벨이 출연한 작품을 선택하세요.",빌리 캠벨이 출연한 작품은 드라큘라입니다.,드라큘라,0.8833020925521851,CORRECT,"Both answers identify ""드라큘라"" as the work featuring 빌리 캠벨, with the generated answer providing additional context without changing the meaning."
-43,조지 앤서니 몬커가 현재 활동 중인 팀은 무엇인가요?,조지 앤서니 몬커는 현재 잉글랜드 EFL 리그 투의 레이턴 오리엔트 FC에서 활약하고 있다.,레이턴 오리엔트 FC.,0.8575295209884644,CORRECT,"The generated answer correctly identifies the club as Leyton Orient FC, matching the actual answer."
-44,엑스트레마두라의 주로 공용되는 언어는 무엇인가요?,엑스트레마두라의 유일한 공용어는 스페인어입니다.,스페인어입니다.,0.8870794773101807,CORRECT,"The generated answer correctly states that the only official language of Extremadura is Spanish, matching the actual answer."
-45,내곡초등학교는 몇 년도에 청주시에 편입되었습니까?,내곡초등학교는 1983년에 청주시에 편입되었습니다.,1983년,0.8204280138015747,CORRECT,Both answers indicate the year 1983 as the relevant date.
-46,"앨범 제목 ""The X Factor""는 어떻게 결정되었나요?","앨범 제목 ""The X Factor""는 녹음 시작과 동시에 나왔으며, 프로듀서 나이젤 그린에 따르면 음악의 발전 방식, 블레이즈의 새로운 참여, 사운드, 음반의 헌신이 ""X Factor""라는 특별한 품질을 가지고 있다고 느껴 작업 타이틀로 정했고, 이를 좋아해서 그대로 보관했다고 한다.","음악의 발전과 블레이즈의 새로운 참여를 통해 ""X Factor""라는 특별한 품질을 느꼈기 때문에 결정되었습니다.",0.8891357183456421,CORRECT,"The generated answer conveys the same meaning about the decision being based on the special quality felt through musical development and Blaze's new involvement, matching the actual answer."
-47,용귀는 어떤 식물을 의미하나요?,용귀는 까마중을 의미합니다.,까마중,0.8958570957183838,CORRECT,"The generated answer correctly identifies 용귀 as 까마중, matching the actual answer's meaning."
-48,U11은 어떤 종류의 차량 모델에 사용되었나요?,U11은 닛산 블루버드의 일본 세단 모델에 사용되었습니다.,닛산 블루버드 (U11),0.9365953803062439,CORRECT,"Both answers identify U11 as related to the Nissan Bluebird, with the generated answer specifying it as the Japanese sedan model, which aligns with the actual answer."
-49,상위사자는 고구려 후기 기준 어느 정도 계급인가요?,상위사자(上位使者)는 고구려 후기 14관등 가운데 제9위이며 중국의 정6품직에 해당됩니다.,고구려 후기의 14관등 가운데 제9위입니다.,0.8950968980789185,CORRECT,"The generated answer provides the same information about the rank being 9th among the 14 ranks in late Goguryeo, with additional detail that does not contradict the actual answer."
-50,'신의 나라'와 '지상의 나라'는 무엇인가요?,"'신의 나라'는 영광스러운 나라로서 하느님과의 일치를 의미하며, '지상의 나라'는 끊임없는 지배욕에 사로잡힌 세속적인 나라를 뜻합니다. 이 두 나라는 아우구스티누스가 세계 역사를 두 개의 역사로 구별하여 서술한 개념입니다.","'신의 나라'는 영광스러운 상태로 묘사되며, '지상의 나라'는 끊임없는 지배욕에 사로잡힌 상태로 묘사됩니다. 이는 각각 하느님과의 일치와 배반을 상징하는 두 개의 역사적 상태입니다.",0.9373100996017456,CORRECT,"Both answers describe '신의 나라' and '지상의 나라' as contrasting states related to unity with God and worldly domination, conveying the same core meaning."
-51,글리제 674 b 의 공전 주기는 얼마인가요?,글리제 674 b의 공전 주기는 4.6938일입니다.,글리제 674 b의 공전 주기는 4.6938일입니다.,1.0000001192092896,CORRECT,The generated answer exactly matches the actual answer.
-52,미리벌 중학교에 첫 번째로 취임한 교장의 성함은 무엇인가요?,미리벌중학교에 첫 번째로 취임한 교장은 장승욱입니다.,장승욱입니다.,0.8990916609764099,CORRECT,"The generated answer correctly identifies 장승욱 as the first principal, matching the actual answer."
-53,예테네시의 인구 밀도는 얼마인가요?,예테네시의 인구 밀도는 21명/km2입니다.,21명/km²입니다.,0.8666313290596008,CORRECT,"Both answers state the population density as 21명/km², with only minor differences in wording."
-54,하버트 로스의 사망일자는 언제인가요?,하버트 로스의 사망일자는 2001년 10월 9일입니다.,2001년 10월 9일입니다.,0.8695708513259888,CORRECT,"The generated answer provides the same date with additional context, which does not change the meaning."
-55,"어느 나라는 최대 흑자, 어느 나라는 최대 적자를 기록했나요?",답은 본문에 없습니다.,"해당 문서에서 언급된 최대 흑자 및 적자에 대한 국가 목록의 구체적인 나라는 제공되지 않았습니다. 문서에 따르면, 최대 흑자와 최대 적자 목록은 CIA 월드 팩트북에 등재된 2017년 추산 데이터에 기반한다고 했으나, 구체적인 국가 이름은 명시되지 않았습니다.",0.8271786570549011,CORRECT,Both answers state that the specific countries with the largest surpluses and deficits are not provided in the document.
-56,유순하가 1990년에 수상한 문학상은 무엇인가?,유순하는 1990년에 아동문예 신인상을 수상하였다.,김유정문학상입니다.,0.8760473132133484,INCORRECT,The generated answer mentions a different award and year than the actual answer.
-57,어떤 지역이 현존하는 산무시로 변하기 전에 어떤 이름을 가지고 있었나요?,산무시로 변하기 전에 그 지역은 휴가촌이라는 이름을 가지고 있었습니다.,휴가촌,0.8678805828094482,CORRECT,"The generated answer correctly identifies the previous name as ""휴가촌"" and provides additional context without contradicting the actual answer."
-58,"정유안, 김영애, 민지영, 이학주 중 드라마 《아빠를 찾아주세요》의 출연진은 누구인가요?",드라마 《아빠를 찾아주세요》의 출연진 중 김영애와 민지영이 포함되어 있습니다. 정유안과 이학주는 출연진 명단에 없습니다.,김영애,0.8467603921890259,CORRECT,"The generated answer correctly identifies 김영애 as part of the cast, matching the actual answer."
-59,마이클 G. 포스터 경영대학의 이름이 바뀐 해는 언제인가요?,마이클 G. 포스터 경영대학의 이름이 바뀐 해는 2007년입니다.,2007년.,0.8668012022972107,CORRECT,"Both answers state that the year is 2007, with the generated answer providing additional context without changing the meaning."
-60,수프와 이데올로기(Soup and Ideology) 에서 주연으로 출연한 사람 중 감독도 맡은 사람은 누구인가?,양영희가 수프와 이데올로기에서 주연으로 출연하였고 감독도 맡았다.,양영희,0.8787450790405273,CORRECT,"The generated answer correctly identifies 양영희 as the main actor and adds that she also directed, which does not contradict the actual answer."
-61,'애디'라는 이름이 사용된 맥락에서 다음 중 비법인지구를 지칭하는 곳은 어디인가요?,'애디'라는 이름이 사용된 맥락에서 비법인지구를 지칭하는 곳은 미국 워싱턴주입니다.,워싱턴주,0.8621547818183899,CORRECT,Both answers identify Washington State as the location referred to.
-62,인드라 랄 로이는 첫 격추를 언제 기록했나요?,인드라 랄 로이는 1918년 7월 6일 첫 격추를 기록했습니다.,1918년 7월 6일.,0.8673639893531799,CORRECT,"The generated answer provides the same date as the actual answer, with additional context that does not contradict the original information."
-63,《Bel Air》 음반의 발매 연도는 무엇인가요?,《Bel Air》 음반의 발매 연도는 2011년입니다.,2011년.,0.8595327734947205,CORRECT,"Both answers state the release year as 2011, matching in meaning."
-64,프로게이머 루트는 2018년 어느 팀에 입단했나요?,프로게이머 루트는 2018년 8월 갈락티코스에 입단했습니다.,루트는 2018년 다크 패시지에 입단했습니다.,0.9217213988304138,INCORRECT,"The generated answer states 루트 joined 갈락티코스 in 2018, but the actual answer says he joined 다크 패시지 in 2018."
-65,박경재는 어느 해에 서울 지방검찰청 검사를 시작했나요?,박경재는 1973년에 서울 지방검찰청 검사로 시작했습니다.,1973년.,0.8564833402633667,CORRECT,"The generated answer correctly states the year 1973 as the starting point, matching the actual answer."
-66,가시반디쿠트의 학명은 무엇인가요?,가시반디쿠트의 학명은 Echymipera kalubu입니다.,Echymipera kalubu,0.8234670758247375,CORRECT,"The generated answer correctly provides the scientific name Echymipera kalubu, matching the actual answer."
-67,SOS 해상 구조대에서 데이비드 해셀호프가 맡은 역할의 이름은 무엇인가요?,데이비드 해셀호프가 맡은 역할의 이름은 미치 뷰캐넌입니다.,미치 뷰캐넌,0.8817257881164551,CORRECT,"The generated answer correctly identifies the name ""미치 뷰캐넌"" as the role played by David Hasselhoff."
-68,골변연을 다른 단어로 표현하면 무엇인가요?,"골변연을 다른 단어로 표현하면 ""리핑(lipping)""입니다.",리핑(lipping),0.9153306484222412,CORRECT,"The generated answer correctly identifies ""리핑(lipping)"" as another term for 골변연."
-69,밴드 콘은 첫 대형 공연에서 어떤 밴드의 오프닝으로 무대에 섰어?,밴드 콘은 단지그(Danzig)의 오픈 밴드로서 첫 번째 대형 공연을 했다.,단지그(Danzig),0.8535013198852539,INCORRECT,"The generated answer adds information about a band named ""밴드 콘"" and a first large performance, which is not present in the actual answer and changes the meaning."
-70,황벽련은 어느 나라에서 태어났나요?,황벽련은 캐나다 밴쿠버에서 태어났습니다.,캐나다,0.824847936630249,CORRECT,"Both answers state that 황벽련 was born in Canada, with the generated answer providing additional detail about the city."
-71,"""노주현, 문희, 이낙훈, 사미자, 강민호, 방인자 등이 출연한 영화는 몇 년에 개봉되었나요?""",The answer is not found in the passage.,1971년,0.7068074345588684,INCORRECT,"The generated answer states the answer is not found, but the actual answer provides a specific year, 1971년."
-72,문맥에서 스테판 루가 작화를 담당한 작품을 모두 말하시오.,The answer is not found in the passage.,"위치블레이드, 버즈 오브 프레이, 할리 퀸",0.7266976833343506,INCORRECT,"The generated answer states the answer is not found, but the actual answer provides specific movie titles."
-73,어떤 집단이 야요이인이 되었나요?,대륙 지역에서 유래한 여러 집단이 야요이인이 되었다고 한다.,야요이인은 대륙 지역에서 유래한 여러 집단.,0.9842298626899719,CORRECT,Both answers state that Yayoi people originated from various groups in the continental region with the same meaning.
-74,more 보다 더 많은 기능을 제공하는 유닉스 계열의 페이저 명령어는 무엇인가요?,more 보다 더 많은 기능을 제공하는 유닉스 계열의 페이저 명령어는 less입니다.,less,0.7807319760322571,CORRECT,"The generated answer correctly identifies ""less"" as the Unix pager command offering more features than ""more,"" matching the actual answer."
-75,'maimai'는 어떤 회사의 게임 이름인가요?,'maimai'는 세가의 게임 이름입니다.,세가.,0.8929133415222168,CORRECT,"The generated answer correctly identifies 'maimai' as a game by Sega, matching the actual answer's identification of Sega."
-76,송도항이 위치한 도시의 이름을 전부 말하시오.,"송도항이 위치한 도시는 사천시, 창원시, 통영시, 신안군, 여수시, 진도군입니다.","사천시, 창원시, 통영시, 신안군, 여수시, 진도군.",0.9024518728256226,CORRECT,"The generated answer lists the same cities as the actual answer, only adding that they are locations of 송도항 without changing the meaning."
-77,박진우가 NC 다이노스에서 9승을 기록한 시즌은 언제인가요?,박진우가 NC 다이노스에서 9승을 기록한 시즌은 2019년 시즌입니다.,2019년입니다.,0.8635076284408569,CORRECT,Both answers identify 2019 as the season when 박진우 recorded 9 wins with NC 다이노스.
-78,바스테르를 주도로 두고 있는 곳은 어디인가?,바스테르는 프랑스 령 과들루프의 주도이다.,카리브해의 프랑스 령 과들루프,0.879544198513031,INCORRECT,"The generated answer states that Basse-Terre is the capital of Guadeloupe, while the actual answer identifies Guadeloupe as a French territory in the Caribbean, not specifying Basse-Terre as the capital."
-79,플레이걸은 창간부터 폐간까지 얼마의 시간이 걸렸나요?,"플레이걸은 1973년 창간되어 2016년에 인쇄판 발행을 중단하였으므로, 창간부터 폐간까지 약 43년이 걸렸습니다.",43년,0.7797960638999939,CORRECT,"The generated answer correctly states the magazine's duration as approximately 43 years, matching the actual answer."
-80,"""영화 '큰엄마의 미친봉고'에서 유성주가 맡은 역할의 이름은 무엇인가요?"".",유성주가 맡은 역할의 이름은 유한일입니다.,유한일.,0.8952027559280396,CORRECT,"Both answers provide the same character name, 유한일, with the generated answer including additional context that does not change the meaning."
-81,페어반츠리가는 모든 지역에서 운영되나요? (Yes or No).,No.,No.,0.9999999403953552,CORRECT,"Both answers clearly and directly respond with ""No."""
-82,하킴 압둘 올라주원의 어린 시절 축구 포지션은 무엇이었나요?,하킴 압둘 올라주원의 어린 시절 축구 포지션은 골키퍼였습니다.,골키퍼입니다.,0.8827276825904846,CORRECT,"The generated answer correctly states the position as goalkeeper, matching the actual answer."
-83,《Eye II Eye》 음반에서 독일어로 녹음된 곡의 제목은 무엇인가요?,《Eye II Eye》 음반에서 독일어로 녹음된 곡의 제목은 〈Dubist so schmutzig〉입니다.,〈Du bist so schmutzig〉,0.8277490139007568,INCORRECT,"The generated answer misspells the song title as ""Dubist so schmutzig"" instead of the correct ""Du bist so schmutzig""."
-84,클라인 병과 뫼비우스 띠의 차이점은 무엇인가요?,"클라인 병은 영다양체가 아닌 해다양체이고, 뫼비우스 띠는 비콤팩트 해다양체의 예이며 원 위의 자명하지 않은 실수 선다발이다.","클라인 병은 콤팩트 해다양체이며, 뫼비우스 띠는 비콤팩트 해다양체입니다.",0.9599794745445251,INCORRECT,"The generated answer incorrectly states that the Klein bottle is a non-orientable manifold, contradicting the actual answer that it is a compact manifold."
-85,현대 A 엔진은 몇 년부터 생산되었나요?,현대 A 엔진은 2002년부터 생산되었습니다.,2002년부터입니다.,0.8790113925933838,CORRECT,Both answers state that production started in 2002.
-86,연기의 원인 중 하나는 무엇인가요?,연기의 원인 중 하나는 불완전 연소이다.,불완전 연소.,0.9109835028648376,CORRECT,"The generated answer correctly identifies ""불완전 연소"" as a cause of smoke, matching the actual answer."
-87,"밀양 조선 성종 왕녀 태실은 무엇을 보관하는 곳이었으며, 현재 어떤 이름으로 불리고 있나요?","밀양 조선 성종 왕녀 태실은 조선시대 어느 왕녀의 태항아리를 보관했던 곳이며, 현재는 ""밀양 조선 성종 왕녀 태실""이라는 명칭으로 불리고 있다.","태실은 왕녀의 태항아리를 보관하는 곳이었으며, 현재 ""밀양 조선 성종 왕녀 태실""로 불리고 있습니다.",0.9864319562911987,CORRECT,The generated answer conveys the same meaning as the actual answer with slight elaboration.
-88,"영화 ""누구나 비밀은 있다""의 감독은 누구인가요?
+[Passage Chunk 1]
+passage: 같이 보기 
+ 자공민 노선
+
+전후 쇼와 시대의 정치
+헤이세이 시대의 정치
+일본 사회민주당
+공명당 Title: 성유물 Text:성유물(聖遺物)은 가톨릭과 정교회 등의 기독교에서 예수, 성모 마리아, 성 요셉, 사도 등등 성인과 관련이 있는 유물을 의미한다.
+
+유물
+사료 Title: 신북 Text:신북은 다음을 의미한다.
+ 신북시: 타이완의 북부에 위치하는 중화민국 최대의 도시
+ 신북면
+ 신북읍
+
+같이 보기 Title: 알파시르 Text:알파시르(아랍어: الفاشر)은 수단 북다르푸르 주의 주도다. 2006년 기준으로 인구는 264,734명이다.
+
+기후
+
+각주
+
+[Passage Chunk 2]
+passage: 기후
+
+각주 
+
+수단의 도시
+다르푸르
+수단의 주도
+북다르푸르주 Title: 엘레오노르 드 벨지크 왕녀 Text:엘레오노르(Eléonore Fabiola Victoria Anne Marie, 2008년 4월 16일 ~ )는 벨기에의 국왕인 필리프와 그의 아내 마틸드 왕비와의 사이에서 태어난 둘째 딸이자 넷째 아이이다. 또한 벨기에의 전임 국왕 알베르 2세와 파올라 왕비의 손녀이기도 하다. 엘리노어 공주는 현재 벨기에의 왕위 계승 순위 4위이다.
+
+[Passage Chunk 3]
+passage: 동시 상영작은 《닌자 핫토리군+파만 닌자 괴수 짓포우 VS 미라클 타마고》이다.
+
+개요 
+《걸리버 여행기》의 리리팟트 국가 모험담을 모티브로 하고 있으며 또한 미국의 영화인 《스타워즈》에 대한 오마주 요소, 이외에도 고전 SF 작품인 《수축하는 남자》도 발상의 힌트가 되었다(《수축하는 남자》에서 작아진 주인공이 장난감 집에서 생활하는 장면이 본작에 영향을 미쳤다.). 또한 저자는 이전에 전술한 소설, 영화의 오마주인 단편 작품 〈천장에서의 우주 전쟁〉(텐토우무시코믹스 19권 수록)을 발표하였다."
+2,한국 신발 산업에서 1985년 이후 수출이 증가한 원인은 무엇인가요?,아시안과 올림픽 특수에 국내업계의 이미지 제고와 연구개발 및 소재개발 노력,"아시안게임과 올림픽 특수에 힘입어 이미지 제고, 연구개발 및 소재개발 노력 때문입니다.",0.9699856042861938,CORRECT,The generated answer accurately conveys the same reasons for export increase as the actual answer.,"
+
+[Passage Chunk 1]
+passage: 품목도 포화·케미화가 주종을 이루었다.  1980년대에 접어들면서 세계적으로 제품의 라이프사이클이 짧아지고 패턴의 고급화 경향이 두두러지자 국내업계도 혁신적인 소재의 개발과 제품의 고급화에 주력하여 고급혁제 운동화의 생산기반을 구축하였으나 선진국의 수입규제강화에 국내업체간의 수주를 위한 과당경쟁이 발생하여 군소업체들의 도산사태가 빚어지기도 했다.  그러나 1985년 이후 아시안과 올림픽 특수에 국내업계의 이미지 제고와 연구개발 및 소재개발 노력으로 1988년까지 연평균 30% 이상의 수출신장을 기록하였고 1989년에는 이탈리아에 이어 세계 제2위의 신발 수출국으로서의 지위를 점하였다.  구조적인 면에서 노동집약적 산업인 신발산업은 수출을 발판으로 성장해 왔다. 1990년을 정점으로 완제품 수출은 많이
+
+[Passage Chunk 2]
+passage: 지위를 점하였다.  구조적인 면에서 노동집약적 산업인 신발산업은 수출을 발판으로 성장해 왔다. 1990년을 정점으로 완제품 수출은 많이 감소했으나 부품수출은 생산량의 절반 이상을 수출하고 있다. 1988년 이후 원자재 가격상승과 원화의 절상, 급격한 임금인상 등 3고현상에 따른 가격경쟁격 약화로 해외생산기지 이전이 증가한 결과 1995년 말에는 59개 업체가 중국·인도네시아 등으로 이전했다. 1990년 이후 계속되는 수출감소와 산업의 구조조정을 거치면서 신발산업 규모는 상당히 축소되어 1990년 수출액 43억 달러 규모에서 1996년 12억 달러로 크게 축소됐다. 세계신발시장에서 차지하는 비중도 1990년 16%에서 1994년 5.1%로 크게 낮아졌다. 반면 수입은 증가추세로 수입품의 국내시장 점유율이
+
+[Passage Chunk 3]
+passage: 있어서는 그 비중이 미미하지만 신장속도는 매우 빠른 것으로 나타나고 있다. 무엇보다도 이들 국가들은 저임금 노동력과 원자재 조달면에서의 이점을 지니고 있으며 한국·타이완 등의 업체들의 현지투자로 기술수준도 상당한 단계에 이르고 있다. 주요 수입국들은 미국·EC·일본 등 선진국들로서 매년 소폭씩 물량이 증가하여 왔으나 1988년 하반기 이후 미국과 일본에서는 자국내 신발공업을 보호하기 위한 각종 수입규제 조치를 취해 동지역에서의 수입이 감소 내지는 정체되고 있다. 세계 신발수입의 40%를 차지하고 있는 미국은 지속되어 온 달러화 약세에 힘입어 고급정장화를 중심으로 경쟁력이 회복되고 있는데, 수입은 줄고 생산이 증가하는 경향이 뚜렷해지고 있다. 미국·일본 지역에 비해 EC 지역은 신발수입이 큰 폭으로 증가하자"
+2,게르하르트 슈퇴크가 1936년 베를린 올림픽에서 창던지기에서 이룬 성과는 무엇인가요?,금메달 획득,금메달을 획득하였습니다.,0.9766770005226135,CORRECT,Both answers state that Gerhard Stöck won the gold medal in javelin at the 1936 Berlin Olympics.,"
+
+[Passage Chunk 1]
+passage: 같이 보기 
+ 2002년 동계 패럴림픽 메달 집계
+
+2002년 동계 올림픽
+동계 올림픽 메달 집계 Title: 게르하르트 슈퇴크 Text:게르하르트 슈퇴크(, 1911년 7월 28일 ~ 1985년 3월 29일)는 독일의 육상 선수로 포환던지기와 창던지기를 주로 활약하였다.
+
+생애 
+현재 폴란드 그라비오나에 속하는 카이저스발데에서 태어난 슈퇴크는 1936년 베를린 올림픽에서 포환던지기 동메달과 창던지기의 역전승 금메달을 획득하였다.
+
+포환던지기에서 각각 1·2위를 한 동료 선수 한스 뵐케와 핀란드의 술로 바를룬드에 의하여 능가되었다. 부수적으로 뵐케는 올림픽 육상 종목에서 금메달을 따는 데 첫 독일 선수였다.
+
+[Passage Chunk 2]
+passage: 창던지기에서 슈퇴크를 위한 더 많은 호의적 성과가 있었다. 던지기의 4개의 라운드 후에 자신이 5위에 오고, 아돌프 히틀러 총통의 경기장 도착과 격렬하게 응원하는 팬들에 의하여 영감을 받은 슈퇴크는 자신의 우승에 71.84m의 대단한 던지기와 함께 날렸다.
+
+제2차 세계 대전이 일어나는 동안에 그는 독일 육군의 중위였으며, 스탈린그라드 전투에 있었다.
+
+[Passage Chunk 3]
+passage: 독일의 올림픽 금메달리스트
+독일의 올림픽 동메달리스트
+독일의 제2차 세계 대전 참전 군인
+독일의 올림픽 육상 참가 선수
+1936년 하계 올림픽 메달리스트 Title: 고대 그리스 권투 Text:고대 그리스 권투(Ancient Greek boxing)는 적어도 기원전 8세기, 호메로스의 일리아스의 시대까지 거슬러 올라가 그리스 도시 국가의 다양한 사회 상황에서 이루어졌다. 이 경기에 대한 현존하는 사료의 대부분은 단편적인 혹은 전설에 기초를 둔 것이기 때문에, 규칙과 관습, 역사 등 오늘날 그 정보를 아는 것은 어렵다. 그렇지만, 고대 그리스의 스포츠 문화에서 중요한 위치를 차지하고 있었던 것은 분명하다."
+2,무엇이 DME를 통해 조종사에게 제공됩니까?,거리,거리 정보,0.9618100523948669,CORRECT,"The generated answer ""거리"" (distance) matches the actual answer ""거리 정보"" (distance information) in meaning.","
+
+[Passage Chunk 1]
+passage: 항공전자 Title: 거리측정장치 Text:거리측정장치(distance measuring equipment, DME)는 항공기와 VOR 기지국과의 거리를 알려주는 시스템이다. VOR 기지국과 방위차이는 VOR에 의해 알려주고, 거리는 DME가 알려 주므로 조종사는 자기의 위치를 알 수 있다. 이 시스템은VOR/DME 로 불린다. DME는 미국이나 일본에서 사용되는 군용 항법 시스템 TACAN (TACtical Air Navigation)의 일부로 활용된다. VOR과 TACAN을 통합한 지상국은 VOR/TAC으로 불린다. VOR/DME 또는 VOR/TACAN에서 사용하는 주파수는 국제 표준에 의해 정해지는데 조종사는 특정 VOR 주파수를 선택하면DME이나 TACAN 주파수를 자동적으로 선택하는 기능이 기기에
+
+[Passage Chunk 2]
+passage: 현재 위치와의 차이를 산출해 CDI(Course Deviation Indicator, 코스 편향 지시기) 및 CDI를 포함한 통합 계기에 표시한다. 조종사는 또는 자동 조종 장치가 이 차이를 잃도록 비행하는 것으로 올바른 경로를 따라서 진입이 가능해진다. MKR 또는 T-DME은 수신시에 활주로까지의 거리를 알 수 있지만, 이때 고도를 확인해 경로를 체크한다.최근 MKR의 대용으로서 T-DME을 설치하고 있다. MKR은 상공을 통과하고 처음으로 거리를 알 수 있지만, T-DME의 경우는 접지점까지 단속적으로 거리 측정이 가능하다.
+
+[Passage Chunk 3]
+passage: 주파수는 국제 표준에 의해 정해지는데 조종사는 특정 VOR 주파수를 선택하면DME이나 TACAN 주파수를 자동적으로 선택하는 기능이 기기에 내장되고 있다."
+2,히틀러가 괴벨스와 총력전에 관해 이야기를 나눈 후 법령에 서명하는 데에 소요된 시간은 얼마였나요?,거의 1년,거의 1년.,0.9965448379516602,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 보냈다. 결과적으로 보어만은 괴벨스에게 필요한 칙령의 초안을 작성하도록 했다. 히틀러는 괴벨스와 총격전 개념에 대해 이야기한지 거의 1년 뒤인 1943년 1월 13일, 해당 법령에 서명했다. 법안이 발효됨에 따라 마르틴 보어만, 한스 라머스, 빌헬름 카이텔이 감독자로, 요제프 괴벨스와 알베르트 슈페어를 자문으로 하는 운영위원회가 설치되었다. 한편 히틀러는 이러한 총력전 계획에 대하여 무관심했다. 다음달 2월, 베를린 스포츠궁전에서 열린 나치당 집권 10주년 기념집회에서 요제프 괴벨스는 유명한 ""총력전 연설""을 한다.
+
+[Passage Chunk 2]
+passage: 1942년 3월, 요제프 괴벨스와 아돌프 히틀러는 국내 전선 전체를 전시체제에 두는 괴벨스의 계획에 대하여 이야기했다. 히틀러는 괴벨스가 제시한 개념에 동의했지만 실질적인 행동을 전혀하지 않았다. 1942년 10월, 군수장관 알베르트 슈페어, 경제장관 발터 풍크와 독일노동전선의 총재 로베르트 라이는 괴벨스를 지지하며 히틀러가 행동을 개시하도록 압박했다. 하지만 히틀러는 표면적으로만 동의할 뿐 계속해서 주저하는 태도를 보였다. 1942년 휴가시즌 이후, 히틀러는 그의 개인비서인 마르틴 보어만을 요제프 괴벨스와 국가수상부장 한스 라머스와 함께 주어진 질의들을 논의하도록 보냈다. 결과적으로 보어만은 괴벨스에게 필요한 칙령의 초안을 작성하도록 했다. 히틀러는 괴벨스와 총격전 개념에 대해 이야기한지 거의 1년 뒤인
+
+[Passage Chunk 3]
+passage: 개요 
+""총력전""이라는 단어는 1935년 출판된 독일 장군 에리히 루덴도르프의 제1차 세계대전 회고록에서 ""Der totale Krieg""(""총력전쟁"")이라는 단어로 처음 등장한다. 몇 저자들은 총력전의 개념을 이보다 훨씬 전 카를 폰 클라우제비츠의 저작 전쟁론에서 쓰인 ""absoluter Krieg""(절대전쟁)에서도 쓰였다고 하지만, 다른 이들은 이것이 클라우제비츠의 개념과 다른 해석이라고도 한다.
+
+미국 공군 장성 커티스 르메이는 핵무기 개발이 시작됨에 따라 원자시대에 맞게 총력전의 개념을 수정했다. 1949년, 그는 원자시대의 총력전은 국가 전체의 모든 핵무기를 동원한 단 한번의 공격으로 ""국가를 죽이는 것""이 될 것이라고 개념을 소개했다.
+
+예시
+
+제2차 세계대전"
+2,"""장미의 고백""의 감독 이름이 뭐예요?",김영식,김영식,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 1934년 영화
+미국의 영화 작품
+미국의 흑백 영화
+영어 영화 작품
+미국의 코미디 영화
+캘리포니아주를 배경으로 한 영화
+미국 국립영화등기부 등재 영화
+파라마운트 픽처스 영화 Title: 장미의 고백 Text:""장미의 고백""은 한국에서 제작된 김영식 감독의 1966년 영화이다. 강신성일 등이 주연으로 출연하였고 박의순 등이 제작에 참여하였다.
+
+출연
+
+주연 
+ 강신성일
+ 장동휘
+ 이대엽
+
+기타 
+ 원작자: 김광조
+ 조명: 이병준
+ 미술: 홍성칠
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 출연
+
+주연 
+ 윤봉춘
+ 임운학
+ 하소양
+ 나운규
+ 박연익
+
+외부 링크 
+ 
+
+1932년 영화
+일제강점기의 영화 작품
+한국의 흑백 영화
+한국어 영화 작품
+나운규 감독 영화 Title: 김두봉 (동음이의) Text:김두봉이라는 이름의 동명이인은 다음과 같다.
+ 김두봉
+ 김두봉 (목사)
+ 진더우펑(金斗峯)은 대한제국 불교 승려 겸 독립운동가 순재 선사의 중국어 가명.
+
+같이 보기 Title: 로버트 베리치 Text:로버트 베리치(, 1991년 6월 17일 ~ )는 슬로베니아 축구선수로 중국 슈퍼 리그의 톈진 진먼후에서 스트라이커로 활약하고 있다.
+
+클럽 경력
+
+각주
+
+[Passage Chunk 3]
+passage: 줄거리
+
+캐스팅 
+ 바네사 패러디스 - Jacqueline
+ 케빈 패런트 - Antoine Godin
+
+외부 링크 
+ 
+
+프랑스어 영화 작품
+2011년 영화
+프랑스의 드라마 영화
+캐나다의 드라마 영화
+몬트리올을 배경으로 한 영화
+파리를 배경으로 한 영화
+장마크 발레 감독 영화
+다운 증후군을 소재로 한 영화 Title: 통영시의 향토문화유산 Text:통영시의 향토문화유산은 통영시 내에 있는 문화재로서 「문화재보호법」, 「경상남도 문화재보호 조례」에 따라 국가·도 지정문화재 등으로 지정되지 않은 것으로 역사적·학술적·경관적 가치가 큰 유·무형의 유산 또는 자료를 말한다.
+
+지정 목록
+
+각주"
+2,한국잠종협회 설립 연도는?,1961년,1961년.,0.990332841873169,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 역시 이란은 최신형 600톤급인 파테흐급 잠수함을 건조중인데, 같은 이유로, 아무르-550을 수입했을 가능성이 있다.
+
+아무르-550은 수상배수량 550톤, 수중배수량 700톤, 길이 46 m, 폭 4.4 m, 높이 5.2 m, 속력 18노트, 항속거리 1500 km, 승무원 18명, 작전일수 20일에 400 mm 경어뢰 4발을 장착했다.
+
+각주 
+
+이란의 잠수함 Title: 한국잠종협회 Text:한국잠종협회는 잠종업의 개량발전과 회원 복리증진을 도모함으로써 잠사업의 진흥에 기여함을 목적으로 1961년 12월 6일 설립된 대한민국 농림수산식품부 소관의 사단법인이다. 사무실은 서울특별시 영등포구 여의도동 17-9, 잠사회관 내에 있다.
+
+[Passage Chunk 2]
+passage: 주요 사업 
+ 우량 잠종제조에 관한 기술과 경영향상을 위한 조사연구, 강습회 개최
+ 잠종의 생산비조사 및 적정가격의 협정
+ 잠종생산에 필요한 물자의 공동구입 및 잠종수출, 판매 알선
+ 잠종생산자금 공동 융자알선
+ 농림수산식품부장관의 지시에 의한 사업
+ 기타 본회의 목적달성에 필요한 사업 및 부대사업
+
+사단법인 (농림축산식품부 소관)
+대한민국의 농업 단체
+서울 영등포구
+1961년 설립된 단체 Title: 힙포트라구스속 Text:힙포트라구스속(Hippotragus)은 우제목/경우제목 소과에 속하는 영양 속의 하나이다. 현존하는 2종의 영양을 포함하고 있다. 체고가 1,3~1.45m이고, 몸무게는 최대 250kg이다. 8~40마리씩 무리를 지어 생활한다.
+
+[Passage Chunk 3]
+passage: 카르티에는 사그네의 대지를 찾는 데 3번째 항해를 택하는 데 허락이 주어졌다. 그러나 그 일은 원정이 떠나기 5년전이었을 것이다. 이번에 로크 드 로베르발이라 불리는 남성이 담당할 것이었다. 로베르발의 팀은 정착이 시작된 후 이어진 해에 북아메리카에서 카르티에의 원정을 만나는 것이었다. 1541년 5월 23일 자신의 선원들과 5척의 항선과 함께 카르티에는 생말로를 떠났다. 원정의 목표는 북아메리카에서 정착지를 설립하는 것이었다. 그들은 8월 23일 스타다코나에 도착하였고, 오늘날 퀘벡시 근처에 ""샤를부르루알""로 불린 정착지를 설립하였다. 그들은 지역을 탐험하기 시작하였다. 곧 카르티에와 그의 선원들은 금과 다이아몬드 같이 생긴 발견된 돌들을 믿었다. 하지만 다이아몬드들이 사실 석영의 조각들이며, 금은"
+2,도리이 다다하루의 아버지 이름은 무엇인가요?.,도리이 다다마사,도리이 다다마사,0.9999998807907104,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+
+ 공식 홈페이지
+
+1965년 출생
+살아있는 사람
+오스트레일리아의 여자 싱어송라이터 Title: 도리이 다다하루 Text:도리이 다다하루(鳥居忠春)는 에도 시대 초기의 다이묘이다. 시나노 다카토 번 초대 번주. 미부 번 도리이 가(壬生藩鳥居家) 제3대 당주. 야마가타번주 도리이 다다마사의 삼남으로 태어났다.
+
+[Passage Chunk 2]
+passage: 가족 
+ 부:덴지 천황
+ 모: 아베노 타치바나노 이라츠메
+ 남편:덴무 천황
+ 아들:도네리 친왕
+
+일본의 황후
+699년 사망
+덴무 천황
+덴지 천황의 자녀 Title: 달린 첵 Text:달린 첵(Darlene Zschech)은 오스트레일리아 시드니에 있는 힐송 교회의 워십 인도자이며 가수이자 작곡가이다. 예배 인도자로서 시드니 힐송 교회의 워십과 창조예술 분야를 담임하고 있다. 달린은 힐송 텔레비전 프로그램의 매 주 예배를 인도하고 있으며, 공식 홈페이지에 따르면 이 프로그램은 전 세계 125개국에 방송되고 있다고 한다. 힐송 교회는 2004년에 발매한 라이브 CD인 ""For All You've Done""이 오스트레일리아 음반 순위에서 1위를 기록하면서 전 세계 헤드라인을 장식한 바 있다.
+
+[Passage Chunk 3]
+passage: 고릴라 캔드로이드()는 여미를 감지하여 사용자에게 경계 신호를 보내고, 위험 상황에서 셀 메달을 수집하는 캔드로이드로, 양 팔에 해당하는 스트리머 게인에서 나오는 완력으로 장애물을 치울 수 있다. 다테 아키라가 전투하는 동안 여러 대가 주위에 떨어진 셀 메달들을 다테의 셀 메달 상자에 넣는다.
+
+각주 
+
+가면라이더 시리즈의 등장 인물 Title: 교태 Text:교태(交泰, 958년 3월 ~ 5월)는 남당(南唐) 원종(元宗) 이경(李璟)의 세번째 연호이다. 2개월 가량 사용하였다. 교태 원년(958년) 5월, 후주(後周)와의 3년 전쟁에서 최종적으로 패배하면서, 조약을 체결 한다. 이후, 칭제건원을 포기하면서, 국주 칭호와 후주 연호를 사용하게 되었다."
+2,2016년에 개봉한 '테러'라는 영화의 감독은 누구인가?,사티시 카세티,사티시 카세티,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 각주
+
+같이 보기 
+ 경희대학교
+ 스누라이프
+ 고파스
+
+외부 링크 
+ 쿠플라자
+
+경희대학교 Title: 테러 (2016년 영화) Text:테러(Terror)는 인도에서 제작된 사티시 카세티 감독의 2016년 액션, 스릴러 영화이다. 스리칸스 등이 주연으로 출연하였다.
+
+출연
+
+주연 
+ 스리칸스
+ 라비 베르마
+
+조연 
+ 스리니바사 라오 코타
+ 나사르
+ 니키타 투크랄
+
+사운드트랙 
+""O Lala O Lala""
+""Dil Ka Diwana""
+""Okkasari""
+
+각주
+
+외부 링크 
+
+2016년 영화
+텔루구어 영화 작품
+인도의 영화 작품
+경찰 영화
+
+[Passage Chunk 2]
+passage: 2006년 4월에서 배우인 톰 스튜리지, 테리사 파머, 제이미 벨이 점퍼의 주연으로 배정되었다. 이어 7월에는 배우 새뮤얼 L. 잭슨이 국가안전보장국(NSA)의 수사관 역할로 영화에 합류했고, 고이어는 킨버그와 함께 원래의 대본 초고를 고쳐서 다시 썼다. 기본적인 촬영은 도쿄, 로마, 토론토, 그리고 뉴욕에서 하는 것으로 계획이 잡혔다. 제작은 2006년 6월에 제작자인 톰 로스먼이 감독인 라이먼에게 ""주연이 열 여덟살입니다. 영화가 좀 더 좋아지려면 스물 다섯살이어야 하지 않을까요? 감독님이 상당히 거대한 영화를 여기 갖고 계신데, 어른들은 열여덟 살짜리 애를 보려고 오지는 않을 것입니다. 아동용 영화 취급할 거예요. 그래서 그것보다 더 큰 영화를 만드셔야해요."" 라이먼은 영화에 낭만적인 면을 더 넣기
+
+[Passage Chunk 3]
+passage: 더그 라이먼 감독 영화
+미국의 모험 영화
+순간이동을 소재로 한 영화
+SF 모험 영화
+사이먼 킨버그 각본 영화
+도쿄도에서 촬영한 영화
+우주 비행을 소재로 한 작품 Title: 제4회 전국동시지방선거 Text:제4회 전국동시지방선거는 2006년 5월 31일 수요일, 대한민국 전국에서 실시된 지방의회 의원 및 지방자치단체의 장을 뽑는 선거이다."
+2,"최소영은 고백, 화려한 휴가, 빙점, 과다수면 중 어떤 작품에 등장하지 않나요?",과다수면,최소영은 '과다수면'에 등장하지 않습니다.,0.910445511341095,CORRECT,"The generated answer correctly identifies '과다수면' as the work where 최소영 does not appear, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 전염성해면상뇌병증 Title: 최소영 Text:최소영의 다른 뜻은 다음과 같다.
+ 별은 내 가슴에의 등장인물
+ 화려한 휴가 (드라마)의 등장인물
+ 백야 3.98의 등장인물
+ 빙점 (2004년 드라마)의 등장인물
+ 82년생 김지영 (영화)의 등장인물
+ 고사: 피의 중간고사의 등장인물
+ 고백 (2021년 영화)의 등장인물
+
+같이 보기 Title: 카투피리 Text:카투피리()는 브라질의 헤케이장 브랜드이다.
+
+이름 
+""카투피리""()의 어원은 고대 투피어로 ""아주 좋다""는 뜻의 ""카투프르브()""이며, 이때 ""카투()""는 ""좋다""를, ""프르브()""는 ""아주""를 뜻한다.
+
+[Passage Chunk 2]
+passage: 서브 캐릭터 
+호시노 아유무
+성우 : 우이 / 오오하시 아유루(동일)
+중학교 3학년생. 카즈마의 동생. 몸이 허약하다.
+
+요로즈 센카
+성우 : 유즈키 카나메 / 카와라기 시호(동일)
+요로즈 여관의 주인장.
+
+토도 카사네
+성우 : 안즈 밋츠 / 카도와키 마이(동일)
+중학교 3학년생. 토도 세자매의 막내.
+
+미나미코쿠바라 다이고
+성우 : 하루노 카제 / 하타노 와타루(동일)
+2학년생. 카즈마가 전학 직후 친해진 남자친구.
+
+후지미야 시이
+성우 : 카가 히카루
+
+작중 게스트 캐릭터로 전작 노을빛으로 물드는 언덕의 히로인인 나가세 미나토(성우 : 미즈사와 히카루) 와 욧쨩(성우 : 토요사키 아키)가 등장한다.
+
+[Passage Chunk 3]
+passage: 미소녀 게임
+연애 어드벤처 게임
+2010년 성인 비디오 게임
+2011년 애니메이션
+UHF 애니메이션
+텔레비전 애니메이션화 된 성인 게임
+학교를 배경으로 한 애니메이션
+월간 콤프 에이스
+애니플러스
+학교를 배경으로 한 만화
+연애 만화
+2010년 비디오 게임
+동화공방
+윈도우 게임
+기후현을 배경으로 한 작품
+기후현을 배경으로 한 만화
+기후현을 배경으로 한 애니메이션 Title: 산청 진양강씨 정려각 Text:산청 진양강씨 정려각(山淸 晉陽姜氏 旌閭閣)은 경상남도 산청군 단성면에 있는 일제강점기의 정려이다. 2008년 2월 5일 경상남도의 문화재자료 제443호로 지정되었다.
+
+현지 안내문
+
+각주
+
+참고 자료"
+2,지니 프랜시스는 어떤 민족적 배경을 가지고 있나요?,"잉글랜드계, 리투아니아계, 캐나다계 미국인","잉글랜드계, 리투아니아계, 캐나다계 미국인입니다.",0.9871562719345093,CORRECT,The generated answer matches the actual answer exactly in content.,"
+
+[Passage Chunk 1]
+passage: TV부문 스턴트 상 
+ 트루 블러드 수상
+ 번 노티스
+ CSI - 뉴욕
+ 덱스터
+ 사우스랜드
+
+미국 배우 조합상
+2010년 영화상
+2011년 1월
+2010년 텔레비전상
+2010년 미국 Title: 지니 프랜시스 Text:지니 프랜시스(Genie Francis, 1962년 5월 26일 ~ )는 미국의 배우이다.
+
+TV 출연 
+ 제너럴 호스피털
+ 제시카의 추리극장
+ 남과 북 (텔레비전 드라마)
+ 우리 생애 나날들
+ 올 마이 칠드런
+ 로잔느 아줌마
+ 남과 북 (텔레비전 드라마)
+ 인크레더블 헐크 (1996년 애니메이션)
+ 솔로몬 가족은 외계인
+ 로즈웰 (드라마)
+ 더 영 앤 더 레스트리스
+
+외부 링크 
+
+ 
+ 
+ 지니 프랜시스 - 트위터
+ 지니 프랜시스 - 페이스북
+
+[Passage Chunk 2]
+passage: 외부 링크 
+
+ 
+ 
+ 지니 프랜시스 - 트위터
+ 지니 프랜시스 - 페이스북
+
+1962년 출생
+살아있는 사람
+미국의 여자 텔레비전 배우
+데이타임 에미상 수상자
+뉴저지주 출신 배우
+잉글랜드계 미국인
+리투아니아계 미국인
+캐나다계 미국인
+엥글우드 (뉴저지주) 출신 Title: 칩과 데일 Text:칩과 데일(Chip and Dale)은 월트 디즈니 컴패니의 다람쥐 캐릭터이다. 도널드 덕에서 주로 많이 등장하는 주인공이다.
+
+설정 
+칩은 지기 싫어하며 지혜롭고 데일은 게으르고 장난끼가 많다. 둘 다 말이 빠르고 높은 목소리를 가졌다.
+
+[Passage Chunk 3]
+passage: 각주 
+
+ 《이윤기의 그리스 로마 신화 4》, 이윤기, 2007년
+ 《그리스 신화》, 메네라오스 스테파니데스, 2003년
+
+그리스 신화의 생물
+신화의 사자
+제우스의 자식
+괴물
+네메아
+헤라클레스의 12과업 Title: 딕실랜드 Text:딕실랜드()는 재즈의 장르 중 하나이다. 핫 재즈() 또는 트래디셔널 재즈()라고도 한다. 20세기 초 뉴올리언스에서 발달한 재즈 스타일로, 뉴올리언스의 밴드가 1910년대에 시카고와 뉴욕으로 이동하여 발달했다. 딕실랜드는 재즈로도 유행하고 있지만 과거 미국의 인기 만화 프로그램인 《톰과 제리 시리즈》에서도 소개된 적이 있었던 것으로 알려져 왔다."
+2,보나파르트가의 가문 설립자의 조카는 누구인가요?,나폴레옹 3세,나폴레옹 3세,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 가문 설립자, 나폴레옹 1세. 1804년부터 1814년까지, 이후 1815년.
+ 명목상으로, 나폴레옹 1세의 아들 나폴레옹 2세. 1815년,
+ 나폴레옹 1세의 조카, 나폴레옹 3세. 1852년부터 1870년까지. (1848년부터 1852년까지는 루이나폴레옹 보나파르트라는 이름으로 프랑스 공화국 초대 대통령을 지냈음)
+
+보나파르트 가문은 또한 제1제정 시기 동안 나폴레옹 1세의 족벌 정치 구조하에 여타 유럽 국가들을 다스리기도 했다.
+
+[Passage Chunk 2]
+passage: 콘스턴틴 새뮤얼 라피네스크가 명명한 분류군 Title: 보나파르트가 Text:프랑스 황가(maison impériale de France)는 프랑스 황실 가문과 그 방계 가문을 뜻한다. 프랑스 황가는 이탈리아에 기원을 둔 코르시카 귀족 가문인 보나파르트가(famille Bonaparte)가 선발됐다. 보나파르트 가문은 앙시앵 레짐 시기 프랑스에서 귀족으로 인정받았으며, 이후 1804년 5월 18일 나폴레옹 보나파르트가 프랑스의 제위에 오르며 황실 가문이 되었다. 보나파르트 가문원 중 세 명이 프랑스를 다스렸다.
+
+[Passage Chunk 3]
+passage: 보나파르트 가문은 또한 제1제정 시기 동안 나폴레옹 1세의 족벌 정치 구조하에 여타 유럽 국가들을 다스리기도 했다.
+
+ 이탈리아 왕국 (나폴레옹 1세, 1805년 - 1814년) ;
+ 나폴리 왕국 (조제프 보나파르트, 1806년 - 1808년) ;
+ 스페인 왕국 (조제프 보나파르트, 1808년 - 1813년) ;
+ 홀란트 왕국 (루이 보나파르트, 1806년 - 1810년, 루이 2세, 1810년) ;
+ 루카 피옴비노 공국 (엘리자 보나파르트, 1805년 - 1814년) ;
+ 토스카나 대공국 (엘리자 보나파르트, 1809년 - 1814년) ;
+ 베스트팔렌 왕국 (제롬 보나파르트, 1807년 - 1813년).
+
+군주 목록"
+2,무라야마 도모히코는 어느 포지션에서 뛴다고 기록되어 있나요?,NOT_FOUND,골키퍼,0.7824451327323914,INCORRECT,"The generated answer states ""NOT_FOUND"" while the actual answer specifies the position as ""골키퍼"" (goalkeeper).","
+
+[Passage Chunk 1]
+passage: 개발현황
+
+부두시설 
+ 자동차전용부두
+
+계류시설 
+ 소형어선 접안시설
+ 신항 준설토 투기장 축조공사
+
+도시주거시설 
+신항만의 배후도심으로 고하해상신도심이 조성중에 있다. 목포대교가 건설되고 있다.
+
+전라남도의 항구
+목포시의 교통 Title: 무라야마 도모히코 Text:무라야마 도모히코(1987년 8월 22일 ~ )는 일본의 축구 선수이다. 현재 J3리그의 마쓰모토 야마가 FC에서 뛰고 있다.
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 
+
+1987년 출생
+살아있는 사람
+일본의 남자 축구 선수
+J1리그의 축구 선수
+J2리그의 축구 선수
+J3리그의 축구 선수
+일본 풋볼 리그의 축구 선수
+마쓰모토 야마가 FC의 축구 선수
+쇼난 벨마레의 축구 선수
+남자 축구 골키퍼
+지바현의 축구 선수
+득점 기록이 있는 골키퍼 Title: 버로티 러요시 Text:버로티 러요시(, 1914년 8월 19일 ~ 2005년 12월 23일)는 헝가리의 전 축구 선수 및 축구 감독이었다.
+
+1928년 헝가리의 세게드 AK에서 데뷔했으며, 1946년 죄르 ETO FC로 이적해 1948년까지 활약하였다. 또한 1939년 헝가리 축구 국가대표팀에 정식으로 데뷔한 뒤, 1941년까지 2차례의 경기에 참여하기도 했다.
+
+[Passage Chunk 3]
+passage: 교통
+
+철도 
+ 동일본 여객철도 우쓰노미야 선(도호쿠 본선)
+
+도로 
+ 국도 제4호선
+ 국도 제293호선
+
+인구
+
+외부 링크 
+
+  사쿠라 시 공식 홈페이지
+
+ 
+도치기현의 도시 Title: 세바스티앵 코르시아 Text:세바스티앵 코르시아(, 1990년 11월 1일~)는 프랑스의 축구 선수로 포지션은 라이트백이다. 현재 리그 1의 FC 낭트 소속으로 뛰고 있다.
+
+외부 링크 
+ 
+  세바스티앵 코르시아 - 프랑스 축구 연맹
+  세바스티앵 코르시아 - National Football Teams
+  세바스티앵 코르시아 - 트랜스퍼마크트"
+2,친황다오 올림픽 스포츠 센터 스타디움은 어떤 특별한 해에 개장했나요?,2008년,2004년.,0.9320361614227295,INCORRECT,"The generated answer gives the wrong year of opening, 2008 instead of the correct 2004.","
+
+[Passage Chunk 1]
+passage: 학교 동문
+
+참고 자료
+
+각주
+
+외부 링크 
+ 
+
+신안군의 초등학교
+1940년 개교 Title: 친황다오 올림픽 스포츠 센터 스타디움 Text:친황다오 올림픽 스포츠 센터 스타디움(, )은 중국 친황다오에 있는 다목적 경기장이다. 2008년 하계 올림픽 축구 경기장으로 활용되었다.
+
+[Passage Chunk 2]
+passage: 2004년 설립
+2008년 하계 올림픽 경기장
+중화인민공화국의 축구 경기 시설
+친황다오시의 건축물 Title: 크리크 전쟁 Text:크릭 전쟁() 또는 크릭 내전(, 1813년 - 1814년)는 미국 남부에서 크릭 족 인디언의 내전에 미군이 개입했던 ""인디언 전쟁""이다. 결과적으로 이곳에 정착해서 살고 있던 인디언의 강제 이주와 미국의 인디언의 영토 약탈이자, 인종 청소가 되었다. 인디언을 영국군이 지원하고 있었기 때문에, 영미전쟁의 일부라고 생각하는 경우도 있다. 이 전쟁에서 미군의 승리로 이끈 앤드루 잭슨은 백인 사회에서 일약 명성을 떨치게 되었다.
+
+[Passage Chunk 3]
+passage: 같이 보기 Title: 멜버른 파크 Text:멜버른 파크(Melbourne Park)는 오스트레일리아 멜버른에 위치한 스포츠 경기장이다. 1988년 설립되었다. 오스트레일리아 오픈 테니스 개최지 (매년 1월, 2월), 멜버른 타이거스 (농구)의 홈 경기장, 아이스 스케이트, 자전거 경기, 모터스포츠, 음악 이벤트도 개최된다.
+
+외부 링크 
+
+Melbourne & Olympic Parks official website
+
+멜버른의 스포츠 시설 Title: 미즈노 다다요시 Text:미즈노 다다요시(みずの ただよし)"
+2,파이널 판타지 XVI 게임의 주요 인물 중 한 명인 클라이브 로즈필드의 목표는 무엇인가요?,사건의 원인을 밝혀 복수하는 것,복수하는 것.,0.9502649307250977,CORRECT,"The generated answer correctly states the goal as seeking revenge, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 마법의 에너지원인 크리스털을 둘러싼 국가 간 분쟁이 빈번한 대지 '발리스제아'가 게임의 무대이다. 소환수의 힘이 깃든 도미넌트를 사용한 전쟁이 발발하고 전대륙에 퍼지는 신종 질병으로 인해 전란의 소용돌이가 가속화하자, 로자리아 공국의 왕자인 주인공 클라이브 로즈필드가 사건의 원인을 밝혀 복수하는 내용을 다뤘다.
+
+2015년부터 구상개발 단계에 접어들었으며 제작진에는 프로듀서 요시다 나오키, 기획자 타카이 히로시, 원화가 미나가와 히로시 및 타카하시 카즈야, 총괄제작자 마에히로 카즈토요, 작곡가 소켄 마사요시, 그리고 전투 디자이너 스즈키 료타가 있다.
+
+[Passage Chunk 2]
+passage: 개발 
+《파이널 판타지 XVI》의 제작은 스퀘어 에닉스 제3개발사업부가 전담했으며, 이는 온라인 게임 《파이널 판타지 XIV》의 개발 및 운영을 맡는 곳이다. 게임 프로듀서는 《파이널 판타지 XIV》의 프로듀서 및 디렉터인 요시다 나오키가 맡았으며, 디렉터는 《사가》 시리즈 및 《더 라스트 램넌트》의 제작자였던 타카이 히로시이다.
+
+반응 
+
+플레이스테이션 5판 《파이널 판타지 XVI》는 리뷰 애그리게이터 웹사이트 메타크리틱에서 87/100점을 기록해 ""대체적으로 긍정적인 평가""를 받았다. 오픈크리틱에서는 88/100점을 기록했으며 92%가 게임을 추천했다.
+
+참조
+
+내용주
+
+각주
+
+외부 링크
+
+[Passage Chunk 3]
+passage: 평가
+
+각주
+
+외부 링크 
+
+안드로이드 게임
+IOS 게임
+MacOS 게임
+오픈 월드 게임
+플레이스테이션 3 게임
+플레이스테이션 비타 게임
+시뮬레이션 게임
+윈도우 게임
+닌텐도 스위치 게임
+엑스박스 360 게임
+엑스박스 원 게임
+플레이스테이션 4 게임
+2008년 비디오 게임
+2009년 비디오 게임
+2010년 비디오 게임
+2012년 비디오 게임
+2013년 비디오 게임
+2014년 비디오 게임
+2015년 비디오 게임
+2016년 비디오 게임
+2017년 비디오 게임
+2018년 비디오 게임 Title: 파이널 판타지 XVI Text:《파이널 판타지 XVI》은 스퀘어 에닉스가 제작한 액션 롤플레잉 게임이다. 《파이널 판타지》 본편 시리즈의 열여섯 번째 작품으로 플레이스테이션 5로 개발돼 2023년 6월 22일 출시됐다."
+2,도라지 민요의 주된 내용은 무엇에 관한 것인가?.,도라지를 캐는데 도라지가 많고 커서 좋다는 내용이다.,도라지가 많고 커서 좋다는 내용입니다.,0.9759093523025513,CORRECT,"The generated answer accurately conveys the main content about the abundance and size of doraji, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 외부 링크 
+
+ 
+
+교토시의 절
+우쿄구의 건축물
+교토시의 중요문화재
+일본 특별명승
+교토부의 국가 지정 명승
+교토부의 국가 지정 사적
+고도 교토의 문화재
+일본의 세계유산
+고다이고 천황
+아시카가 다카우지
+고카메야마 천황
+아시카가 요시미쓰 Title: 도라지타령 Text:도라지는 고대 한국인들 사이에 널리 불린 민요이다.
+
+아리랑과 도라지는 대한민국과 조선민주주의인민공화국의 대표적인 민요이다. 이들은 모두 3박자로 연주된다.
+
+도라지를 캐는데 도라지가 많고 커서 좋다는 내용이다.
+
+악보
+
+가사 
+한국어 가사는 다음과 같다:
+1.
+도라지 도라지 도라지
+심심산천(深深山川)의 도라지
+한 두 뿌리만 캐어도
+대바구니로 반실만 되누나
+
+후렴
+에헤요 에헤요 에헤야
+어여라난다 지화자 좋다
+저기 저 산 밑에 도라지가 한들한들
+
+[Passage Chunk 2]
+passage: 후렴
+에헤요 에헤요 에헤야
+어여라난다 지화자 좋다
+저기 저 산 밑에 도라지가 한들한들
+
+2.
+도라지 도라지 도라지
+은률(殷栗) 금산포(金山浦) 백도라지
+한 뿌리 두 뿌리 받으니
+산골에 도라지 풍년일세
+
+후렴
+
+3.
+도라지 도라지 도라지
+강원도(江原道) 금강산(金剛山) 백도라지
+도라지 캐는 아가씨들
+손맵시도 멋들어졌네
+
+후렴
+
+같이 보기 
+ 경기입창
+
+참조
+
+외부 링크 
+ 도라지 가사
+
+한국어 노래
+한국의 민요 Title: 도라지타령 Text:도라지는 고대 한국인들 사이에 널리 불린 민요이다.
+
+아리랑과 도라지는 대한민국과 조선민주주의인민공화국의 대표적인 민요이다. 이들은 모두 3박자로 연주된다.
+
+도라지를 캐는데 도라지가 많고 커서 좋다는 내용이다.
+
+악보
+
+[Passage Chunk 3]
+passage: 도라지를 캐는데 도라지가 많고 커서 좋다는 내용이다.
+
+악보
+
+가사 
+한국어 가사는 다음과 같다:
+1.
+도라지 도라지 도라지
+심심산천(深深山川)의 도라지
+한 두 뿌리만 캐어도
+대바구니로 반실만 되누나
+
+후렴
+에헤요 에헤요 에헤야
+어여라난다 지화자 좋다
+저기 저 산 밑에 도라지가 한들한들
+
+2.
+도라지 도라지 도라지
+은률(殷栗) 금산포(金山浦) 백도라지
+한 뿌리 두 뿌리 받으니
+산골에 도라지 풍년일세
+
+후렴
+
+3.
+도라지 도라지 도라지
+강원도(江原道) 금강산(金剛山) 백도라지
+도라지 캐는 아가씨들
+손맵시도 멋들어졌네
+
+후렴
+
+같이 보기 
+ 경기입창
+
+참조
+
+외부 링크 
+ 도라지 가사"
+2,애너글리프 방식은 다른 방식과 구별될 수 있는 특징이 하나입니다. 그 특징은 무엇인가요?,안경 외에 별도의 장비 없이 입체효과를 느낄 수 있다,색 필터를 통해 입체 효과를 느낄 수 있다는 점입니다.,0.9288130402565002,INCORRECT,"The generated answer incorrectly states no additional equipment is needed besides glasses, while the actual answer specifies the use of color filters to achieve the 3D effect.","
+
+[Passage Chunk 1]
+passage: 애너글리프(Anaglyph) 
+애너글리프 방식은 보색관계의 적색과 청색으로 좌우 형상을 그리고 색 필터로 형상을 선택, 분리하여 양안에 각각 적색과 청색의 색안경을 쓰고 보는 방법으로 안경 외에 별도의 장비 없이 입체효과를 느낄 수 있다. 이는 3D의 시초라고 할 수 있으며 다양한 부분에서 사용이 되었다.
+
+작동 방식 
+
+애너글리프 방식은 보색관계의 적색과 청색으로 좌우 화상을 그리고 색 필터로 좌우상을 선택, 분리하여 양안에 각각 적색과 청색의 색안경을 쓰고 보는 방법으로 안경 외에 별도의 장비 없이 다양한 출력 매체에서 입체효과를 느낄 수 있다.
+
+[Passage Chunk 2]
+passage: 역사 
+3D의 시초라 불리는 애너글리프 방식은 색상 차를 이용해 3D 영상을 구현하는 방식이다. 애너글리프 이미지를 만드는 방법은 라이프 치히 (Leipzig), 독일의 빌헬름 Rollmann에 의해 1852년에 개발되었다. 1800년대 중반부터 사진이나 그림을 입체적으로 볼 수 있는 장치를 만들기 시작하였고, 1922년에 최초의 상업용 3D 영화로 알려진 'The power of love' 가 상영되었다.
+
+적용 분야
+
+[Passage Chunk 3]
+passage: 안경 등의 보조 기구로 3D를 표현하는 스테레오스코피 방식은 크게 애너글리프(Anaglyph), 셔터 글래스(Shutter Glasses), 필름타입패턴편광(Film Patterned Retarder) 방식으로 나뉜다."
+2,권영철(실존 인물)은 어느 스포츠 팀과 관련이 있나요?,삼성 라이온즈,삼성 라이온즈,0.9999998211860657,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 각주 
+
+ 
+칼 폰 린네가 명명한 분류군
+측계통군 Title: 광시증 Text:광시증(光視症)은 어둠에서 빛을 인식하는 증상이다. 이는 후유리체박리(posterior vitreous detachment), 조짐편두통(migraine with aura), 두통이 없이 전조만 있는 편두통(migraine aura without headache), 망막 박리 및 망막 이단(retinal break or detachment), 후두엽 경색(occipital lobe infarction), 감각 차단(sensory deprivation)과 관련이 있다.
+
+눈병
+징후
+편두통 Title: 권영철 (동음이의) Text:권영철의 다른 뜻은 다음과 같다.
+
+실존 인물 
+ 권영철: 전 KBO 리그 삼성 라이온즈의 선수
+
+[Passage Chunk 2]
+passage: 실존 인물 
+ 권영철: 전 KBO 리그 삼성 라이온즈의 선수
+
+가공 인물 
+ 시비시비의 등장 인물
+ 서서 자는 나무의 등장 인물
+
+같이 보기 Title: 김중만 (동음이의) Text:김중만의 다른 뜻은 다음과 같다.
+
+실존 인물 
+ 김중만
+ 김중만 (조선)
+
+가공 인물 
+ 장미의 눈물의 등장 인물
+ 지푸라기라도 잡고 싶은 짐승들의 등장 인물
+
+[Passage Chunk 3]
+passage: 요즘은 운동권과 비운동권의 구분자체가 모호해졌다.
+
+비판 
+대학생들의 조직이지만, 정치적인 성향을 띠어 갖은 비리도 존재하는 조직 도 있으며 때에 따라서는 이해관계 및 대립, 충돌 등이 있어 한국정치의 폐해를 답습하는 경우도 있다. 부적절한 선거운동으로 인해 경고 누적 등으로 강제사퇴가 되거나, 학사경고 누적으로 인한 퇴학, 또는 성폭력의혹으로 인한 후보자격 상실 등의 사건이 있다. 극한으로 치닫는 경우 법적 소송까지 가는 사례도 있다. 총학생회장이 단과대 학생회장에 의해 탄핵되는 사례도 있었으며 선거관리위원회실에 감청장비를 설치하거나 개표 전 사전개봉을 하는 사건도 있었다. 또한 학생들만이 아닌 외부조직과 밀접한 연관이 있는 경우가 있으며, 폭력조직과 연계하는 사례도 보도된 바 있다."
+2,아이오나섬은 과거 3세기 동안 무엇의 중심지였나요?,게일 수도자들의 중심지,게일 수도자들의 중심지.,0.9885740280151367,CORRECT,The generated answer exactly matches the actual answer.,"
+
+[Passage Chunk 1]
+passage: 셀차 (크로아티아)
+ 셀차 (슬로베니아)
+
+같이 보기 Title: 아이오나섬 Text:아이오나섬(Iona, Ì Chaluim Chille)은 스코틀랜드 서부 해안의 Ross of Mull에서 떨어진 이너헤브리디스 제도의 작은 섬이다. 아이오나 애비를 통해 주로 알려진 지역이지만 이 섬에 다른 건물들도 존재한다. 아이오나 애비는 3세기 동안 게일 수도자들의 중심지였으며 오늘날 이 지역의 상대적인 평온함과 자연 환경으로 유명하다.
+
+아이오나 애비 
+
+오늘날의 교회 일치 운동 교회인 아이오나 애비는 방문객들에게 역사적, 종교적 관심 대상이다.
+
+참고 문헌 
+
+ 
+ Murray, W. H. (1966). The Hebrides. London. Heinemann.
+
+각주
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 참고 문헌 
+
+ 
+ Murray, W. H. (1966). The Hebrides. London. Heinemann.
+
+각주
+
+외부 링크 
+
+ Visit Mull & Iona (Official tourism website for the Isles of Mull and Iona)
+Isle of Iona, Scotland (A visitors guide to the Isle)
+The Iona Community
+ Computer-generated virtual panorama Summit of Iona Index
+Photo Gallery of Iona by Enrico Martino
+ National Trust for Scotland property page
+
+[Passage Chunk 3]
+passage: 사진
+
+같이 보기 
+ 부석사
+ 부석사 무량수전 앞 석등
+
+각주
+
+참고 문헌
+
+외부 링크 
+
+대한민국의 국보
+경상북도의 국보
+고려의 건축물
+무량수전
+1376년 완공된 건축물
+극락전 Title: 오르모크만 Text:오르모크만(Ormoc bay)은 필리핀 중부 비사야 제도의 레이테 섬의 북서쪽에 있는 만이다. 세부섬 사이의 카모테스해에서 북쪽으로 파고든 강이다. 오르모크시는 만의 머리 부분에 있으며, 아닐라오강이 흐르고 있다. 이 항구에서 쌀 외에도 다른 농장에서 재배되는 코프라, 설탕 등을 실어 나른다."
+2,사무편람을 작성할 때 민간수탁기관이 반드시 받아야 하는 것은 무엇인가?.,위탁기관의 승인,위탁기관의 승인,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: [대통령령 제30080호, 2019. 9. 17., 타법개정]
+
+제 3장 15조 사무편람
+ 민간수탁기관은 수탁사무의 종류별로 처리부서, 처리기간, 처리절차, 처리기준, 구비서류, 서식 및 수수료 등을 구분하여 구체적으로 밝힌 사무편람을 작성하여 갖춰 두어야 한다.
+ 민간수탁기관은 제1항의 편람을 작성하였을 때에는 위탁기관의 승인을 받아야 한다.
+
+[Passage Chunk 2]
+passage: 조직
+
+청장 
+ 관리과
+ 심사과
+ 조사과
+ 이민특수조사대
+
+소속기관 
+ 출장소
+
+각주 
+
+2018년 설립
+지방출입국·외국인관서
+부산 중구 소재의 관공서 Title: 사무편람 Text:사무편람이란 사무에 대해 처리부서, 처리기간, 처리절차, 처리기준, 구비서류, 서식 및 수수료 등을 구분하여 구체적으로 정리한 문서이다.
+
+사무편람이 단순히 사무의 기준과 처리절차를 명시한 기록물인지, 기록에 따른 절차적 의무까지 사무주체에게 부과되는 것인지는 불명확하여 자료를 찾아볼 필요가 있다.
+
+관련 법 
+행정권한의 위임 및 위탁에 관한 규정(시행 2019. 9. 17.)
+
+[대통령령 제30080호, 2019. 9. 17., 타법개정]
+
+[Passage Chunk 3]
+passage: 국적취득의 신청, 국적이탈·상실 신고 그 밖의 국적민원 접수 및 실태조사
+ 난민인정 결정 및 난민 처우 등에 관한 사항
+ 「출입국 관리법 시행령」 별표 1에 따른 외국인의 체류자격 중 거주(F-2), 영주(F-5) 등을 가진 정주외국인 및 귀화자 등의 네트워크 구축·운영 지원에 관한 사항
+ 사증발급인정서의 발급 등에 관한 사항
+ 기타 내·외국인의 출입국관리에 관한 사항"
+2,그린란드 민주당의 독립에 대한 입장은 무엇인가요?,그린란드의 독립이나 자치에 대해 부정적인 입장이다.,부정적인 입장을 갖고 있으며 덴마크 왕국에 남아야 한다는 입장입니다,0.9212583303451538,CORRECT,Both answers state a negative stance on independence and support remaining within the Kingdom of Denmark.,"
+
+[Passage Chunk 1]
+passage: 쿤밍의 마천루 Title: 민주당 (그린란드) Text:민주당(, )은 그린란드의 사회자유주의, 연합주의 정당이다. 2002년에 창당했으며 같은 해에 실시된 그린란드 총선거에서 5석을 차지하면서부터 그린란드 의회에서 원내정당 지위를 차지하고 있다. 그린란드의 독립이나 자치에 대해 부정적인 입장을 갖고 있으며 그린란드가 페로 제도와 함께 덴마크 왕국에 남아 있어야 한다는 입장을 갖고 있다. 또한 그린란드의 교육, 주택 상황 개선에 우선 순위를 두고 있다.
+
+외부 링크 
+ 민주당 홈페이지
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 민주당 홈페이지
+
+2002년 설립된 정당
+그린란드의 정당
+사회자유주의 정당
+그린란드의 자유주의 정당 Title: 반모음 Text:반모음(半母音, ; semiconsonant)은 /이, 우, 으/같은 모음의 음가를 가지고 있지만 위턱 조음점과 아랫턱 조음체 사이에 만드는 틈이 좁고 지속 시간도 짧아서 자음의 자리에만 나오는 소리다. 조음 방법으로서는 접근음(接近音, )에 속한다. 또 모음과 비슷하지만 독립적이지 못하고 후속하는 모음으로 합류하듯 움직이는 특성에 따라 활음(滑音, )라고도 한다.
+
+국제 음성 기호
+
+[Passage Chunk 3]
+passage: 코네티컷주를 배경으로 한 영화
+1973년을 배경으로 한 영화
+코네티컷주에서 촬영한 영화
+불륜을 소재로 한 영화
+추수감사절을 소재로 한 영화
+실존주의 영화 Title: 아제르바이잔의 군사사 Text:아제르바이잔의 군사사는 현대 아제르바이잔을 아우르는 영토에서 수천 년에 걸친 무력 활동과 해외 분쟁에 대한 아제르바이잔군의 개입으로 구성된다. 아제르바이잔인은 토착 캅카스 알바니아인, 스키타이인이나 알란인과 같은 이란 부족, 그리고 일부 사이에서 오우즈 투르크를 포함한 다양한 고대 문명과 민족의 상속자로 믿어진다 (캅카스의 여러 현대 민족은 동일한 고대 민족 중 하나 이상에 조상을 추적할 수 있다)."
+2,문서에 소개된 송암동이 행정동인 구역은 어디인가요?,광주광역시 남구,광주광역시 남구.,0.9932449460029602,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 그 계곡은 발 세리아나(Val Seriana)로 알려져 있다.
+
+각주
+
+외부 링크 
+
+아다강의 지류
+이탈리아의 강
+롬바르디아주의 강
+베르가모도의 강 Title: 송암동 Text:송암동의 다른 뜻은 다음과 같다.
+ 송암동(松岩洞)은 광주광역시 남구의 행정동이다.
+ 송암동(松岩洞)은 강원특별자치도 춘천시의 법정동이다.
+
+같이 보기 Title: 스펜서 데이비스 그룹 Text:스펜서 데이비스 그룹()은 1963년 버밍엄에서 결성된 영국의 록 밴드이다.
+
+구성원
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 제기 목록
+
+같이 보기 
+ 가야진사 - 경상남도 민속문화재 제7호
+
+각주
+
+참고 자료 
+ 
+
+경상남도의 유형문화재
+양산시립박물관 소장품
+분청사기 Title: 오그던 (유타주) Text:오그던(Ogden)은 미국 서부 유타주에 있는 도시이다. 인구 78,086(2006). 유타주 북부, 워새치 산맥 서쪽 기슭의 해발고도 1,310m 지점에 위치한다. 솔트레이크시티 북쪽 약 50km 지점에 있다. 면적은 약 69 km2다. 후기성도들이 건설하였고, 대륙횡단철도가 이 곳을 통과하게 되면서 처음에는 예수 그리스도 후기성도 교회의 성전이 지어지는 등 솔트레이크시티보다 먼저 발전했었다. 지금은 주 북부의 중심지이고, 고속도로가 교차하는 교통의 요지이다. 동쪽에는 스키 휴양지가 있다.
+
+[Passage Chunk 3]
+passage: 라마 3세의 치세 때 므앙 피차이는 난이나 프래와 같은 시암 북부의 므앙이나 심지어 루앙프라방, 비엔티안의 지배를 받았다. 난 강이 얕아지는 지점에 항구가 세워졌다. 마을은 중요한 교역 중심지로 성장하였다. 1899년에 피차이의 중심지는 이 새로운 위치로 옮겨졌고 1915년에 우따라딧으로 개칭되었다.
+
+교통 
+ 태국 국유철도
+
+행정 구역 
+우따라딧에는 9개의 암프(군)와 더 세부 행정구역인 67개의 땀본 그리고 562개의 무반 (행정 구역)이 있다.
+
+외부 링크 
+
+ 공식 홈페이지"
+2,태극 품새에서 몇 개의 품새를 알고 있어야 검은띠를 받을 수 있나요? 그리고 모든 품새를 수행할 때 어떻게 해야 하나요?.,8개 품새를 모두 알고 있어야 하며 중간에 쉬지 않고 연속적으로 모든 품새를 수행해야 한다.,"8개의 태극 품새를 모두 알고 있어야 하며, 중간에 쉬지 않고 연속적으로 수행할 수 있어야 합니다.",0.9717153906822205,CORRECT,The generated answer matches the actual answer in content and meaning.,"
+
+[Passage Chunk 1]
+passage: 각주 
+
+태권도 Title: 태극 품새 Text:태극 품새(太極품새)는 태권도를 가르치는 데 사용되는 방어 및 공격 형태의 패턴이다.
+
+1967년과 1971년 사이에 국기원식 태권도는 대한태권도협회 (KTA)가 태권도의 원래 9관 중 일부를 통해서 개발한 팔괘형식이라는 오래된 방식을 사용했다. 1970년까지 추가적으로 관이 KTA에 합류하여 모든 관의 방식을 더 잘 표현하기 위해 새로운 태극양식의 품새가 개발되었다. 1971년까지 팔괘형식은 새로운 태극형식을 위해 더 이상 사용되지 않는 것으로 간주되었지만 일부 학교에서는 여전히 팔괘형식도 가르치고 있다.
+태권도에서 검은띠를 받으려면 일반적으로 8개의 태극 품새를 모두 알고 있어야 하며 중간에 쉬지 않고 연속적으로 모든 품새를 수행할 수 있어야 한다.
+
+[Passage Chunk 2]
+passage: 1967년과 1971년 사이에 국기원식 태권도는 대한태권도협회 (KTA)가 태권도의 원래 9관 중 일부를 통해서 개발한 팔괘형식이라는 오래된 방식을 사용했다. 1970년까지 추가적으로 관이 KTA에 합류하여 모든 관의 방식을 더 잘 표현하기 위해 새로운 태극양식의 품새가 개발되었다. 1971년까지 팔괘형식은 새로운 태극형식을 위해 더 이상 사용되지 않는 것으로 간주되었지만 일부 학교에서는 여전히 팔괘형식도 가르치고 있다.
+태권도에서 검은띠를 받으려면 일반적으로 8개의 태극 품새를 모두 알고 있어야 하며 중간에 쉬지 않고 연속적으로 모든 품새를 수행할 수 있어야 한다.
+
+각 태극 품새는 팔괘의 의미를 지니고 있으며, 각 품새마다 장(場)이라는 어미를 붙여 부른다.
+
+[Passage Chunk 3]
+passage: 각 태극 품새는 팔괘의 의미를 지니고 있으며, 각 품새마다 장(場)이라는 어미를 붙여 부른다.
+
+같이 보기 
+ 태극1장
+ 태극2장
+ 태극3장
+ 태극4장
+ 태극5장
+ 태극6장
+ 태극7장
+ 태극8장
+
+각주 
+
+태권도 Title: 태극 품새 Text:태극 품새(太極품새)는 태권도를 가르치는 데 사용되는 방어 및 공격 형태의 패턴이다."
+2,데비카 라니는 어느 나라의 배우인가요?,인도,인도,0.9999998807907104,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 역사 및 현황 
+1957년 1월 1일 창업하였으며, 현재 22대의 버스를 보유하고 있다.
+
+보유 차량
+
+현대자동차 
+ 현대 쏠라티
+ 현대 그린시티
+ 현대 뉴 슈퍼 에어로시티
+
+기아 
+ 기아 올 뉴 카니발
+
+같이 보기 
+ 홍천군의 농어촌버스
+ 인제군의 농어촌버스
+
+각주
+
+외부 링크 
+ 홍천군의 농어촌버스 시간표
+
+1957년 설립된 기업
+인제군의 교통
+홍천군의 교통
+강원특별자치도의 시내버스 기업
+강원특별자치도의 버스 교통 Title: 데비카 라니 Text:데비카 라니(, , 1908년 3월 30일 ~ 1994년 3월 9일)는 인도의 배우, 디자이너, 가수이다. 1958년 파드마슈리 서훈자이다.
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 이 영화는 이탈리아와 조선민주주의인민공화국 간의 국제적 공동 제작 작품이며 온로케이션으로 북한에서 촬영되었다. 오늘날까지 이 영화는 해당 국가에서 촬영된 몇 안 되는 서부에서 제작된 비다큐멘터리 장편 영화 가운데 하나이며 미국 배우가 출연한 몇 안 되는 영화 가운데 하나이기도 하다.
+
+참고 문헌
+
+외부 링크 
+ 
+
+1988년 영화
+영어 영화 작품
+이탈리아의 SF 영화 Title: 토니 클라크 Text:토니 클라크(Tony Clarke, 1940년 4월 13일 ~ 1971년 8월 28일)는 미국의 배우 겸 싱어송라이터이다.
+
+뉴욕에서 태어났으며 디트로이트에서 사망하였다. 본명은 랠프 토머스 윌리엄스(Ralph Thomas Williams)다.
+
+영화 
+ 블루 골드 (2008년)
+ 시티즌 버딕 (2003년)
+
+[Passage Chunk 3]
+passage: 영국의 범죄 드라마
+추리 드라마
+셜록 홈즈 드라마
+영국 소설을 바탕으로 한 텔레비전 드라마 Title: 아부 오마르 알바그다디 Text:아부 오마르 알바그다디(, 1959년 ~ 2010년 4월 18일)는 지하드 전사 평의회의 지도자로 알려져있다. 이 조직은 미군의 이라크 점령을 반대하는 8개의 그룹의 연합조직으로 현재는 이슬람 국가가 되었다.
+
+생애 
+아부 오마르 알바그다디의 본명은 하미드 다우드 무함마드 카릴 알-자위(Hamid Dawood Muhammad Khalil al-Zawi)로 1964년 이라크 안바르주 하디타의 알-자위야(al-Zawiya) 마을에서 태어났다. 그는 바그다드의 경찰대학을 졸업했고, 이후 이라크 경찰 장교로 복무했다."
+2,메달 오브 아너: 라이징 선의 온라인 다인용 기능이 중단된 연도는 언제입니까?,2006년 11월,2006년.,0.9717541337013245,CORRECT,"The generated answer correctly specifies the year 2006, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 불가리아의 조각품
+불가리아의 기념물
+불가리아의 유적
+불가리아의 세계유산
+슈멘주의 관광지
+슈멘주의 건축물
+암면미술
+부조
+금석문
+말을 소재로 한 미술 작품
+7세기 조각 작품
+8세기 조각 작품 Title: 메달 오브 아너: 라이징 선 Text:메달 오브 아너: 라이징 선(Medal of Honor: Rising Sun)은 EA 게임즈가 2003년 11월 출시한, 메달 오브 아너 시리즈 중 5번째 작품인 1인칭 슈팅 비디오 게임이다. 라이징 선의 배경은 제2차 세계 대전, 태평양 전쟁 시기이다. 1인용과 다인용 기능을 제공한다.(다인용 기능은 2006년 11월에 중단됨)
+
+평가
+
+각주
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 각주
+
+외부 링크 
+ 
+
+2003년 비디오 게임
+일렉트로닉 아츠의 게임
+다중 사용자 온라인 게임
+게임큐브 게임
+메달 오브 아너 시리즈
+플레이스테이션 2 게임
+미국의 비디오 게임
+하와이주를 배경으로 한 비디오 게임
+미얀마를 배경으로 한 비디오 게임
+필리핀을 배경으로 한 비디오 게임
+싱가포르를 배경으로 한 비디오 게임
+태국을 배경으로 한 비디오 게임
+엑스박스 게임
+제2차 세계 대전 비디오 게임 Title: 박석진 Text:박석진(朴石鎭, 1972년 7월 19일 ~ )은 대한민국의 야구 선수, 지도자로 전 KBO 리그 LG 트윈스의 투수이자, 현재 KBO 리그 NC 다이노스의 2군 투수코치이다. 우완 사이드암 투수로서 삼성과 롯데를 여러 차례 오가며 선수 생활을 했으며, 신고선수 출신의 성공 사례로 손꼽힌다.
+
+[Passage Chunk 3]
+passage: 1970년대에 케이브 존슨은 블랙 메사와의 경쟁에서 이기기 위해 보리알리스 호라는 쇄빙선을 만들었으나 사고로 인해 쇄빙선이 통째로 텔레포트되어버리는 사건이 발생한다. 1981년에 케이브 존슨이 포탈의 전도체라고 알려진 월석을 사들이고 나서부터 월석에 감염되어 병을 앓게 된다. 1980년대 후반에 케이브 존슨은 결국 월석에 의한 병으로 사망한다. 그는 사망하였지만 애퍼처 사이언스는 지속적으로 운영되었다.
+
+내용주
+
+외부 링크 
+  콤바인 오버위키 '케이브 존슨' 항목"
+2,탈활건칠과 목심건칠의 주요 차이는 무엇인가요? 그리고 현대 제작법에서 찰흙과 석고는 어떤 역할을 하나요?,"탈활건칠은 찰흙으로 대강의 형상을 만들고 마포를 칠로 붙인 후 내부 흙을 뽑아내어 나무 뼈대로 보강하는 방법이고, 목심건칠은 나무로 대체적인 형상을 새기며 여러 나무를 합쳐서 만들 수도 있다. 현대 제작법에서 찰흙은 원형을 만들고 석고는 외형을 베는 데 사용된다.","탈활건칠은 찰흙으로 대강의 형상을 만들고 마포를 옻으로 붙인 뒤 내부의 흙을 제거하는 방식이며, 목심건칠은 나무를 이용하여 형상을 만들고 그 위에 칠과 마포를 씌우는 방식입니다. 현대 제작법에서는 찰흙이 원형을 만드는 소재로 사용되며, 석고는 외형을 만들어 내부에 칠을 바르기 쉽게 하는 역할을 합니다.",0.9823208451271057,CORRECT,"The generated answer accurately explains the main differences and the roles of clay and plaster in modern methods, matching the actual answer's facts.","
+
+[Passage Chunk 1]
+passage: 한편 목심건칠조상법(木心乾漆造像法)은 나무로 대체적인 형상을 새긴다. 이 경우 반드시 한 나무로 만드는 것이 아니라 여러 나무를 합쳐서 만들어도 무방하다(木寄法). 상의 표면에 칠과 향말(香末)·안료로 다진 것을 마포로 바르고 적당한 두께를 만든 다음 여러번 칠을 하여 세부를 완성시켜 나간다
+
+이상은 전통적인 건칠의 조상법인데, 현대에는 찰흙으로 원형을 만들고 석고 외형으로 베낀 다음, 그 내부에 칠을 칠하여서 두께를 만들고 외형에서 분리시켜서 만드는 방법이 사용되고 있다.
+
+[Passage Chunk 2]
+passage: 건칠조상법 
+중국의 주·당시대에 성행되었고, '즉(卽)' 또는 '새'로 불리고 있었다. 건칠조상은 대별하며는 두 제작법이 있다. 탈활건칠(脫活乾漆)은 찰흙으로 대강의 형상을 만들고 그 위에 마포(麻布)를 칠로 칠하여서 발라 붙인다. 여러 번 거듭하여 경화(硬化)되면 내부의 흙을 뽑아 낸다. 공동이 된 내부는 또다시 나무로 뼈대를 짜고 축을 만들어 보강한다. 표면은 옻에 향·안료 등을 혼합하여 세부(細部)를 마무린 다음, 금박(金箔)·나전(螺鈿) 등의 가공을 하여 완성시킨다.
+
+[Passage Chunk 3]
+passage: 다음에 보강과 두께를 곁들이기 위하여 옻칠을 하고서 적당한 크기의 마포를 발라 잘 밀착시킨다. 재차 옻칠을 한다. 이 작업을 반복하여 충분한 두께를 붙인다. 외형을 합칠 때에는 접착하기 쉬운 맥칠(麥漆－밀가루와 칠을 혼합한 것)을 만들어 접착면에 칠한다. 칠이 잘 건조하였을 때 석고 외형을 빠갠다. 완성은 찰흙의 원형이 완성상일 경우에는 수정하지 않아도 되지만, 찰흙의 원형이 대체적인 형일 경우는 최후의 완성은 칠의 바로 칠하기로 한다."
+2,마나도의 공식 언어는?.,마나도말레이어,마나도말레이어.,0.9929804801940918,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 언어 
+마나도에서 사용되어 있는 언어는 마나도말레이어이다.
+
+기후
+
+각주
+
+외부 링크 
+
+ Official Site of Manado 
+
+인도네시아의 도시
+인도네시아의 주도 Title: 마야 카사비앙카 Text:마야 카사비앙카(Maya Casabianca, 1941년 ~ 2018년 12월 31일)는 프랑스-이스라엘계 가수이다.
+
+모로코의 카사블랑카 태생인 여성가수이다. 부친은 프랑스인인 조선기사(造船技師)이며, 모친은 에스파냐인이다. 3년 동안 이스라엘에서 지낸 뒤 부친과 함께 지중해 항구를 전전한 끝에 1958년에 프랑스로 왔다. 1960년 여름, 프로방스에서 재능을 인정받아 그해 레코드를 취입하여 성공하였다.
+
+각주
+
+[Passage Chunk 2]
+passage: 기후
+
+각주
+
+외부 링크 
+  도브리치 공식 사이트
+  도브리치 사진과 안내
+  도브리치
+
+불가리아의 도시
+도브리치주 Title: 마나도 Text:마나도(Manado)는 인도네시아 술라웨시우타라 주의 주도이다. 마나도는 마나도 만에 위치해 있으며, 인구는 451,916명(2020년 기준)이다. 마나도에서 사용되고 있는 방언은 Wenang, Sario, Malalayang, Molas, Mapanget이다.
+
+언어 
+마나도에서 사용되어 있는 언어는 마나도말레이어이다.
+
+기후
+
+각주
+
+외부 링크 
+
+ Official Site of Manado
+
+[Passage Chunk 3]
+passage: 각주 
+
+1941년 출생
+2018년 사망
+프랑스의 여자 가수
+이스라엘의 여자 가수
+카사블랑카 출신 Title: 서덜랜드 (뉴사우스웨일스주) Text:서덜랜드()는 오스트레일리아(호주) 뉴사우스웨일스주의 행정 구역으로, 시드니(뉴사우스웨일스 주의 주도)에서 남쪽으로 35km 정도 떨어진 곳에 위치하며 인구는 215,084명, 면적은 335km2이다.
+
+외부 링크 
+ 서덜랜드 의회 공식 홈페이지
+
+뉴사우스웨일스주의 도시 Title: 서로소 집합 Text:집합론에서 서로소 집합(-素集合, )는 공통 원소가 없는 두 집합이다. 예를 들어서 과 은 서로소이며 과 는 아니다.
+
+정의 
+두 집합 가 을 만족시키면, 서로소 집합이라고 한다."
+2,"정경호는 영화 ""별빛 속으로""에서 어떤 역할을 맡았나요?",현수영 역,현수영 역.,0.9949780106544495,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 노르드 신화의 장소
+튀르핑 대계 Title: 별빛 속으로 Text:""별빛 속으로""는 2007년에 개봉한 대한민국의 영화이다.
+
+캐스팅 
+ 정경호 : 현수영 역
+ 김민선 : 삐삐소녀 역
+ 차수연 : 수지 역 
+ 김C : 노란샤쓰 역 
+ 최데레사 : 40대 수지 역 
+ 정우혁 : 형사 2 역
+ 장항선 : 노 교수 역 (우정출연) 
+ 이수나 : 어머니 역 (우정출연)
+ 송승환 : 라디오 DJ (목소리) 역 (우정출연) 
+ 정진영 : 교수 수영 역 (우정출연)
+
+외부 링크 
+ 별빛 속으로 - 다음영화
+ 별빛 속으로 - 무비스트
+ 별빛 속으로 - 한국영화 데이터베이스
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 별빛 속으로 - 다음영화
+ 별빛 속으로 - 무비스트
+ 별빛 속으로 - 한국영화 데이터베이스
+
+한국어 영화 작품
+2007년 영화
+대한민국의 영화 작품
+대한민국의 로맨스 영화
+대한민국의 공포 영화
+대한민국의 판타지 영화 Title: 송문기 Text:송문기 박사 (영어: Moon K. Song, 송문기 박사, 1931년 7월 9일 ~ )는 재미교포 과학자로서 현재 미재향군인회 병원에서 수석연구원으로 근무하고 있는 인물이다. 현재 아연을 통한 당뇨치료에 대한 연구를 하고 있으며, 국내에는 주식회사 노브메타파마의 자문위원으로서 당뇨치료 연구를 개진하고 있다.
+
+생애
+
+[Passage Chunk 3]
+passage: 외부 링크 
+
+이탈리아의 남자 영화 배우
+1958년 출생
+살아있는 사람
+이탈리아의 영화 감독
+이탈리아의 남자 가수
+나스트로 디아르젠토 수상자 Title: 만웨 Text:만웨(Manwë)는 J. R. R. 톨킨의 가운데땅을 무대로 한 소설 「반지의 제왕」, 「실마릴리온」의 등장 인물이다. 아르다를 창조한 아이누 중에서도 가장 강한 14명의 발라중 한명이며, 창조신 에루 일루바타르의 생각을 가장 잘 이해하는 존재이다. 가운데땅을 포함한 모든 아르다의 군주이다. 대기와 바람을 다스리는 권능을 가졌기에, 「바람을 피우는 것」을 의미하는, 술리모(Sulimo)라고도 불린다.
+
+아내는 별들의 여왕 바르다이며, 형제로 멜코르가 있다. 그를 시중드는 마이아로는 에온웨가 있다.
+
+눈과 옷이 푸른색이다."
+2,제3회 전국동시지방선거에서 충청북도의회 지역구위원의 인원은 몇 명인가요?,24명,24명입니다.,0.9769716262817383,CORRECT,The generated answer matches the actual answer in number and meaning.,"
+
+[Passage Chunk 1]
+passage: 잡지 
+ 맥심
+
+수상 
+ 2017년 제2회 SK청년비상 창업경진대회 장려상
+
+외부 링크 
+ 
+
+1997년 출생
+대한민국의 여자 모델
+대한민국의 방송인
+대한민국의 유튜버
+대한민국의 카레이서
+덕성여자대학교 동문
+살아있는 사람 Title: 제3회 전국동시지방선거 충청북도의회 Text:다음은 제3회 전국동시지방선거의 충청북도의회의원 선거결과를 정리한 문서이다. 해당 선거에서 충청북도의회는 지역구의원 24명과 비례대표의원 3명을 선출했다.
+
+지역구 선거구
+
+지역구 선거 결과
+
+청주시
+
+충주시
+
+제천시
+
+단양군
+
+청원군
+
+영동군
+
+보은군
+
+옥천군
+
+음성군
+
+진천군
+
+괴산군
+
+비례대표 선거 결과
+
+정당 투표 결과
+
+비례대표 당선자
+
+전체 결과
+
+같이 보기 
+ 중앙선거관리위원회 선거통계시스템
+
+[Passage Chunk 2]
+passage: 역대 선거 결과 
+
+1939년 출생
+살아있는 사람
+기장군 출신
+부산대학교 동문
+동래고등학교 동문
+민주자유당의 정치인
+신한국당 당원
+한나라당의 정치인
+사하구청장
+20세기 대한민국 사람
+21세기 대한민국 사람 Title: 사천시·남해군·하동군 Text:사천시·남해군·하동군은 대한민국의 국회의원 선거구이다. 경상남도 사천시, 남해군, 하동군을 관할한다. 현 지역구 국회의원은 무소속 하영제 (초선, 2020년~)이다.
+
+역사
+대한민국 제19대 국회의원 선거를 앞두고 사천시 선거구와 남해군·하동군 선거구가 통합됨에 따라 신설되었다.
+
+관할 구역 
+ 사천시 전역
+ 남해군 전역
+ 하동군 전역
+
+역대 국회의원
+
+역대 선거 결과
+
+대한민국 제19대 국회의원 선거
+
+대한민국 제20대 국회의원 선거
+
+[Passage Chunk 3]
+passage: 대한축구협회 회장을 지낸 외과 의사 김명학이 석진형의 사위이다.
+
+같이 보기 
+ 김명학
+
+참고자료
+
+각주 
+
+1877년 출생
+1946년 사망
+일제강점기의 법학자
+대한제국의 관료
+일제강점기의 관료
+유교인
+일제강점기의 기업인
+일제강점기의 도지사
+동양척식주식회사 관련자
+친일파 708인 명단 수록자
+친일인명사전 수록자
+대한민국 정부 발표 친일반민족행위자
+광주시 (경기도) 출신
+충주 석씨
+도쿄 대학 동문
+호세이 대학 동문 Title: 아멜리아 안데르스도테르 Text:아멜리아 안데르스도테르(, 1987년 8월 30일 ~ )은 스웨덴 해적당에 소속된 유럽 의회 의원이다. 2009년 유럽 연합 총선에서 스웨덴 해적당의 정당 비례 명부에 의해 의원으로 선출되었다."
+2,로이스 가문의 형계에서는 몇 세가 넘으면 이름 숫자가 1부터 다시 시작하나요?,100세,100세,0.9999998211860657,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 같은 아버지를 둔 형제 사이라도 '~세(世)'가 연속해서 이어지지는 않았다. 숫자는 전체 가문의 남자아이들에게 태어난 순서대로 붙여지기 때문이다. 가령 하인리히 67세의 다섯 아들들은 하인리히 5세, 하인리히 8세, 하인리히 11세, 하인리히 14세, 하인리히 16세였다.
+
+한편, 그 숫자가 무한히 늘어나지는 않았다. 형계(Altere Linie)에서는 100까지 숫자가 매겨지면, 그 다음부터 태어나는 남아(男兒)부터는 다시 1세로 돌아가 숫자를 붙인다. 한편 제계(Jüngere Linie)에서는 세기(世紀)가 바뀌면 그 때부터 태어나는 남아부터는 다시 '1세'로 돌아가 숫자를 붙인다.
+
+[Passage Chunk 2]
+passage: 각주
+
+외부 링크 
+ 
+ 
+ 
+
+1990년대 미국의 텔레비전 프로그램
+2000년대 미국의 텔레비전 프로그램
+2010년대 미국의 텔레비전 프로그램
+미국의 텔레비전 토크 쇼
+영어 텔레비전 프로그램
+CBS의 텔레비전 프로그램 Title: 로이스가 Text:로이스 가문()은 독일 중부 튀링겐주에 있었던 영주의 가문이다. 1918년 당시에는 로이스그라이츠(Reuß-Greiz, 로이스 형계(兄系, Altere Linie))와 로이스게라(로이스 제계(弟系, Jüngere Linie))로 나뉘어 있었다.
+
+[Passage Chunk 3]
+passage: 남자 자손의 이름 
+로이스 가문의 통치자인 로이스 가(家)는 모든 남자 자손들의 이름이 하인리히(Heinrich)라는 것이 특이하다. 이것은 12세기에 그들 가문에게 베이다(Weida)와 게라(Gera)의 영토를 주었던 신성(神聖)로마제국의 황제 하인리히 6세를 기념하기 위한 것이었으나, 가족법으로 규정된 것은 1688년부터였다. 가문 전체의 모든 남자 자손들의 이름이 하인리히였기 때문에, 이름 뒤에 '~세(世)'를 붙여 서로를 구분했다."
+2,제이미 머리는 몇 년도에 첫 번째 '덱스터' 시리즈에 출연했나요?,2006,2006년,0.9114136099815369,CORRECT,Both answers state the year 2006 as the first appearance year.,"
+
+[Passage Chunk 1]
+passage: 출연 작품 
+ 디파이언스 3 (2015)
+ 디파이언스 2 (2014)
+ 프라이트 나이트2 (2013)
+ 디파이언스 1 (2013)
+ 더 파인더 (2011)
+ 사무엘 블리크 (2011)
+ 스파르타쿠스 : 갓 오브 아레나 (2011)
+ 데블스 플레이그라운드 (2010)
+ 허슬 4 (2007)
+ 덱스터 시즌2 (2007)
+ 이안 스톤의 죽음 (2007)
+ 보치드 (2007)
+ 허슬 3 (2006)
+ 덱스터 시즌1 (2006)
+ 허슬 2 (2005)
+ 애니멀 (2005)
+ 허슬 (2004)
+ 더 빌 (1984)
+
+외부 링크 
+
+ 
+ 제이미 머리 - 인스타그램
+ 제이미 머리 - 트위터
+
+[Passage Chunk 2]
+passage: 외부 링크 
+
+ 
+
+1959년 출생
+살아있는 사람
+미국의 여자 어린이 배우
+미국의 여자 영화 배우
+미국의 여자 텔레비전 배우 Title: 제이미 머리 (배우) Text:제이미 머리(Jaime Murray, 1977년 7월 21일 ~ )는 잉글랜드의 배우이다. 아버지는 배우 빌리 머리이다.
+
+[Passage Chunk 3]
+passage: 외부 링크 
+
+ 
+ 제이미 머리 - 인스타그램
+ 제이미 머리 - 트위터
+
+1977년 출생
+살아있는 사람
+잉글랜드의 여자 텔레비전 배우
+잉글랜드의 여자 영화 배우
+잉글랜드의 여자 모델
+런던 출신
+미국에 거주한 잉글랜드인 Title: 조윤길 Text:조윤길(趙潤吉, 1949년 7월 4일 ~ )은 대한민국의 공무원, 정치인이다. 민선4·5·6기 옹진군수를 역임했다.
+
+학력 
+ 1962년 백령국민학교 졸업
+ 1965년 백령중학교 졸업
+ 1968년 경기수산고등학교 졸업
+ 1993년 한국방송통신대학교 행정학 학사
+
+비학위 수료 
+ 2004년 인하대학교 행정대학원 고위행정연구과정 수료"
+2,정암터널은 어떤 중요한 변화를 가져왔나요?,영동선 열차의 운행거리가 50km 단축되었다.,영동선 열차의 운행거리가 50km 단축되었습니다.,0.9959417581558228,CORRECT,The generated answer matches the actual answer in meaning and factual content.,"
+
+[Passage Chunk 1]
+passage: 2017년 9월 8일 오전 1시에, 자무쓰 역의 남부 역사와 고가 대합실이 정식 운영을 시작했고, 북부 역사는 수리를 위해 일시 폐쇄되었다.
+
+사고 
+2012년 8월 23일 17시 24분에, 자무쓰 역에서 2대의 여객 열차가 연결 과정에서 큰 충돌이 발생하여, 24명의 승객이 열차에서 하차했다.
+
+인접정차역
+
+같이 보기 
+
+자무쓰시의 교통
+헤이룽장성의 철도역 Title: 정암터널 Text:정암터널(淨岩터널)은 고한역과 추전역 사이에 위치한 태백선 상의 길이 4,505m의 터널로, 1969년 8월에 착공하여 1973년 2월 28일에 준공되었다. 강원특별자치도 정선군 고한읍과 태백시 삼수동을 이으며, 함백산의 북쪽을 관통한다.
+
+[Passage Chunk 2]
+passage: 2016년 6월에 자무쓰역 종합 재개발 사업이 시작되었고, 양쪽 화물 하차장은 둥자무쓰(东佳木斯) 역으로 이전되었다. 이 프로젝트는 북측 역 건물의 유지 보수, 새로운 남측 철도역의 건설 및 남북측 역 선상에서 대기 패턴을 형성하기 위한 고가 대기실의 건설을 포함하며, 토지의 총면적은 119,000㎡, 건물 총면적은 지상 56,500㎡, 지하 50,300㎡, 공사가 완료되면 총 7면 14선으로 총 건설 기간은 28개월로, 2018년 10월까지 완공될 예정이다.
+
+2017년 4월 29일에, 자무쓰 역의 새로운 4,5번 승강장이 개장하여, 자무쓰 역은 고상 승강장 시대에 들어갔다. 동시에, 고가 대합실의 북측 부분 건설이 시작되었고, 기존의 1-3 승강장과 육교가 제거되었다.
+
+[Passage Chunk 3]
+passage: 이 터널이 완공되기 이전에는 청량리역에서 강릉역까지 갈 때 영동선을 이용하여 영주역으로 돌아서 가야 하였으나, 터널이 완공된 이후로 영동선 열차의 운행거리가 50km나 단축되었다.
+
+개통 당시에는 대한민국에서 가장 긴 철도 터널이었으나, 전라선의 죽림온천역과 관촌역 사이에 있는 슬치터널이 관통되면서 그 지위를 잃었다.
+
+각주
+
+같이 보기 
+ 고한역
+ 추전역
+
+태백선
+강원특별자치도의 터널
+대한민국의 철도 터널."
+2,"조슈아 체프테게이는 2020년 몇 월에 5,000m 세계 신기록을 세웠나요?",8월,8월.,0.9937007427215576,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 어빙 탤버그 상 
+ Pandro S. Berman 수상
+
+음악스코어링상 
+ 바운드 포 글로리 - Leonard Rosenman 수상
+
+아카데미상
+1977년 3월
+1976년 영화상
+1977년 미국 Title: 조슈아 체프테게이 Text:조슈아 키프루이 체프테게이(, 1996년 9월 12일~)는 우간다의 육상 선수로 주 종목은 장거리 달리기이다. 2020년 8월 모나코에서 열린 다이아몬드 리그 대회에서 5,000m 세계 신기록인 12분 35초 36을 세웠다. 케네니사 베켈레가 2004년 작성한 종전 세계 기록을 1초 99를 앞당긴 기록이다.
+
+각주 
+내용
+
+출처
+
+외부 링크 
+ 
+ 
+ 
+ 
+ 
+  조슈아 체프테게이 - Olympedia
+  조슈아 체프테게이 - Sports Reference
+
+[Passage Chunk 2]
+passage: 출처
+
+외부 링크 
+ 
+ 
+ 
+ 
+ 
+  조슈아 체프테게이 - Olympedia
+  조슈아 체프테게이 - Sports Reference
+
+1996년 출생
+살아있는 사람
+우간다의 남자 장거리달리기 선수
+우간다의 올림픽 금메달리스트
+우간다의 올림픽 은메달리스트
+올림픽 육상 메달리스트
+2020년 하계 올림픽 메달리스트
+우간다의 올림픽 육상 참가 선수
+2016년 하계 올림픽 육상 참가 선수
+2020년 하계 올림픽 육상 참가 선수
+세계 육상 선수권 대회 메달리스트
+육상 경기 세계 기록 보유자
+네덜란드에 거주한 우간다인 Title: 지미 롤린스 Text:제임스 캘빈 롤린스(James Calvin Rollins, 1978년 11월 27일 ~ )은 미국출신의 전직 야구 선수이다.
+
+경력
+
+[Passage Chunk 3]
+passage: 생애 
+당시 메클렌부르크포어포메른주의 일부이자, 현재 니더작센주에 속하는 암트노이하우스에서 태어난 슐트는 동독의 보이콧으로 1984년 로스앤젤레스 올림픽에 나가지 못하였다. 1986년 원반던지기에서 세계 기록을 세웠으며, 동독의 프로그램 아래의 선수로서 그의 74.08m(243.0 피트) 투척은 소련의 유리 둠체프의 이전 기록을 2.22m(7.3 피트)를 능가하였다. 이 원반던지기 세계 기록은 아직도 보유되고 있으며, 25년 79일 동안 보유된 제시 오언스의 멀리뛰기 기록을 깬 남성의 장기적 보유 세계 기록이다.
+
+1988년 동독과 서독 사이의 처음이자 마지막 육상 경연에서 슐트는 동독에서 서독으로 이주하고, 자신을 꺾던 볼프강 슈미트와 악수하는 데 거절하였다."
+2,프랑스 모음곡의 두 번째와 다섯 번째 모음곡에서 사용된 스타일은 무엇인가요?,이탈리아 스타일,두 모음곡 모두 이탈리아 스타일이다.,0.9115122556686401,CORRECT,"The generated answer correctly identifies the style as ""이탈리아 스타일,"" matching the actual answer.","
+
+[Passage Chunk 1]
+passage: '프랑스 모음곡'이라는 이름은 바흐의 전기 작가 요한 니콜라우스 포르켈이 1802년에 쓴 바흐 전기에서 ""프랑스식으로 쓰여지기 때문에 일반적으로 프랑스 모음곡이라고 부르다."" 그러나 이 주장은 정확하지 않다. 바흐의 다른 모음곡과 마찬가지로 대부분 이탈리아 관습을 따른다. 이 모음집에 대해 살아남은 최종 사본은 없으며 장식은 사본에 따라 유형과 정도가 모두 다르다. 첫 번째 모음(D단조)과 세 번째 모음(B단조)의 쿠랑테는 프랑스 스타일이고 나머지 네 모음의 쿠랑테는 모두 이탈리아 스타일이다. 어쨌든 바흐는 프랑스 방식과는 다른 춤 동작(6번째 모음곡의 폴로네즈와 같은)도 사용했다. 일반적으로 알레망드 뒤의 빠른 2악장은 쿠랑테(프랑스 스타일) 또는 코렌테(이탈리아 스타일)로 명명되지만 바흐 카탈로그
+
+[Passage Chunk 2]
+passage: 같은)도 사용했다. 일반적으로 알레망드 뒤의 빠른 2악장은 쿠랑테(프랑스 스타일) 또는 코렌테(이탈리아 스타일)로 명명되지만 바흐 카탈로그 목록에 따르면 이러한 모든 모음곡에서 2악장은 쿠랑테로 명명된다.
+
+[Passage Chunk 3]
+passage: 행정 구역 
+2개 주, 7개 도를 관할한다.
+
+ 인데니에쥐아블랭주
+ 아방구루도
+ 아니빌레크루도
+ 베티에도
+ 쉬드코모에주
+ 아부아소도
+ 아디아케도
+ 그랑바삼도
+ 티아품도
+
+인구 
+2021년 인구 조사에 따르면, 코모에구의 인구는 1,501,366명이다. 인구 밀도는 2021년 기준으로 110명/km2이다.
+
+각주
+
+외부 링크 
+ 
+
+코트디부아르의 구 Title: 프랑스 모음곡 (바흐) Text:프랑스 모음곡 BWV 812–817은 요한 세바스티안 바흐가 1722년에서 1725년 사이에 건반 악기(하프시코드 또는 클라비코드) 연주용으로 쓴 6개의 모음곡이다. 모음곡 1번에서 4번은 일반적으로 1722년으로 거슬러 올라가지만 첫 번째 모음곡은 다소 더 일찍 작곡되었을 가능성이 있다."
+2,김선희의 그대 창가는 매일 몇 시에 방송되나요?,매일 2시 ~ 3시,깊은 밤 2시 ~ 3시,0.9464573860168457,CORRECT,"The generated answer correctly states the daily broadcast time as 2시 ~ 3시, matching the actual answer's time.","
+
+[Passage Chunk 1]
+passage: 진행자는 TBC 아나운서 김선희이며, 방송시간은 매일 깊은 밤 2시 ~ 3시까지다.
+
+주파수 소개
+ 대구/경주/구미: 99.3Mhz
+ 포항/영덕/울진: 99.7Mhz
+ 안동/영주/문경 경북북부: 106.5Mhz
+ 성서/지산/범물 일부지역: 106.5Mhz
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 라윤경의 주말 TBN 차차차 공식 홈페이지
+
+한국교통방송의 라디오 프로그램 Title: TJB 뉴스 Text:TJB 뉴스는 다음을 가리킨다.
+ TJB 뉴스 (1040)
+ TJB 뉴스 (1050)
+ TJB 뉴스 (1210)
+ TJB 뉴스 (1350)
+ TJB 뉴스 (1355)
+ TJB 뉴스 (1400) Title: 김선희의 그대 창가에서 Text:김선희의 그대 창가에서는 TBC Dream FM에서 진행하는 대구·경북 전지역에 송출되는 깊은 밤 대중가요 전문 라디오 프로그램이다.
+
+진행자는 TBC 아나운서 김선희이며, 방송시간은 매일 깊은 밤 2시 ~ 3시까지다.
+
+[Passage Chunk 3]
+passage: 역사 
+2014년 4월 14일에 첫방송을 시작해, 2014년 9월 21일에 잠정적으로 폐지됐다가, 2015년 11월 16일에 다시 부활했으며, 2014년 4월 14일부터 2014년 9월 21일까지는 원주MBC FM4U에서만 방송됐으나, 2015년 11월 16일에 다시 부활한 이후부터 강원도 전역으로 방송 권역을 확대하여 방송하다가, 2022년 4월 17일 방송을 마지막으로 완전히 폐지되었다.
+
+역대 DJ
+
+1기 
+ 2014년 4월 14일 ~ 2014년 9월 21일 : 주용준 아나운서"
+2,울라라는 이름은 어느 지역 이름의 기원이 되었나요?,아일랜드 북부,얼스터(아일랜드 북부),0.9478612542152405,CORRECT,"The generated answer correctly identifies ""아일랜드 북부,"" which matches the actual answer's region ""얼스터(아일랜드 북부).""","
+
+[Passage Chunk 1]
+passage: 은허에서 발굴된 갑골문에 따르면 상나라의 10대 군주로 복임(卜壬)이라는 시호를 받았으며 아들인 전전(戔錢)이 뒤를 이었다고 한다. 
+
+상나라의 왕 Title: 울라 (아일랜드) Text:울라(, )는 고대 아일랜드 북서부에 살았던 사람들 및 그들의 왕국으로, 여기서 오늘날 아일랜드 북부를 가리키는 얼스터라는 말이 유래하였다.
+
+[Passage Chunk 2]
+passage: 현지 안내문
+
+개요 
+라벤더 핀 보라공간과 산의 경계는 거제 지세포진성(巨濟 知世浦鎭城)이다.
+오랜세월 방치가 되어 산성의 흔적은 허물어져 있지만 조선 성종 21년(1490년) 9월 바다를 통해 출몰하는 왜구로부터 방어를 하기 위해
+둘레 1605척(486.363m)의 성을 만든 후 인종 원년(1545년) 인근 6개군의 2만 5천명을 동원하여 포곡식 산성으로 만들었다.
+임진왜란을 통해 지세포 만호 강지욱(姜志昱)은 가토 기요마사(加藤淸正)가 이끄는 일본군이 패하였고 함락된 지세포성은 가토군이 일본식으로 개축해서 지세포왜성이라 부르기도 한다.
+
+[Passage Chunk 3]
+passage: 약력 
+그는 러시아인 어머니와 타타르족 아버지 사이에서 태어났다. 하지만 그는 자주 러시아인이라고 말했다. 1973년에서 1975년사이에 소련군에 입대했다. 소련 공산당에 가입했으며, 1991년까지 활동했다. 1991년에서 1996년까지 치타 시의 시장으로 지냈으며, 1996년부터 치타 주 주지사와 러시아 의회의 국회의원으로 지냈다.
+
+1955년 출생
+살아있는 사람
+러시아의 정치인
+자바이칼 변경주
+타타르계 러시아인 Title: 마티아스 링만 Text:마티아스 링만(Matthias Ringmann, 1482~1511)은 독일의 지도 제작자이자 인문주의자이다. 마르틴 발트제뮐러와 함께 만든 지도에서 처음으로 아메리카라는 이름을 사용했다."
+2,오카다 류는 어느 지역 출신의 축구선수인가요?,NOT_FOUND,시즈오카현,0.7651649713516235,INCORRECT,"The generated answer says ""NOT_FOUND"" while the actual answer provides the region ""시즈오카현.""","
+
+[Passage Chunk 1]
+passage: 1980년 결성된 음악 그룹
+우루과이의 록 밴드
+몬테비데오 출신
+스페인어 음악 그룹
+그래미상 수상자 Title: 예플레 IF Text:예플레 IF(Gefle IF)는 1882년 12월 5일에 창단된 스웨덴 예블레의 축구 클럽으로, 현재 알스벤스칸에서 활동하고 있다.
+
+성적 
+ 스웨덴 컵
+ 준우승 1회 (2006)
+ 스웨덴 폿볼포칼렌
+ 우승 3회 (1899, 1900, 1902)
+
+외부 링크 
+ 공식 홈페이지
+ 공식 서포터 클럽 홈페이지
+ 서포터 홈페이지
+
+ 
+1882년 설립된 축구단
+스웨덴의 축구단 Title: 오카다 류 Text:오카다 류 (1984년 4월 10일 ~ )는 일본의 전 축구 선수이다. 과거 주빌로 이와타, 아비스파 후쿠오카에서 활동하였다.
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 세리에 A의 축구 선수
+세리에 B의 축구 선수
+볼로냐 FC 1909의 축구 선수
+엠폴리 FC의 축구 선수
+코센차도 출신
+세리에 C의 축구 선수 Title: 디에이치 자이 개포 Text:디에이치 자이 개포(THE H Xi Gaepo)는 서울특별시 강남구 일원동에 위치한 아파트 단지이다. 이 아파트는 사실상 현대건설이 단독 시공했으며, GS건설과 현대엔지니어링은 지분투자만 했다.
+
+[Passage Chunk 3]
+passage: 잉글랜드의 해외 진출 남자 축구 선수
+스페인에 거주한 잉글랜드인
+프랑스에 거주한 잉글랜드인
+선덜랜드 AFC의 축구 선수
+샹피오나 나시오날 3의 축구 선수 Title: 황갈색머리마모셋 Text:황갈색머리마모셋(Callithrix flaviceps)은 비단원숭이과에 속하는 영장류의 일종이다. 마모셋 중의 하나로 브라질 남동부의 우림에 산다."
+2,이규형 외교관이 주 방글라데시 대사로 근무한 기간은 언제인가요?.,2002년~2004년,2002년부터 2004년까지입니다.,0.9727026224136353,CORRECT,The generated answer matches the actual answer's time period exactly.,"
+
+[Passage Chunk 1]
+passage: 개인 생활 
+스미스는 1984년 사이언 스티킹스와 결혼했다. 스미스가 모스크바에서 복무한 후, 그녀는 2003년 신년 서훈에서 ""러시아의 지역 및 영국 사회에 대한 공로""로 MBE로 임명되었다. 그들은 딸이 둘 있다.
+
+각주
+
+외부 링크 
+ IAEA in September 2010
+ Green roof on the embassy in June 2010
+
+1958년 출생
+살아있는 사람
+옥스퍼드 대학교 워덤 칼리지 동문
+유엔 주재 영국 대사
+오스트리아 주재 영국 대사
+우크라이나 주재 영국 대사
+대한민국 주재 영국 대사 Title: 이규형 (1951년) Text:이규형(李揆亨, 1951년 10월 24일~)은 대한민국의 외교관으로, 제9대 주중국 대사를 지냈다. 부산 출신이다.
+
+[Passage Chunk 2]
+passage: 1996년: 외교안보연구원 연구관
+ 1997년~1998년: 외무부 공보관
+ 1998년~1999년: 외교통상부 외교정책실 국제기구정책관
+ 1999년~2002년: 주 중화인민공화국 대사관 공사
+ 2002년: 외교안보연구원 아태연구부 부장
+ 2002년~2004년: 주 방글라데시 대사
+ 2004년~2005년: 외교통상부 대변인
+ 2005년~2006년: 외교통상부 제2차관
+ 2005년: 2006 서울 세계도서관정보대회 조직위원회 위원
+ 2007년~2010년: 주 러시아 대사
+ 2011년~2013년: 주 중화인민공화국 대사
+ 2013년~: 삼성경제연구소 고문
+ 자유한국당 
+ 바른정당
+
+[Passage Chunk 3]
+passage: 경력 
+1981년부터 1986년까지 스미스는 고용부에서 일했다. 1986년 영국 여왕 폐하의 외교부에 들어갔으며, 1998년부터 2002년까지 런던, 도쿄, 모스크바에서 경제/상업 고문으로 근무했다.
+
+대사 
+2007년부터 2012년까지 빈 주재 오스트리아 대사를 역임했으며, 국제 원자력 기구(IAEA) 이사회의 영국 총재를 포함한 빈의 많은 유엔 및 국제기구에서 영국 대표를 지냈다. 2011년 10월 13일, 키예프 주재 우크라이나 대사로 임명되었으며, 2012년부터 주 우크라이나 대사로 취임하였다.  그는 2015년에 교체되었다. 런던과 한국어 연수를 잠시 거친 후 주한 대사로 임명되어 2018년 3월 부임하였다."
+2,신지정은 어느 행정 구역과 합병되어 현재의 마쓰에시가 되었나요?,"마쓰에시, 가시마정, 미호노세키정, 야쿠모촌, 다마유정, 시마네정, 야쓰카정","마쓰에시, 가시마정, 미호노세키정, 야쿠모촌, 다마유정, 시마네정, 야쓰카정과 합병되었습니다.",0.9459356069564819,CORRECT,"The generated answer lists the same entities as the actual answer, directly addressing the question.","
+
+[Passage Chunk 1]
+passage: 현재는 합병으로 마쓰에시 신지정에 해당한다.
+
+역사 
+ 1889년 4월 1일 - 정촌제 시행과 함께 합병전의 정역인 오우군 신지촌이 성립하였다.
+ 1896년 4월 1일 - 관할권이 야쓰카군으로 변경되었다.
+ 1927년 11월 1일 - 정으로 승격해 신지정이 되었다. 
+ 1955년 4월 3일 - 기마치촌과 합병해 새로운 신지정이 성립하였다.
+ 2005년 3월 31일 - 마쓰에시, 가시마정, 미호노세키정, 야쿠모촌, 다마유정, 시마네정, 야쓰카정과 합병해 새로운 마쓰에시가 성립하였다. 동일 신지정은 폐지되었다.
+
+교통
+
+철도 
+ 서일본 여객철도
+ 산인 본선
+ 기스키 선
+
+도로 
+ 국도 9호선
+ 국도 54호선
+
+[Passage Chunk 2]
+passage: 학교 동문
+
+참고 자료
+
+외부 링크 
+ 
+
+1936년 개교
+칠곡군의 초등학교 Title: 세네갈의 대통령 Text:세네갈의 대통령 (President of Senegal)은 세네갈의 국가 원수이며 임기는 5년 중임제이며 1번 중임은 가능하고 최대 임기는 10년이다.
+
+이 문서는 1960년 세네갈이 프랑스로부터 독립한 이래 대통령 목록이다.
+
+세네갈의 대통령
+
+같이 보기 
+ 프랑스령 세네갈의 식민지 수장
+ 세네갈의 총리
+
+ 
+세네갈 정부 Title: 신지정 Text:신지정(宍道町)은 시마네현 북동에 있던 정이며 야쓰카군에 속했다.
+
+현재는 합병으로 마쓰에시 신지정에 해당한다.
+
+[Passage Chunk 3]
+passage: 각주
+
+내용주
+
+출처주
+
+참고 문헌
+
+같이 보기 
+ 지리학
+ 인문지리학
+ 문화인류학
+ 민속학
+ 문화연구
+
+문화지리학
+인문지리학 Title: 미나세촌 Text:미나세촌(皆瀬村) 아키타현 오가치군에 존재했던 촌이다. 2005년 3월 22일, 유자와 시 및 오가쓰 군 오가쓰 정·이나가와 정과 합병해 새로운 유자와 시의 일부가 되었기 때문에 폐지되었다.
+
+역사 
+ 1889년 4월 1일 - 정촌제 시행과 함께 가와무코 촌, 하타케토 촌의 구역으로 구성하여 성립하였다.
+ 2005년 3월 22일 - 유자와시, 이나가와정, 오가치정과 합병해 새로운 유자와시가 성립하였다. 이날부터 미나세촌은 폐지하였다."
+2,파올라의 면적은 몇 km2인가요?,42km2,42km²입니다.,0.945469856262207,CORRECT,The generated answer matches the actual answer in value and meaning.,"
+
+[Passage Chunk 1]
+passage: 1957년 출생
+2020년 사망
+미국의 남자 영화 배우
+미국의 남자 텔레비전 배우
+20세기 미국 사람
+21세기 미국 사람 Title: 파올라 (이탈리아) Text:파올라()는 이탈리아 칼라브리아주 코센차도에 위치한 코무네로 면적은 42km2, 높이는 94m, 인구는 17,195명(2004년 12월 31일 기준), 인구 밀도는 410명/km2이다.
+
+외부 링크 
+
+ 파올라 (이탈리아) 공식 홈페이지
+
+코센차도의 코무네 Title: 핫타촌 (이시카와현) Text:핫타촌(八田村)은 이시카와현 가호쿠군에 설치되었던 촌이다.
+
+이시카와현의 폐지된 시정촌
+가나자와시의 역사
+가호쿠군 Title: 흑산초등학교 영산분교 Text:흑산초등학교 영산분교는 전라남도 신안군에 있는 공립 초등학교이다.
+
+[Passage Chunk 2]
+passage: 각주 Title: 뤄푸현 Text:뤄푸현(, )은 신장 위구르 자치구 호탄 지구의 현급 행정구역이다. 넓이는 14,314km2이고, 인구는 2007년 기준으로 220,000명이다.
+
+기후 
+연평균 기온은 12.1°C이고 연평균 강수량은 35mm이다.
+
+행정 구역 
+1개 진, 7개 향을 관할한다.
+ 진: 洛浦镇.
+ 향: 布亚乡, 山普鲁乡, 恰尔巴格乡, 杭桂乡, 多鲁乡, 纳瓦乡, 拜什托格拉克乡.
+
+인구
+
+각주
+
+외부 링크 
+ 로프 현 정부 
+
+신장 위구르 자치구의 현
+호탄 지구의 행정 구역 Title: 문예봉 Text:문예봉(文藝峰, 1917년 1월 3일~1999년 3월 26일)은 일제강점기, 조선민주주의인민공화국의 영화 배우이다. 본명은 문정원(文丁元), 창씨개명 당시의 이름은 하야시 데이켄()이다.
+
+[Passage Chunk 3]
+passage: 지리 
+도와다 시는 핫코다 산계의 기슭에 있으며 도와다호의 아오모리 현 부분을 둘러싼다. 오이라세 강이 시를 통과한다. 시는 냉량한 해양성 기후로 시원한 여름과 폭설을 동반한 겨울이 특징이며 이곳을 또한 일본의 벼농사의 북쪽 한계이기도 하다. 시역의 일부는 도와다하치만타이 국립공원에 속해있다.
+
+인접한 자치체 
+ 아오모리 현
+ 아오모리시
+ 가미키타군 : 로쿠노헤정, 시치노헤정, 도호쿠정
+ 산노헤군 : 고노헤정, 신고촌
+ 히라카와시
+
+ 아키타현
+ 가즈노시
+ 가즈노군 고사카정"
+2,신티아 파뇌프는 2006년에 부상으로 어떤 대회를 놓쳤나요?,2006년 동계 올림픽 출전권이 걸린 캐나다 선수권,2006년 동계 올림픽 출전권이 걸린 캐나다 선수권.,0.9843336343765259,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+ 
+
+1977년 출생
+살아있는 사람
+센슈 대학 동문
+일본의 남자 축구 선수
+J1리그의 축구 선수
+J2리그의 축구 선수
+쇼난 벨마레의 축구 선수
+세레소 오사카의 축구 선수
+도쿠시마 보르티스의 축구 선수
+남자 축구 골키퍼
+지바현의 축구 선수 Title: 신티아 파뇌프 Text:신티아 파뇌프(, 1988년 1월 16일 ~ )는 캐나다의 여자 피겨 스케이팅 선수이다.
+
+[Passage Chunk 2]
+passage: 여자 싱글 부문에서 2004년 캐나다 선수권에서 조아니 로셰트를 제치고 우승하며 주목받았다. 그러나 그 다음해부터 조아니 로셰트에게 밀리고 있다. 2006년에는 부상으로 2006년 동계 올림픽 출전권이 걸린 캐나다 선수권에도 참가하지 못하는 등 활동을 중단했다. 그 다음 시즌에 복귀했고, 2009년 캐나다 선수권에서 다시 2위를 했고, 2010년 선수권에서도 2위에 올라 조아니 로셰트와 함께 2010년 동계 올림픽에 참가하였다. 그는 올림픽에서 12위에 올랐다. 올림픽 직후 열린 세계 선수권에서는 5위를 하였다.
+
+외부 링크 
+ 공식 사이트
+
+[Passage Chunk 3]
+passage: 2007년 팬아메리칸 게임 야구 참가 선수
+아메리칸 리그 올스타
+실버 슬러거 상 수상자
+쿠바의 망명자
+피나르델리오 출신
+미국에 거주한 쿠바인 Title: 야한 스포츠 Text:야한 스포츠는 수요일 새벽 1시 30분에 스포츠 뉴스와 연애프로그램을 혼합한 새로운 형식의 스포테인먼트뉴스쇼다."
+2,"크메르 루주는 어느 나라의 공산당 무장 집단이었으며, 그들의 주요 후원자는 누구였습니까?","캄푸치아, 중국","크메르 루주는 캄보디아의 공산당 무장집단이었으며, 중국의 후원을 받았습니다.",0.8448349237442017,CORRECT,"The generated answer correctly identifies Cambodia as the country and China as the main supporter, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 크메르 루주는 1977년 과거의 동맹이었던 베트남에 대한 대규모 군사행동을 실시했다. 그러나 오히려 베트남에게 철저하게 패배하여 1979년 실각한다(베트남-캄보디아 전쟁). 이후 캄보디아에는 베트남의 괴뢰정권인 캄푸치아 인민공화국이 세워졌다. 크메르 루주는 망명정부를 건립하며 괴뢰정권에 대항하는 정통정권으로서 1993년까지 국제연합 의석을 유지했다. 그러나 1993년 노로돔 시아누크 국왕이 왕정복고하자 정통정권의 지위도 빼앗기고 일개 반군으로 전락했다. 이듬해 크메르 루주 수 천명은 밀림에서 기어나와 항복했다. 1996년에 전 크메르 루주 지도자인 이엥 사리가 민주국가통합운동이라는 정당을 조직했다. 항복하지 않고 남아 있던 크메르 루주는 1990년대 중반을 지나며 거의 와해되었고, 1999년 신정부군에
+
+[Passage Chunk 2]
+passage: 추계 추씨
+과거 급제자
+고려의 문신
+유교인
+고려의 외교관
+중국계 한국인
+고려의 정치인
+고려의 관료
+고려의 저술가
+고려의 유학자
+용인시 출신 Title: 크메르 루주 Text:크메르 루주(,  )는 캄푸치아 공산당의 무장 군사조직으로, 당 자체를 지칭하는데 사용되기도 한다. 공산당 정권의 붕괴 이후까지 반군 조직으로 활동했다. 1968년 북베트남의 베트남 인민군에서 떨어져나와 조직되었다. 1973년부터는 이전의 후원자 북베트남 대신 중국의 후원을 받게 되었다. 1975년에서 1979년까지의 캄보디아(민주 캄푸치아)의 여당이었으며, 지도부는 폴 포트, 누온 찌어, 이엥 사리, 손 센, 키우 삼판이었다. 베트남 전쟁 당시에는 미국이 이끄는 반공전선에 맞서 북베트남, 베트콩, 파테트라오와 연합 제휴했다.
+
+[Passage Chunk 3]
+passage: 정당을 조직했다. 항복하지 않고 남아 있던 크메르 루주는 1990년대 중반을 지나며 거의 와해되었고, 1999년 신정부군에 완전히 항복하여 그 역사에 종언을 고했다."
+2,"드라큘라, DC 타이탄, 행성탈출, 앵무새 죽이기 중 빌리 캠벨이 출연한 작품을 선택하세요.",드라큘라,드라큘라,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+ 
+ 
+
+1976년 출생
+살아있는 사람
+미국의 남자 텔레비전 배우
+미국의 남자 영화 배우
+미국의 남자 가수
+미국의 남자 싱어송라이터
+볼티모어 출신 배우 Title: 빌리 캠벨 Text:빌리 캠벨(Billy Campbell, 1959년 7월 7일 ~ )은 미국의 배우이다.
+
+출연 작품 
+ 드라큘라
+ 미티어
+ 인간 로케티어
+
+외부 링크 
+
+ 
+
+1959년 출생
+살아있는 사람
+미국의 남자 텔레비전 배우
+미국의 남자 영화 배우
+버지니아주 출신 배우
+샬러츠빌 출신 Title: 소를 넣은 음식 목록 Text:다음은 소를 넣은 음식 목록이다.
+
+종류
+
+소를 넣은 채소·과일
+
+소를 넣은 생선·해물
+
+소를 넣은 고기·내장
+
+소를 넣은 쌀밥 요리
+
+소를 넣은 반죽 음식
+
+같이 보기 
+ 팥소
+ 콩소
+
+[Passage Chunk 2]
+passage: 출연
+
+주연 
+ 이민자
+ 염석주
+ 조항
+
+기타 
+ 조명: 함완섭
+ 녹음: 이경순
+
+외부 링크 
+
+1953년 영화
+대한민국의 영화 작품
+한국어 영화 작품 Title: 티건 크로프트 Text:티건 크로프트(, 2004년 4월 23일 ~ )는 오스트레일리아의 배우이다. DC 코믹스 원작 드라마 《DC 타이탄》의 레이븐 역으로 출연하고 있다.
+
+생애와 경력 
+시드니 출신으로, 9세 때인 2014년 연극 《앵무새 죽이기》의 주인공 스카우트 역으로 데뷔했다. 2016년에는 SF 영화 《행성탈출: 반란의 서막》에서 아역으로 출연했고 같은 해 연속극 《홈 앤 어웨이》에서 벨라 역으로 출연했다. 2017년에 스트리밍 서비스 DC 유니버스에서 방영하는 슈퍼히어로 드라마 《DC 타이탄》에서 레이븐 역으로 캐스팅되었다.
+
+[Passage Chunk 3]
+passage: 종류
+ 추상적 규범통제: 구체적인 소송사건이 제기된 경우가 아님에도 법령의 위헌여부를 심사하는 절차이다.
+ 구체적 규범통제: 구체적인 소송사건이 제기되었을 때 그 사건에 적용될 법령의 위헌여부를 선결적으로 심사하는 절차이다.
+
+같이 보기 
+ 헌법재판소
+
+헌법 Title: 데브 파텔 Text:데브 파텔(Dev Patel, 1990년 4월 23일 ~ )은 잉글랜드의 배우이다.
+
+출연 작품 
+ 슬럼독 밀리어네어
+ 뉴스룸
+ 채피 - 디온 윌슨 역
+ 무한대를 본 남자 - 라마누잔 역
+ 라이언 - 사루 역
+ 호텔 뭄바이 - 아르준 역 (기획, 주연)
+
+연출 작품 
+ 로보로브스키
+
+외부 링크"
+2,조지 앤서니 몬커가 현재 활동 중인 팀은 무엇인가요?,레이턴 오리엔트 FC,레이턴 오리엔트 FC.,0.9964518547058105,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 일본의 해외 진출 남자 축구 선수
+몬테네그로의 외국인 남자 축구 선수
+독일의 외국인 남자 축구 선수
+몬테네그로에 거주한 일본인
+독일에 거주한 일본인 Title: 조지 몬커 Text:조지 앤서니 몬커(George Anthony Moncur, 1993년 8월 18일 ~ )는 잉글랜드의 축구 선수이다. 현재 잉글랜드 EFL 리그 투의 레이턴 오리엔트 FC에서 활약하고 있다.
+
+[Passage Chunk 2]
+passage: 셰퍼드의 최근 작품들 중 다수는 논픽션이었다. 그는 잠시 화물열차 여행자들에 관해 취재한 뒤, 그 경험을 바탕으로 소설과 논픽션을 함께 내놓았다. 또한 그는 팬터지 앤 사이언스 픽션 지와 일렉트릭스토리 닷컴에서 고정 필진으로 영화 리뷰를 기고하기도 한다. 그는 리뷰를 통해 현재 미국 영화에 대한 경멸감을 드러내고 있다.
+
+동료 작가인 제임스 패트릭 켈리에 의하면, 셰퍼드는 집필에 필요한 자극을 얻기 위해 극적인 경기 장면을 인용할 정도로 열렬한 스포츠 팬이라고 한다.
+
+선별된 자서전
+
+[Passage Chunk 3]
+passage: 성적
+
+유명 선수 
+  레네 판 더 케르크호프
+
+외부 링크 
+  공식 홈페이지
+
+ 
+1909년 설립된 축구단
+네덜란드의 축구단 Title: KELT-9b Text:KELT-9b는 백조자리 방향으로 지구로부터 약 620 광년(190 파섹) 떨어져 있는 외계 행성이다.
+
+특징 
+KELT-9b는 KELT(Kilodegree Extremely Little Telescope)를 통해 발견되었으며 2017년 그 범상치 않은 성질이 논문을 통해 공개되었다. 행성이 항성 앞을 지나가면서 발머 Hα 선의 흡수가 일어나는 것을 관측, 존재를 입증했다. 미국 스콧 가우디 오하이오 주립 대학교가 이 행성의 연구에 참여했으며, TESS 우주망원경, 제임스 웨브 우주망원경 등을 동원하여 더 자세히 연구할 예정이다."
+2,엑스트레마두라의 주로 공용되는 언어는 무엇인가요?,스페인어,스페인어입니다.,0.9717121124267578,CORRECT,The generated answer correctly identifies the commonly used language as Spanish.,"
+
+[Passage Chunk 1]
+passage: 명칭의 기원 
+수많은 학설이 존재한다. 한 학설에 따르면 엑스트레마두라주의 이름은 도루 강의 끝이라는 의미인 라틴어에서 따와서 이 지방의 위치가 도루 강의 남쪽 지방에 있음을 가리키고 있다고 한다. 그러나 일부에서는 엑스트레마두라라는 단어의 뜻이 대개 기독교 지역과 경계를 하는 지역을 지칭하는 것으로 스페인에서 사용되어왔다. 때문에 이를 지적하고 있는 것이 아닌가 하고 생각되기도 한다. 본래 이름 외에 카스티야의 형용사형인 카스테야나를 붙여 표시하기도 한다.
+
+지리 
+전체 면적은 41,633 km2로서 스페인의 주 중에서 5번째로 큰 규모이다.
+
+[Passage Chunk 2]
+passage: 언어 
+유일한 공용어는 스페인어이지만 다른 언어도 사용된다. 포르투갈어의 변형체로서 사투리처럼 쓰이는 경우도 다반사이다. 엑스트레마두라 사투리도 사용되지만 교육상으로도 개인적으로도 교육되는 경우가 없기 때문에 거의 사멸되었다고 여겨진다. 갈리시아-포르투갈 어의 혼합 방언이 일부 지역에서 장려되기도 한다.
+
+인구 
+
+2006년 1월 1일 기준으로 전체 인구는 1,086,373명으로서 전체 스페인의 인구 중 2,74%를 차지한다. 인구 밀도가 매우 낮아서 1km2당 25.81 명이다.
+
+가장 인구가 많이 분포하는 지방은 바다호즈(Badajoz) 지방으로 673,474명이 거주하고 있으며 면적 당 30.94명이 분포한다. 다른 지방의 경우 많은 차이는 없지만 인구 분포가 적은 것만은 분명하다.
+
+[Passage Chunk 3]
+passage: 외국인 
+전체적으로 29,000명 정도의 외국인이 살고 있다. 이는 2007년 1월 통계에 따른 것으로서 바다호즈 주에만 12,421명의 외국인이 살고 있다. 가장 많은 민족으로는 모로코인이 있으며 루마니아인과 포르투갈인이 그 다음을 따른다. 브라질인도 1,676명 정도가 살고 있으며 그 뒤로 콜롬비아가 따른다. 북아프리카 사하라 사막 지대에서 이민온 사람도 많으며 이 중에서는 세네갈 사람(88명)이 가장 많다. 아시아 출신으로는 중국인이 631명으로 가장 많은 인구를 차지한다.
+
+같이 보기 
+ 에스트레마두라어
+
+외부 링크 Title: 옥수수흑수병 Text:옥수수흑수병(-黑穗病) 또는 옥수수깜부기병은 옥수수속 식물이 옥수수깜부기균(Ustilago maydis)에 감염되어 생기는 질병이다.
+
+사용"
+2,내곡초등학교는 몇 년도에 청주시에 편입되었습니까?,1983,1983년,0.9079107046127319,CORRECT,"The generated answer correctly provides the year 1983, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 학교 연혁 
+ 1940. 03. 15 강서공립국민학교 부설 내곡간이학교로 설립
+ 1943. 03. 25 개교
+ 1945. 03. 31 초대교장 박희창 취임
+ 1977. 06. 16 내곡국민학교 교가 제정
+ 1983. 02. 25 행정구역 변경으로 청주시 편입
+ 1996. 03. 01 내곡초등학교로 교명 개명
+ 2000. 10. 10 인터넷 전용선 개통 및 학교장 구축
+ 2007. 09. 20 현관리모델링('내곡초 100주년을 기리며' 역사관)
+ 2008. 03. 02 사랑도움반(특수학급)신설
+ 2009. 12. 16 내곡도서관(지혜의 샘터) 리모델링
+ 2010. 04. 03 돌봄교실 구축
+ 2010. 05. 31 ICT 첨단 교실 구축 및 유치원 실외 놀이시설
+ 2010. 04. 30 급식소 현대화 사업
+
+[Passage Chunk 2]
+passage: 학교 동문
+
+참고 자료
+
+외부 링크
+
+각주 
+
+양평군의 초등학교
+1924년 개교 Title: 청주내곡초등학교 Text:청주내곡초등학교(淸州內谷初等學校)는 충청북도 청주시 흥덕구에 있는 공립 초등학교이다.
+
+[Passage Chunk 3]
+passage: 2015. 02. 16 67회 졸업식(졸업생 수 10명 총 6,436명)
+ 2015. 03. 01 제32대 박순권 교장 취임
+ 2019. 03. 01 청주내곡초등학교로 변경 및 현 위치로 이전"
+2,"앨범 제목 ""The X Factor""는 어떻게 결정되었나요?","음악이 발전하는 방식, 블레이즈의 새로운 참여, 사운드, 새 음반의 헌신이 ""X Factor""라는 특별한 품질을 가지고 있다고 느꼈기 때문에 결정되었다.","음악의 발전과 블레이즈의 새로운 참여를 통해 ""X Factor""라는 특별한 품질을 느꼈기 때문에 결정되었습니다.",0.9802401065826416,CORRECT,The generated answer conveys the same reason for the album title decision as the actual answer with minor wording differences.,"
+
+[Passage Chunk 1]
+passage: 곡 목록
+
+평가
+
+각주 
+
+2010년 음반 Title: The X Factor (음반) Text:《The X Factor》는 영국의 헤비 메탈 밴드 아이언 메이든이 1995년 10월 2일 EMI 레코드를 통해 발매한 열 번째 스튜디오 음반이다. CMC 인터내셔널은 북미에서 음반을 발매했다. 이 밴드가 솔로 활동을 위해 이전 투어에 이어 밴드를 떠난 브루스 디킨슨 대신 울프스베인의 전 소속이었던 블레이즈 베일리를 보컬로 포함시킨 것은 이번이 처음이다. 이 음반은 이혼이 한창이던 당시 스티브 해리스와 관련된 개인적인 문제들을 바탕으로 한 가사로 인해 밴드의 처음 9개 발매 때보다 어두운 톤을 취하고 있다. 이것은 밴드의 마스코트인 에디가 기계에 의해 생동감 있게 묘사된 커버 삽화에 반영되어 있다.
+
+배경
+
+[Passage Chunk 2]
+passage: 배경 
+
+음반 제목은 녹음 시작과 동시에 나왔다. 프로듀서 나이젤 그린에 따르면 ""우리 모두는 음악이 발전하고 있는 방식, 블레이즈의 새로운 참여, 사운드, 새 음반의 헌신이 ""X Factor""라는 특별한 품질을 가지고 있다고 느꼈습니다. 이것이 음반의 작업 타이틀이 되었고 우리는 그것을 좋아했고 그래서 우리는 그것을 보관했습니다. 이 음반은 저희의 열 번째 스튜디오 음반이고 ""X""는 많은 이미지를 불러올 수 있기 때문에 매우 적절합니다.""
+
+에디가 또 다른 전두엽절제술을 받는 모습을 그린 커버 아트는 휴 시메에 의해 만들어졌다. 커버의 ""lifelike"" 스타일 때문에 밴드는 멀리서도 에디의 그래픽이 덜한 모습으로, 가역적인 소매로 음반을 발매할 수밖에 없었다.
+
+[Passage Chunk 3]
+passage: 이 음반은 2015년 《The Book of Souls》가 밴드의 로고의 고전적인 변형을 사용한 마지막 음반이었다. 《Virtual XI》에서 《The Final Frontier》에 이르는 모든 스튜디오 발매는 ""R"", ""M""과 ""N""의 확장된 끝을 제거하는 대체품을 사용했다.
+
+《The X Factor》는 아이언 메이든의 열 번째 연속 영국 톱 10 음반이었지만, 4주밖에 되지 않아 그들의 최단 기간 스튜디오 음반이 되었다.
+
+The X Factour는 이 음반을 지지했다. 다음 음반인 《Virtual XI》의 투어처럼, 베일리는 밴드의 무거운 콘서트 스케줄로 인해 때때로 보컬 문제로 고통받으면서 미국에서 몇 번의 시기가 취소되었다.
+
+곡 목록
+
+인증
+
+각주
+
+외부 링크"
+2,용귀는 어떤 식물을 의미하나요?,까마중,까마중,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 용귀(龍葵)
+ 까마중
+ 중국의 비디오 게임 겸 텔테비전 드라마 의 등장인물
+ 한용귀
+
+같이 보기 Title: 윈도우 모바일 5.0 Text:윈도우 CE 5.0 기반인 윈도우 모바일 5.0(Windows Mobile 5.0, 코드명: Magneto)은 윈도우 모바일 2003 SE의 뒤를 잇는 모바일 운영체제로 2005년 5월 9일 발표되었다.
+
+윈도우 모바일 5.0은 비휘발성 메모리를 지원하도록 변경되어 배터리가 끊어진 이후에도 메모리 내용이 보호되도록 변경되었다.
+
+주요 기능 
+윈도우 모바일 5.0은 기본적으로 다음 기능을 제공했다.
+
+[Passage Chunk 2]
+passage: 담비속
+1806년 기재된 포유류
+미국의 포유류
+캐나다의 포유류 Title: 아줌마 (동음이의) Text:아줌마는 다음을 가리킨다.
+
+ 아줌마는 중년의 여성을 일컫는 칭호이다.
+ 《아줌마》는 2000년 9월 18일부터 2001년 3월 20일까지 방영된 문화방송 월화드라마이다.
+ 《아줌마》는 2022년에 개봉된 싱가포르, 대한민국의 드라마 영화이다.
+
+같이 보기 Title: 용귀 Text:용귀는 다음을 뜻한다.
+
+ 용귀(龍葵)
+ 까마중
+ 중국의 비디오 게임 겸 텔테비전 드라마 의 등장인물
+ 한용귀
+
+[Passage Chunk 3]
+passage: 하위 분류 
+ 순비기나무속(Vitex L.)
+ Cornutia Plum. ex L.
+ Gmelina L.
+ Petitia Jacq.
+ Premna L.
+ Pseudocarpidium Millsp.
+ Teijsmanniodendron Koord.
+
+각주 
+
+ 
+1895년 기재된 식물 Title: 아메리카담비 Text:아메리카담비(Martes americana)는 족제비과에 속하며 북아메리카에서 발견되는 담비류의 일종이다. 솔담비 또는 소나무담비(pine marten)로도 불리지만, 유럽소나무담비와는 다른 종이다. 피셔보다 크기는 작고, 털 색은 더 밝다."
+2,U11은 어떤 종류의 차량 모델에 사용되었나요?,닛산 블루버드 (U11),닛산 블루버드 (U11),0.9999998807907104,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 탄생
+
+사망 
+ 7월 2일 - 하인리히 1세, 독일의 왕
+ 후백제(後百濟)의 국왕(國王) 견훤(甄萱)
+ 후백제(後百濟)의 국왕(國王) 견신검(甄神劍)
+ 후백제(後百濟)의 태자(太子)  견양검(甄良劍)
+ 후백제(後百濟)의 태자(太子)  견용검(甄龍劍)
+ 후백제(後百濟)의 무신(武臣) 견능애(甄能哀)
+ 후백제(後百濟)의 문신(文臣) 능환(能奐)
+ 후백제(後百濟)의 무신(武臣) 파달
+ 고려의 무신 배현경 Title: U11 Text:U11은 다음 뜻이 있다.
+ U11 (뉘벤베르크 U반)
+ 닛산 블루버드 (U11): 일본의 세단 Title: 고영수 Text:고영수(1950년 9월 1일 ~ )는 대한민국의 희극인이다.
+
+학력 
+ 1966~1969 중앙고등학교
+ 1969~1975 성균관대학교 토목공학 학사
+
+[Passage Chunk 2]
+passage: 배급 : 20세기 폭스 재팬
+
+[Passage Chunk 3]
+passage: 광고 
+ 1981 롯데 홀쭉이, 뚱뚱이이 맛포 
+ 1985 농심 너구리 - 고영수, 내 너구리 편
+ 1989 코오롱제약 덴타돌 (인쇄 광고) 
+
+1950년 출생
+살아있는 사람
+20세기 대한민국 사람
+21세기 대한민국 사람
+대한민국의 남자 희극인
+대한민국의 개신교도
+중앙고등학교 동문
+성균관대학교 동문 Title: 군청 (소설) Text:《군청》()은 일본의 영화. 나카가와 요스케의 각본을 바탕으로 미야키 아야코가 소설화하고 있다.
+
+영화 
+
+《군청: 사랑이 물든 바다색》()이라는 제목으로 2009년 6월 27일 개봉되었다. 주연은 나가사와 마사미. 촬영은 2008년 7월에 오키나와현 도나키촌에서 이뤄졌다."
+2,상위사자는 고구려 후기 기준 어느 정도 계급인가요?,제9위,고구려 후기의 14관등 가운데 제9위입니다.,0.8979777693748474,CORRECT,"The generated answer correctly identifies the rank as 제9위, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 각주 
+
+스포츠 텔레비전 프로그램
+캐나다의 발명품 Title: 상위사자 Text:상위사자(上位使者)는 고구려의 관등이다. 계달사(契達奢)라고도 한다. 고구려 후기의 14관등 가운데 제9위이며 중국의 정6품직에 해당된다.
+
+태대사자(太大使者) · 대사자(大使者) · 수위사자(收位使者) · 소사자(小使者)와 함께 부여 계통의 관직인 사자(使者)에서 파생되어 나왔으며, 사자는 원래 족장 아래의 가신으로써의 성격을 지닌 관료였으나, 고구려가 중앙집권적 귀족국가로 전환해가는 과정에서 행정적 관료로 성장하여 각기 그 지위에 따라 여러 사자로 분화, 개편되어나간 것으로 보이고 있다.
+
+[Passage Chunk 2]
+passage: 『삼국사기』직관지(職官志) 외관(外官) 고구려인위조(高句麗人位條)에는 고구려가 멸망했을 때 신라로 망명한 고구려인(보덕국인)에게 신문왕 6년(686년) 신라의 경관을 수여했을 때 소상(小相, 소사자)과 함께 나마 관등을 받았던 적상(狄相)이 상위사자에 비정되는 것으로 여겨지고 있다.
+
+같이 보기 
+ 고구려의 관직
+
+고구려의 관직과 칭호 Title: 서양화 Text:서양화(西洋畵)는 서양에서 발생하여 발달한 그림을 말하며, 반대어는 동양화이다.
+
+서양화를 주종목으로 그림을 그리는 미술가를 서양화가라 부른다.
+
+각주
+
+[Passage Chunk 3]
+passage: 와우아파트는 서울특별시가 와우산 일대에 건설한 시민아파트였다. 무면허 건설업자는 가파른 산 중턱에 와우아파트를 지었는데 이유는 김현옥 시장이 자신의 업적이 대통령에게 일부러 잘 보이도록 하기 위함이었다. 또 건설 허가를 따내기 위해 (주) 대룡건설에게 하청을 줬는데 (주) 대룡건설은 건설업자 박영배에게 하청을 줬다. 문제는 그 '박영배'라는 자가 무면허 건설업자였는데 박영재가 관련 공무원들한테 뇌물을 주고 공사자재를 아껴야 했기 때문에 철근 70개를 넣어야 튼튼하게 유지될 기둥에 고작 5개의 철근을 넣을 정도로 부실공사를 강행했다. 더군다나 김현옥 당시 서울특별시장이 '경무대에서 잘 보여야 한다'는 이유와 더불어 당시 부동산 투기로 인해 서울의 땅값이 있는대로 치솟고 있는 상황이기 때문에 값싼 국유지를"
+2,'신의 나라'와 '지상의 나라'는 무엇인가요?,"'신의 나라'는 하느님의 나라이고, '지상의 나라'는 이 세상 나라입니다.","'신의 나라'는 영광스러운 상태로 묘사되며, '지상의 나라'는 끊임없는 지배욕에 사로잡힌 상태로 묘사됩니다. 이는 각각 하느님과의 일치와 배반을 상징하는 두 개의 역사적 상태입니다.",0.915338397026062,INCORRECT,"The generated answer simplifies the concepts to ""God's kingdom"" and ""this world,"" missing the deeper symbolic and descriptive meanings given in the actual answer.","
+
+[Passage Chunk 1]
+passage: 의사결정
+계획
+자주권
+사회 개념
+자유의 상징
+동기 Title: 신국론 Text:『이교도와 대결하는 신의 도성』(), 통칭 『신국론』(神國論, )은 5세기 초에 쓰여진 아우구스티누스 후기 주요 저작이다. 세계가 창조된 이후의 역사를 지상의 나라와 신의 나라라는 두 개의 역사로 구별하여 서술한다. 모두 22권으로 이루어져 있으며, 전반부 10권은 제신에 대한 희생제의와 관련하여 그리스도교와 모순되는 두 가지 그릇된 견해를 반박하고, 후반부 12권은 하느님의 나라와 이 세상 나라로 나누어 그 기원, 경과 및 발전과 결말을 각기 다루며 그리스도교의 구원사를 구상한다. 이 말은 성서에 등장하는 어구로, 아우구스티누스의 저서 뿐만 아니라, 모든 기독교에서 사용한다.
+
+[Passage Chunk 2]
+passage: 1-5권은 재앙을 그리스도 교도에 의한 다신교 제사의 금지에 돌리려는 주장을 배격하고, 6-10권에서는 이러한 재앙은 과거에도 있었으며, 신들에게 희생을 바친다 해도 이러한 재앙을 막을 힘이 생기기지 않는다는 것을 말하고 있다. 곧 이 책 전반부는 타설의 반박이며, 자기의 주장은 후반에 적극적으로 개진하고 있다. 11-14권에서 이 세상에 나그네로 머무르고 있는 영광스러운 '신의 나라'와 끊임없는 지배를 구하는 지배욕에 사로잡힌 '지상의 나라'의 영원을, 15-18권은 이 두 나라의 발전을, 마지막 네 권은 이러한 발전의 귀착을 각각 보여준다. 그는 목전에 일어난 재앙을 사실(事實)로 인식하였으나 그렇다고 제국의 전도에 대해 비관적인 결론을 맺지는 않는다. 오히려 이 사실의 참된 역사적 의의를 고찰한다.
+
+[Passage Chunk 3]
+passage: 가진 사건의 연속이다. 역사의 이러한 의미에 눈을 뜰 때 인간은 하느님과의 일치냐 배반이냐, '신의 나라'와 '지상의 나라' 중 어느 쪽을 따르느냐 하는 것이 역사의 현실 속에서 요구되는 것이다. 이러한 사상은 그리스도교의 지반으로부터 산출된 사상 최초의 역사철학이며, 두 개 나라(要素)의 대립을 포함하고 역사는 발전한다는 역사관은 중세에 일관됨은 물론 17세기 계몽주의시대가 되기까지 서양의 역사사상(歷史思想)에서 가장 기본적인 저류를 이루는 것이 되었다."
+2,글리제 674 b 의 공전 주기는 얼마인가요?,4.6938일,글리제 674 b의 공전 주기는 4.6938일입니다.,0.8609421849250793,CORRECT,The generated answer provides the exact orbital period as in the actual answer.,"
+
+[Passage Chunk 1]
+passage: 곡 목록
+
+인증
+
+평가
+
+각주 
+
+1992년 음반
+엘렉트라 레코드 음반 Title: 고트샬크 Text:고트샬크의 다른 뜻은 다음과 같다.
+ : 미국의 작곡가
+ 
+ : 비정통파 신학자 수도자
+
+같이 보기 Title: 글리제 674 b Text:글리제 674 b는 제단자리 방향으로 지구로부터 약 15광년 떨어진 곳에 있는 외계 행성이다. b는 항성으로부터 매우 가까운 거리에 있다. 질량은 해왕성 또는 천왕성보다 약간 작은 정도 또는 슈퍼지구급이다. 항성으로부터의 거리는 0.039 천문단위로 1회 공전에 드는 시간은 4.6938일이다. 궤도이심률은 수성과 거의 비슷하다(e=0.2). 2007년 1월 7일 칠레 라 실라 천문대 유럽 우주국 소유 3.6미터 망원경에 장착된 HARPS 분광사진기를 이용, 발견했다.
+
+[Passage Chunk 2]
+passage: 사업장 현황 
+ 본점: 경기도 용인시 기흥구 구성로 278
+ 동두천공장: 경기도 동두천시 승전로 6 (하봉암동)
+ 천안공장: 충청남도 천안시 동남구 동면 화복로 551
+ 포천부화장: 경기도 포천시 일동면 영일로 665-1
+ 예산부화장: 충청남도 예산군 고덕면 상궁3길 100
+
+외부 링크 
+ 마니커 홈페이지
+ 마니커몰 홈페이지
+
+1985년 설립된 기업
+대한민국의 식품회사 Title: 말레이갯첨서 Text:말레이갯첨서(Chimarrogale hantu) 또는 한투갯첨서는 땃쥐과에 속하는 붉은이땃쥐류의 일종이다. 말레이시아 슬랑오르주에서만 기록되고 있다. 멸종 위급종으로 등록되기도 했지만, 이제는 멸종 취약종으로 분류하고 있다. 학명의 ""한투""(hantu)는 말레이어로 귀신을 의미한다.
+
+각주
+
+[Passage Chunk 3]
+passage: 참고 문헌
+
+외부 링크 
+  물병자리 람다의 사진
+  Named Stars (유명한 별들)
+
+물병자리
+변광성
+M형 거성
+바이어 천체
+플램스티드 천체
+216386
+8698
+112961
+느린 불규칙 변광성 Title: 바늘공말 Text:바늘공말(Acanthosphaera zachariasii)은 클로렐라목 클로렐라과에 속하는 녹조류의 일종이다. 바늘공말속(Acanthosphaera)에 속하는 2종 중의 하나이다. 이전에는 녹색소구체말목에 속하는 미세보리수염말과에 속하는 종으로 분류했다. 유럽과 아시아 등의 온대 지역에 분포한다.
+
+각주"
+2,미리벌 중학교에 첫 번째로 취임한 교장의 성함은 무엇인가요?,장승욱,장승욱입니다.,0.9712543487548828,CORRECT,"The generated answer correctly provides the name ""장승욱,"" matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 학교 연혁 
+ 2015년 1월 29일 : 미리벌중학교 교명 확정
+ 2015년 3월 1일 : 미리벌중학교 6학급 인가
+ 2015년 3월 1일 : 제1대 장승욱 교장 취임
+ 2015년 3월 1일 : 미리벌중학교 개교(구, 초동중.상남중 2개교로 나누어 1학기 학사운영)
+ 2015년 3월 1일 : 개교식 및 제1회 입학식 신입생 23명(남 11명, 여 12명)
+ 2015년 8월 10일 : 미리벌중학교 신축건물 준공
+ 2015년 8월 24일 : 미리벌중학교 새 건물로 이전(2015학년도 2학기 개학)
+ 2016년 1월 8일 : 제1회 졸업식 졸업생 32명(남 13명, 여 19명)
+ 2018년 2월 8일 : 제3회 졸업식 졸업생 28명(남 14명, 여 14명)
+ 2018년 9월 1일 : 제3대 신현배 교장 취임
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 
+
+영어 영화 작품
+2001년 영화
+미국의 전기 영화
+미국의 드라마 영화
+십대 임신 영화
+코네티컷주를 배경으로 한 영화
+실화에 바탕한 영화
+컬럼비아 픽처스 영화
+뉴욕주에서 촬영한 영화
+뉴저지주에서 촬영한 영화
+페니 마셜 감독 영화
+1960년대를 배경으로 한 영화
+1970년대를 배경으로 한 영화
+1980년대를 배경으로 한 영화
+한스 치머 영화 음악
+모자관계를 소재로 한 영화 Title: 미리벌중학교 Text:미리벌중학교(미리벌中學校)는 경상남도 밀양시 청도면 인산리에 있는 공립 중학교이다.
+
+[Passage Chunk 3]
+passage: 학교 동문
+
+참고 자료
+
+외부 링크 
+ 미리벌중학교 홈페이지
+
+밀양시의 중학교
+2015년 개교 Title: 박세준 Text:박세준이라는 이름을 가진 인물은 다음과 같다.
+
+ 박세준(1962년)은 대한민국의 정치인이다.
+ 박세준(1960년)은 대한민국의 배우이다.
+ 박세준(1993년)은 대한민국의 배우인 박서안의 본명이다.
+ 박세준은 대한민국의 포켓몬스터 게임 시리즈 프로게이머이다.
+ 박세준은 대한민국의 축구 선수이다.
+
+같이 보기 Title: 삼총사 (영화) Text:《삼총사》는 알렉상드르 뒤마의 소설이며, 여러 해에 걸쳐 영화화되었다.
+
+영화"
+2,예테네시의 인구 밀도는 얼마인가요?,21명/km2,21명/km²입니다.,0.9865986108779907,CORRECT,The generated answer matches the actual answer's value and unit exactly.,"
+
+[Passage Chunk 1]
+passage: 어항 시설 
+ 어의항 : 어촌정주어항
+
+통영시의 지리
+경상남도의 관광지
+남해의 섬
+경상남도의 섬 Title: 예테네시 Text:예테네시()는 스웨덴 베스트라예탈란드주에 위치한 지방 자치체로 행정 중심지는 예테네이며 면적은 620.7686km2, 인구는 13,275명(2016년 12월 31일 기준), 인구 밀도는 21명/km2이다.
+
+외부 링크 
+ 예테네 시 공식 홈페이지
+
+[Passage Chunk 2]
+passage: 인구
+
+기후
+
+경제
+
+각주
+
+외부 링크 
+ 디폴로그 시 정부 공식 홈페이지
+
+필리핀의 도시
+필리핀의 항구 도시
+필리핀의 주도 Title: 라지 (베트남) Text:라지 시사()는 베트남 빈투언성의 티싸(시사)이다.
+
+행정 구역 
+라지 시사에는 5개 방(坊)과 4개 사(社)가 있다.
+
+방
+ 프억호이 (Phước Hội / 福會)
+ 프억록 (Phước Lộc / 福祿)
+ 떤안 (Tân An / 新安)
+ 떤티엔 (Tân Thiện / 新善)
+ 빈떤 (Bình Tân / 平新)
+
+사
+ 떤프억 (Tân Phước / 新福)
+ 떤하이 (Tân Hải / 新海)
+ 떤띠엔 (Tân Tiến / 新進)
+ 떤빈 (Tân Bình / 新平)
+
+각주
+
+외부 링크 
+
+ 라지 시사 인민정부
+
+[Passage Chunk 3]
+passage: 같이 보기 
+
+ 6.25 전쟁 기간 캐나다의 군사사
+
+각주 
+캐나다의 양국 관계
+대한민국의 양국 관계
+대한민국-캐나다 관계 Title: 디폴로그 Text:디폴로그(, , , )는 필리핀 민다나오섬 남부에 위치한 도시로, 북삼보앙가주의 주도이며 면적은 136.28km2, 인구는 141,027명(2011년 기준)이다. 21개 바랑가이를 관할하며 시 남쪽은 높은 산악 지대와 접하고 있고 북쪽은 술루해와 접한다.
+
+필리핀 각 지역을 연결하는 항공 노선이 운행되는 공항이 있으며 산악 지대에 분포하는 야생 난초와 풍부한 정어리 어장으로 유명한 도시이다.
+
+인구
+
+기후
+
+경제
+
+각주
+
+외부 링크 
+ 디폴로그 시 정부 공식 홈페이지"
+2,하버트 로스의 사망일자는 언제인가요?,2001년 10월 9일,2001년 10월 9일입니다.,0.985022246837616,CORRECT,The generated answer matches the actual answer's date exactly.,"
+
+[Passage Chunk 1]
+passage: 북쪽과 서쪽으로는 에르진잔주, 남쪽으로는 엘라지주, 동쪽으로는 빙괼주와 접하며 8개 군을 관할한다. 인구 밀도는 9.8명/km2이며 튀르키예에서 인구 밀도가 가장 낮은 주이다. 문주르 산맥과 접하고 있고 자자인이 주 인구의 다수를 차지한다. 알레비파 무슬림이 많다.
+
+외부 링크 
+ 공식 홈페이지
+
+ 
+튀르키예의 주
+동아나톨리아 지역
+튀르키예령 쿠르디스탄 Title: 허버트 로스 Text:허버트 로스(Herbert Ross, 본명: 허버트 데이비드 로스, Herbert David Ross, 1927년 5월 13일 – 2001년 10월 9일)는 미국의 배우, 안무가, 감독, 프로듀서이다. 영화와 극장에서 주로 활동했다. 2개의 아카데미상 후보, 1개의 토니상 후보에 올랐다.
+
+작품
+
+[Passage Chunk 2]
+passage: 사망 
+즉시 성공이 있는 동안 로우는 메트로 골드윈 메이어가 되는 세력가를 보는 데 살지 않았다. 3년 후, 1927년 9월 5일 57세의 나이로 뉴욕주 글렌코브에 있는 자신의 시골 저택에서 심근 경색으로 사망하였다. 그의 사망을 보고한 버라이어티는 그를 ""사상 전부의 쇼 비지니스의 가장 사랑을 받은 남자""로 불렀다. 그는 브루클린에 있는 메이모니데스 묘지에 안치되었다.
+
+개인 생활 
+로우와 그의 부인 캐리 여사는 쌍둥이 아들 데이비드 L. 로우 (1897 ~ 1973)와 아서 마커스 로우 (1897 ~ 1977)를 두었다. 아서는 아돌프 주커의 딸 밀드레드 주커에게 결혼하였고 메트로 골드윈 메이어의 회장이 되었다. 아서의 아들 아서 로우 주니어 (1925 ~ 1995)는 배우, 제작자와 각본가였다.
+
+[Passage Chunk 3]
+passage: 사후 
+시신은 1557년(명종 12) 8월 22일에 경기도 양주군 치소 북쪽 회암면 율정리(후일의, 양주군 회천읍 율정리) 선영 건너편 왼쪽 언덕에 안장되었다. 묘비문은 그의 친구인 양곡 소세양(陽谷 蘇世讓)이 지었는데, 후일 국조인물고에 실리게 되었다.  후일 그의 문집 정용재집은 1939년 후손 임형준(任炯準)이 편집, 간행하였다. 후일 그의 묘소는 경기도 양주시 율정동 240-4번지에서 경기도 양주시 율정동 산2-62번지로 개정되었다."
+2,"어느 나라는 최대 흑자, 어느 나라는 최대 적자를 기록했나요?",NOT_FOUND,"해당 문서에서 언급된 최대 흑자 및 적자에 대한 국가 목록의 구체적인 나라는 제공되지 않았습니다. 문서에 따르면, 최대 흑자와 최대 적자 목록은 CIA 월드 팩트북에 등재된 2017년 추산 데이터에 기반한다고 했으나, 구체적인 국가 이름은 명시되지 않았습니다.",0.6997377872467041,CORRECT,"The generated answer correctly indicates that the information is not found, matching the actual answer's explanation that specific countries are not provided.","
+
+[Passage Chunk 1]
+passage: Title: 경상수지에 따른 나라 목록 Text:아래는 경상수지에 따른 나라 목록이다.
+
+CIA 월드 팩트북 데이터
+
+최대 흑자의 상위 20개 국가 
+아래는 CIA 월드 팩트북에 등재된 2017년 추산 데이터에 근건한 최대 흑자의 상위 20개 나라 목록이다.
+
+최대 적자의 상위 20개 국가 
+아래는 CIA 월드 팩트북에 등재된 2017년 추산 데이터에 근건한 최대 적자의 상위 20개 나라 목록이다.
+
+유로스탯 데이터 
+아래의 표는 유로스탯의 데이터에 따른(단위: EUR) 유로 아레나와 유럽연합의 경상수지를 보여준다..
+
+각주
+
+[Passage Chunk 2]
+passage: 각주
+
+외부 링크 
+ 
+
+포브스 목록
+억만장자 Title: 스리랑카의 경제 Text:스리랑카의 경제는 2019년 명목 국내총생산(GDP) 기준 840억 달러, 구매력평가 기준 2969억5900만 달러 규모였다. 스리랑카는 2003년부터 2012년까지 매년 6.4%의 성장을 경험했는데, 이는 세계은행이 지속가능하지도 않고 불평등하지도 않다고 경고한 비무역 부문의 성장에 의해 지역 동종 국가들보다 훨씬 높은 수치이다. 스리랑카는 1인당 국민소득이 1만3620PPP달러(2019년 기준)인 명목달러(3852달러)로 종전 중상위 소득에서 세계은행에 의해 중하위 소득국으로 재분류됐다.
+
+[Passage Chunk 3]
+passage: COVID-19 대유행의 시작과 함께 스리랑카의 성장 둔화와 화폐 인쇄, 정부 부채에 대한 지속적인 우려가 국가신용등급 하락으로 번지고 있다. 부채화폐화로 인한 통화불안이 고조되면서 수입통제와 수입대체 현상이 심화되고 있다. 스리랑카는 이번 COVID-19 대유행 대처에서 세계 10위권 안에 들었다.
+
+경제사
+
+초기 역사 
+스리랑카는 동서 무역의 중심에 위치하고 내륙의 관개 농업으로 오랜 역사를 가지고 있는데, 스리랑카는 스리랑카 내에 남아있는 역사적 문헌과 외국인 여행객들의 기록으로 알려져 있다. 이 섬에는 인도-아리아 이주 이후 고대 왕들이 건설한 탱크라고 불리는 관개 저수지가 있는데 이들 중 많은 저수지가 오늘날까지 남아있다. 그들은 보다 현대적인 건축물과 연계된 관개 시스템의 일부를 형성한다."
+2,유순하가 1990년에 수상한 문학상은 무엇인가?,NOT_FOUND,김유정문학상입니다.,0.7359874248504639,INCORRECT,"The generated answer says ""NOT_FOUND"" while the actual answer provides the specific award ""김유정문학상"".","
+
+[Passage Chunk 1]
+passage: 2007년 CONCACAF 골드컵 참가 선수
+멕시코 남자 축구 국가대표팀 선수
+멕시코의 올림픽 축구 참가 선수
+득점 기록이 있는 골키퍼
+리가 MX의 축구 선수
+멕시코 남자 U-20 축구 국가대표팀 선수
+멕시코 남자 U-23 축구 국가대표팀 선수 Title: 유순하 Text:유순하(柳舜夏, 1943년 8월 30일 ~ )은 대한민국의 소설가, 문화비평가, 아동문학가, 극작가이다.
+
+[Passage Chunk 2]
+passage: 수상 
+ 1968년 사상계 신인상 : 희곡 《인간이라면 누구나》
+ 1980년 한국문학 신인상 : 소설 《허망의 피안》
+ 1986년 아동문예 신인상 : 동화 《시간은행》
+ 1989년 이산문학상 : 장편소설 《생성》
+ 1991년 김유정문학상 : 중편소설 《한 자유주의자의 실종》
+ 2013년 EBS라디오 문학상 대상 : 소설 《바보아재》
+
+외부 링크 
+ 한국현대문학대사전 - 네이버
+ 한국 브리태니커 온라인
+ 두산백과 - 네이버
+ 네이버 인물검색
+
+대한민국의 극작가
+대한민국의 소설가
+대한민국의 아동문학 작가
+1943년 출생
+살아있는 사람
+이산문학상 수상자
+풍산 류씨 Title: 육군사령부 Text:육군사령부는 다음과 같다.
+
+[Passage Chunk 3]
+passage: 동화 
+ 《시간 은행》 (1986)
+ 장편동화 《힘내라 동서남북》 (1990) 세계사  (1992) 고려원미디어
+ 장편동화 《동수의 세 번째 비밀》 (1991) 산하 
+ 창작집 《우물안 개구리》 (1991) 현암사"
+2,어떤 지역이 현존하는 산무시로 변하기 전에 어떤 이름을 가지고 있었나요?,휴가촌,휴가촌,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 각주 
+
+1997년 드라마
+한국방송공사 일요아침드라마 Title: 후마정 Text:후마정()은 지바현 가토리군에 설치되었던 정이다. 현재의 가토리시에 해당한다.
+
+지바현의 폐지된 시정촌
+가토리군
+가토리시의 역사 Title: 휴가촌 Text:휴가촌()은 지바현 산부군에 설치되었던 촌이다. 현재의 산무시에 해당한다.
+
+지바현의 폐지된 시정촌
+산부군
+산무시의 역사 Title: 휴가촌 Text:휴가촌()은 지바현 산부군에 설치되었던 촌이다. 현재의 산무시에 해당한다.
+
+지바현의 폐지된 시정촌
+산부군
+산무시의 역사
+
+[Passage Chunk 2]
+passage: 지바현의 폐지된 시정촌
+인바군
+요쓰카이도시의 역사
+사쿠라시 (지바현)의 역사 Title: 충장동 Text:충장동(忠壯洞)은 광주광역시 동구에 위치한 법정동이자 행정동이다. 금융기관 등 각종 상권의 중심이자 예술의 거리가 있다. 광주 동구 충장로가 가장 번성하였던 시기인 70ㆍ80년대를 중심 테마로 2004년 처음 기획된 충장축제는 젊음과 낭만의 거리로 각광 받았다는 점에 착안하여 '추억'을 매개로 한 이색 거리축제이다.
+
+유래 
+충장동의 명칭은 임진왜란 당시 의병장인 충장공 김덕령 장군의 시호를 따서 지어진 것이다. 1998년 4월 27일 소규모동 통폐합으로 동구 관내 중심동인 대금동, 대의동, 충수동, 충금동, 삼성동 5개동을 통합하여 이루어진 동이다.
+
+[Passage Chunk 3]
+passage: 곡 목록 
+
+2003년 음반 Title: 검은 금요일 (1978년) Text:검은 금요일()은 1978년 9월 8일(이란력 1357년 6월 17일) 이란 제국의 수도 테헤란의 잘레흐 광장에서 이란 황립육군이 반정부 시위대에게 발포하여 89명이 사망한 사건이다. 이로써 반정부 운동과 모하마드 레자 샤 정권 사이에 어떠한 타협도 불가능함이 드러났다. 이란 혁명이 급진화된 주요 변곡점으로 평가된다.
+
+각주 
+
+1978년 이란
+이란 혁명
+1978년 분쟁
+이란의 항의행동
+1978년 9월
+1978년 대량 살인 Title: 고쿠후촌 (지바현) Text:고쿠후촌()은 지바현 아와군에 설치되었던 촌이다. 현재의 미나미보소시 북부에 해당한다."
+2,"정유안, 김영애, 민지영, 이학주 중 드라마 《아빠를 찾아주세요》의 출연진은 누구인가요?",민지영,김영애,0.9120285511016846,INCORRECT,"The generated answer names 민지영, but the actual answer is 김영애.","
+
+[Passage Chunk 1]
+passage: 그 외 
+ 황정민 : 최석문 부장의 아내 역
+ 박찬민 : 뉴스 앵커 역
+ 배유람 : 나백일 역 - 나천일의 동생
+ 조정식 : 나익희의 담임 외 다역
+ 강소이 : 전지연 역 - 도레미주류 직원
+ 민지영 : 민지영 역 - 배우이며 맹라연의 고교동창
+ 김동균 : 드라마 감독 역
+ 박성근 : 민규석 역 - 맹라연의 담당의
+ 이기열 : 나천일의 아버지 역
+ 정영금 : 나천일의 어머니 역
+ 김민영 : 나하루 역 - 나천일의 동생
+ 김하균 : 박병달 역 - 도레미주류 인턴 후보
+ 이학주 : 최준우 역 - 도레미주류 인턴 후보, 최석문 부장의 아들
+ 남경읍 : 김영화 역 - 조 여사네 윗집 남자
+ 박진주 : 나익희의 과외선생님 역
+ 김경식 : 윤승우 역 - 나천일의 친구. 맹정신의 첫 번째 맞선남
+
+[Passage Chunk 2]
+passage: 아래 명단은 슈퍼위크 이상 진출자에 한함
+
+순위
+
+논란 
+ 슈퍼스타 K의 합격자 선정 방식 및 운영 체계를 두고 논란이 있었다.
+
+기타 
+ 슈퍼스타 K의 10회 시청률은 당시 케이블 역대 최고 시청률인 7.7%를 기록하였다.
+ 슈퍼스타 K의  최종회는 시청률은 8.4%(AGB 닐슨미디어)로, 자체 최고 시청률 신기록을 세웠으며 문자투표 참여자도 16만4563명에 달했다.
+
+수상 
+ 2010년 제4회 케이블TV 방송대상 대상
+
+각주 
+
+슈퍼스타K
+2009년 텔레비전 시즌 Title: 아빠를 찾아주세요 Text:《아빠를 찾아주세요》는 한국방송공사 2TV 특집드라마이다.
+
+기획 의도 
+뺑소니 사고로 아내를 잃고 아버지는 폐인이 되는 가정의 슬픈 드라마
+
+제작진 
+ 극본 : 강희연
+ 연출 : 이성주
+
+[Passage Chunk 3]
+passage: 맹라연의 주변 인물 
+ 김혜옥 : 조부귀 (조 여사) 역 - 맹라연의 어머니
+ 김희정 : 맹미애 역 - 맹라연의 큰언니 (특별출연)
+ 전영미 : 맹정신 역 - 맹라연의 둘째 언니. 성우
+ 김보정 : 맹연우 역 - 맹라연의 큰동생
+ 나현주 : 맹안나 역 - 맹라연의 둘째 동생
+ 김종구 : 맹추용 역 - 맹라연의 아버지. 고인
+
+나익희의 주변 인물 
+ 강은아 : 배민서 역 - 나익희의 반 친구이자 절친
+ 정유안 : 강보람 역 - 공부 잘하는 옆집 오빠
+ 정시아 : 고서영 역 - 강보람의 어머니
+ 류태준 : 강동건 역 - 강보람의 어버지"
+2,마이클 G. 포스터 경영대학의 이름이 바뀐 해는 언제인가요?,2007년,2007년.,0.9897099733352661,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 각주 
+
+1934년 설립된 기업
+1956년 해체된 기업
+1956년 설립된 기업
+대한민국의 지주회사
+대한민국의 브랜드 Title: 워싱턴 대학교 경영대학 Text:마이클 G. 포스터 경영대학(Michael G. Foster School of Business)은 워싱턴 대학교(University of Washington)에 있는 경영학 단과대학으로, 1917년에 설립되었다. 매년 2500명 정도의 신입/편입 학생들이 입학하며, 워싱턴대 내에서 가장 센 경쟁률을 가진 단과대학 중 하나이다. 학사과정을 포함해 각종 MBA, MS, PhD 프로그램을 통해 학위를 수여한다.
+
+[Passage Chunk 2]
+passage: 역사 
+과거에는 워싱턴대 경영대학 (UW School of Business)으로 불렸으나, 2007년 9월 7일부터 현재의 이름 (Michael G. Foster School of Business)을 사용하고 있다.
+
+건물 
+워싱턴대 캠퍼스의 북쪽에 4개 건물 (PACCAR Hall, Dempsey Hall, Bank of America Executive Education Center, MacKenzie Hall)이 경영대 건물이다.
+
+순위 
+2009년 Business Week는 워싱턴 대학교 경영대학 학부과정을 미국 전체 25로 꼽았다.
+
+각주
+
+외부 링크
+
+[Passage Chunk 3]
+passage: 순위 
+2009년 Business Week는 워싱턴 대학교 경영대학 학부과정을 미국 전체 25로 꼽았다.
+
+각주
+
+외부 링크 
+ 
+
+1917년 개교
+워싱턴주의 대학교 Title: 윌리엄 로버트슨 Text:윌리엄 로버트슨(William Robertson; 1721년 9월 19일 - 1793년 6월 11일)은 스코틀랜드 교회의 목사이며 역사가이다. 에든버러 대학교의 총장을 30년동안 재직한 것은 역사적으로 가장 오랜기간으로 인정받고 있다. 그의 저서 《스코틀랜드의 역사 (1542-1603)》는 매우 높이 평가받고 있다.
+
+그에 대한 책으로는 니콜라스 필립슨이 쓴 《윌리엄 로버트슨과 제국의 확장》이 있다."
+2,수프와 이데올로기(Soup and Ideology) 에서 주연으로 출연한 사람 중 감독도 맡은 사람은 누구인가?,양영희,양영희,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 학교 동문 
+연예인 동문으로는 알려진 바가 없고, 55회 졸업생인 조현준 통영부시장이 있다.
+
+참고 자료
+
+외부 링크 
+ 
+
+통영시의 초등학교
+1922년 개교 Title: 수프와 이데올로기 Text:수프와 이데올로기(Soup and Ideology)는 한국, 일본에서 제작된 양영희 감독의 2021년 다큐멘터리 영화이다. 양영희 등이 주연으로 출연하였다.
+
+출연
+
+주연 
+ 양영희
+ 강정희
+ 아라이 카오루
+
+수상 목록 
+ 2023년 제43회 한국영화평론가협회상 다큐멘터리부문 독립영화지원상 (양영희)
+
+외부 링크 
+
+2021년 영화
+대한민국의 영화 작품
+한국어 영화 작품 Title: 에이코인 Text:에이코인(えいこういん)
+
+[Passage Chunk 2]
+passage: 설립 당시 바버의 본사는 사우스실즈 마켓 플레이스 5번지에 있었으며 1980년대에 같은 지역 내 지금의 위치로 이전했다.
+
+외부 링크 
+ 
+
+영국의 브랜드
+영국 왕실 납품 기업
+영국의 패션 브랜드 Title: 바빌론 A.D. Text:《바빌론 A.D.》(Babylon A.D.)는 프랑스에서 제작된 마티유 카소비츠 감독의 2007년 SF, 액션, 모험, 스릴러 영화이다. 빈 디젤 등이 주연으로 출연하였고 마티유 카소비츠 등이 제작에 참여하였다.
+
+2008년 8월 29일 미국에서 개봉되었다. 프랑스, 영국, 미국의 공동 제작 작품이다.
+
+출연
+
+주연 
+ 빈 디젤
+ 멜라니 티에리
+ 양자경
+
+조연 
+ 제라르 드빠르디유
+ 샬롯 램플링
+ 마크 스트롱
+ 램버트 윌슨
+ 제롬 르 밴너
+ 조엘 커비
+ 소울리메인 딕코
+
+[Passage Chunk 3]
+passage: 조연 
+ 제라르 드빠르디유
+ 샬롯 램플링
+ 마크 스트롱
+ 램버트 윌슨
+ 제롬 르 밴너
+ 조엘 커비
+ 소울리메인 딕코
+
+기타 
+ 공동제작: 셀윈 로버츠
+ 미술: 폴 크로스
+ 의상: 샤토운
+ 배역: 지나 제이
+ 음악: 아틀리 외르바르손
+
+각주
+
+외부 링크 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2008년 영화
+미국의 영화 작품
+미국의 SF 액션 영화
+영국의 영화 작품
+프랑스의 영화 작품
+영어 영화 작품
+SF 소설의 영화화 작품
+스튜디오카날 영화
+세르비아를 배경으로 한 영화
+러시아를 배경으로 한 영화
+뉴욕을 배경으로 한 영화
+2027년을 배경으로 한 영화
+마티외 카소비츠 감독 영화
+체코에서 촬영한 영화
+디스토피아 영화 Title: 박형철 (동음이의) Text:박형철의 다른 뜻은 다음과 같다."
+2,'애디'라는 이름이 사용된 맥락에서 다음 중 비법인지구를 지칭하는 곳은 어디인가요?,애디 (워싱턴주),워싱턴주,0.9459899663925171,CORRECT,"The generated answer correctly identifies Washington state as the location, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 같이 보기 
+ 부신기능부전
+ 부신피질자극호르몬
+
+각주 
+
+내분비계
+부신 Title: 세키나미촌 Text:세키나미촌()은 이바라키현 다가군에 설치되었던 촌이다. 현재의 기타이바라키시 북동부에 해당한다.
+
+이바라키현의 폐지된 시정촌
+다가군
+기타이바라키시의 역사 Title: 시라이시촌 Text:시라이시촌()은 오카야마현 미쓰군에 설치되었던 촌이다. 현재의 오카야마시에 해당한다.
+
+오카야마현의 폐지된 시정촌
+미쓰군
+오카야마시의 역사
+미노군 (오카야마현) Title: 애디 Text:애디의 다른 뜻은 다음과 같다.
+ 마크 애디: 잉글랜드의 배우
+ 잭 애디: 텔레비전 시리즈 본즈의 가공의 인물
+ 애디 (워싱턴주): 미국 워싱턴주의 비법인지구
+
+[Passage Chunk 2]
+passage: 명덕여자중학교 : 서울특별시 강서구 강서로47길 34-10
+ 명덕여자중학교 : 울산광역시 동구 대송로 50
+
+같이 보기 Title: 바티 축구 아카데미 Text:바티 축구 아카데미(សាលាបាល់ទាត់ជាតិបាទី)는 캄보디아의 축구단으로 현재 캄보디아 리그 2에서 활동하고 있다.
+
+캄보디아의 축구단
+바티 축구 아카데미 Title: 보리소프 Text:보리소프(Борисов)는 다음을 가리킨다.
+ 바리사우의 러시아어 표현 보리소프(Borisov)
+ 보이코 보리소프(Бойко Борисов): 불가리아의 총리
+ FC 바테 보리소프(ФК БАТЭ Борисов): 벨라루스의 축구팀
+ 2I/보리소프
+
+[Passage Chunk 3]
+passage: 같이 보기 Title: 체스트 Text:체스트(chest)는 다음을 가리킨다.
+ 체스트는 흉곽을 의미한다.
+ 체스트는 궤를 의미한다.
+ 체스트 (학술지)
+
+같이 보기 Title: 페이즐리 (동음이의) Text:페이즐리의 다른 뜻은 다음과 같다.
+
+지명 
+ 페이즐리: 스코틀랜드 렌프루셔의 도시
+
+패턴
+ 페이즐리 패턴- 아메바와 비슷한 독특한 둥근 곡옥 모양의 무늬. 스코틀랜드의 지방 이름이기도 한데, 이 지방에서 생산된 이 무늬의 숄이 유명해져서 붙여진 이름이다.
+
+인명 
+ 밥 페이즐리: 잉글랜드의 축구 선수이자 감독
+ 이언 페이즐리: 북아일랜드의 프로테스탄트계 정치인
+ 브래드 페이즐리: 미국의 싱어송라이터
+ 킴벌리 윌리엄스 페이즐리: 미국의 배우"
+2,인드라 랄 로이는 첫 격추를 언제 기록했나요?,1918년 7월 6일,1918년 7월 6일.,0.9949184656143188,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 행적 
+오봉 원년(기원전 57년), 누후(蔞侯)에 봉해졌다.
+
+누안후 3년(기원전 55년)에 죽으니 시호를 안이라 하였고, 작위는 아들 유유가 이었다.
+
+출전 
+ 반고, 《한서》 권15상 왕자후표 上
+
+생년 미상
+기원전 55년 사망
+기원전 1세기 중국 사람 Title: 인드라 랄 로이 Text:인드라 랄 로이(, , 1898년 12월 2일 ~ 1918년 7월 22일)는 인도 출신의 영국의 파일럿이다. 1898년 콜카타에서 출생, 영국 유학을 하다가 1917년 영국 왕실 공군에 입대했다.
+
+[Passage Chunk 2]
+passage: 제1차 세계 대전 이 일어나자 제40 전투 비행대에 발령되었고, 1918년 7월 6일 첫 격추를 기록하였다. 그 후 로이는 총 10기의 독일 전투기를 격추시켰다. 1918년 7월 22일 공중전 도중 독일 전투기의 공격을 받아 19세의 나이로 사망하였다.
+
+방글라데시의 군인
+방글라데시의 제1차 세계 대전 참전 군인
+1898년 출생
+1918년 사망
+작전 중 사망자 Title: 장종패 Text:장종패(蔣宗霸, 생몰년 미상)는 오대십국시대 후량의 인물로 명주(明州) 봉화(奉化) 출신이자 북송의 금자광록대부를 지낸 장준명의 조부이다.
+
+[Passage Chunk 3]
+passage: 분로쿠 원년(1592년), 아이즈 번의 초대 번주인 가토 요시아키의 맏아들로 태어났다. 간에이 8년(1631년), 아버지가 사망하자 그 뒤를 이어 아이즈 번 40만 석 영지를 상속받았다. 간에이 16년(1639년), 지진으로 무너진 7층짜리 쓰루가 성 천수각을 5층으로 고쳐 수리하고 성을 크게 보수하고 확충하였다. 하지만 이때 막부의 법령을 무시하고, 영내에 무거운 세금을 부과하였다. 또 어리석고 통솔력이 부족하여 가신들과 대립하였는데, 결국 중신 호리 몬도와 불화를 빚으면서, 호리 일족과 가신들이 무장을 하고 성을 이탈하여 쓰루가 성을 향해 총격을 가하고, 막부에 아키나리의 비행을 호소하는 사건이 발생한다. 아키나리는 호리 일당을 추적하여 처형하였으나, 이 일로 막부의 문책을 받아 영지를 몰수당했다. 그"
+2,《Bel Air》 음반의 발매 연도는 무엇인가요?,2011년,2011년.,0.9908392429351807,CORRECT,The generated answer matches the actual answer exactly in content and meaning.,"
+
+[Passage Chunk 1]
+passage: 기념일 
+ 독립기념일: 1960년 프랑스로부터의 독립을 기념하는 날, 니제르
+
+같이 보기 
+
+ 전날: 8월 2일 다음날: 8월 4일 - 전달: 7월 3일 다음달: 9월 3일
+ 음력: 8월 3일
+ 모두 보기 Title: Bel Air (음반) Text:《Bel Air》는 2011년 4월 1일에 발매된 구아노 에입스의 음반이다. 컬럼비아 레코드에 의해 발매되었다.
+
+곡 목록
+
+평가
+
+각주 
+
+2011년 음반
+컬럼비아 레코드 음반 Title: Catfish Rising Text:《Catfish Rising》는 1991년 9월 10일에 발매된 제쓰로 툴의 음반이다. 크리설리스 레코드에 의해 발매되었다.
+
+곡 목록
+
+평가
+
+각주
+
+[Passage Chunk 2]
+passage: 음악에 재잘거리는 마약 중독자들이었어요. 이 음반은 발매 후 6주 이내에 100만장 이상이 팔릴 것이지만, 2014년 페리는 이 음반을 ""끝의 시작""과 ""우리 예술성의 붕괴""라고 불렀습니다...""
+
+[Passage Chunk 3]
+passage: 곡 목록
+
+각주
+
+외부 링크 
+ 
+
+1977년 음반
+에어로스미스의 음반
+컬럼비아 레코드 음반 Title: Pearl (음반) Text:《Pearl》은 1971년 1월에 사후에 발매된 재니스 조플린의 두 번째이자 마지막 솔로 스튜디오 음반이다. 그녀의 직접 참여가 담긴 마지막 음반이었고, 그녀의 마지막 투어 유닛인 풀 틸트 부기 밴드로 녹음된 유일한 조플린 음반이었다. 이 음반은 9주 동안 그 자리를 지킨 빌보드 200에서 1위를 차지했고, 미국 음반 산업 협회에 의해 4배 플래티넘 인증을 받았다."
+2,프로게이머 루트는 2018년 어느 팀에 입단했나요?,다크 패시지,루트는 2018년 다크 패시지에 입단했습니다.,0.8831635117530823,CORRECT,"The generated answer correctly identifies the team ""다크 패시지"" that 루트 joined in 2018.","
+
+[Passage Chunk 1]
+passage: 이탈리아의 통일 이후 피렌체의 도심을 개선하는 중에 이 로자는 해체되어 산마르코 박물관을 장식하는데 대부분 쓰였다. 1956년에 본래의 재료들을 대부분 사용하여 치옴피 광장에 재건되었다.
+
+참고 자료 
+
+ 
+
+피렌체의 건축물
+피렌체의 르네상스 건축물 Title: 루트 (프로게이머) Text:루트(, 1999년 1월 5일 ~ )는 대한민국의 리그 오브 레전드 프로게이머로 아이디는 Route이다. 포지션은 AD 캐리이다.
+
+선수 생활 
+2016년 5월 25일, 챌린저스의 버튜어소 게이밍에 입단하면서 프로 커리어를 시작했다. 2016년 7월 24일, 팀에서 퇴단했다.
+
+2017년 4월, APK 프린스에 입단했다. 서머 시즌 팀의 주전 원딜러로 활동했다. 하지만 2018 스프링 시즌에서는 출전하지 못했다.
+
+[Passage Chunk 2]
+passage: 2017년 4월, APK 프린스에 입단했다. 서머 시즌 팀의 주전 원딜러로 활동했다. 하지만 2018 스프링 시즌에서는 출전하지 못했다.
+
+2018년 5월, 터키의 다크 패시지에 입단했다.
+
+2018년 8월, 갈락티코스에 입단했다.
+
+2019시즌을 앞두고 진에어 그린윙스에 입단했다. 진에어에서는 팀이 추락하는 와중에서도 좋은 모습을 보여주었다.
+
+2020시즌을 앞두고 샌드박스 게이밍에 입단했다. 스프링 시즌 초반에는 레오의 백업 선수로 활동했으나 점차 주전 원딜러로 발돋움하였다. 팀이 승강전으로 내려가자 출전하여 팀의 잔류에 공헌했다. 서머 시즌에서도 팀의 주전 원딜러로 활동했다.
+
+[Passage Chunk 3]
+passage: 대한민국의 남자 배우
+대한민국의 남자 희극인
+대한민국의 남자 배우
+대한민국의 남자 희극인
+대한민국의 남자 영화 배우
+대한민국의 남자 텔레비전 배우
+20세기 대한민국 사람
+21세기 대한민국 사람
+살아있는 사람 Title: 남승현 Text:남승현(1989년 10월 5일 ~ )은 대한민국의 전직 스타크래프트 프로게이머이다. Suny[gm]라는 아이디를 사용하며, 종족은 테란으로, KT 롤스터 소속이었다.
+
+2006년 하반기 드래프트에서 이네이쳐 탑(현 이스트로)의 추천선수로 입단하였다.
+
+2009년 12월 9일 KT 롤스터로 이적하였다. 출전은 뜸하지만, 매일같이 선수들의 연습을 도와주며, 간접적으로 팀의 성적에 보탬이 되었다."
+2,박경재는 어느 해에 서울 지방검찰청 검사를 시작했나요?,1973년,1973년.,0.9906529188156128,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 같이 보기 
+ 밀양 표충사 삼층석탑 - 보물 제467호
+
+각주
+
+참고 자료 
+ 
+
+경상남도의 보물
+삼층석탑 출토 유물 일괄 Title: 박경재 (법조인) Text:박경재(朴慶宰,  ~ )는 대한민국의 검사 출신이며 현재 변호사이자 변리사이다.
+
+주요 이력
+
+학력 
+ 미국 펜실베이니아 대학교 법과대학원 법학석사
+ 미국 조지 워싱턴 대학교 대학원 법학과 법학석사
+ 서울대학교 행정대학원 행정학 석사
+ 서울대학교 법학 학사
+ 경기고등학교 졸업
+ 경기중학교 졸업
+ 청운초등학교 졸업
+
+[Passage Chunk 2]
+passage: 1972년 12월 27일 공포된 유신헌법에 의해 대법원의 위헌심판권과 탄핵심판위원회가 폐지되고, 헌법위원회가 설치되었다. 그러나 유신파동의 재발을 막기 위해 헌법위원회법에서는 대법원에 합헌결정권을 부여해 고등법원이나 지방법원이 위헌법률심판을 제청하려고 해도 대법원에서 이를 필요없다고 생각하는 경우 위헌법률심판을 제기하지 않을 수 있도록 했다. 또 1971년 위헌 판결을 낳은 국가배상법의 위헌 시비를 막기 위해 헌법 조문에 군인과 경찰에 대한 배상 제한을 명시했다. 그리고 1973년 3월 24일 유신헌법에 따라 전국 법관들의 보직 개편이 이뤄지면서 1971년 당시 대법원이 위헌심판권을 아직 보유하고 있었던 시절 위헌 판결을 내렸던 판사 9명(방순원, 손동욱, 김치걸, 사광욱, 양회경, 나향윤, 홍남표,
+
+[Passage Chunk 3]
+passage: 경력 
+ 1996.01 ~ 1996.12 KBS 객원 해설위원
+ 1995.01 ~ 1995.10 동아일보 객원 편집위원
+ 1983.06 미국상사중재협회 중재위원
+ 1982.08 ~ 북촌 법률사무소 대표
+ 1981.04 ~ 1982.05 미국 베이건 앤드 맥켄지 법률사무소 변호사
+ 1978.06 ~ 1978.12 수원지방검찰청 검사
+ 1976.06 ~ 1978.06 제주지방검찰청 검사
+ 1973.07 ~ 1976.06 서울 지방검찰청 검사
+ 1970.03 ~ 1970.12 경제기획원 경제기획국 사무관
+ 1968.01 ~ 1970.02 한국은행 근무
+
+주요 작품"
+2,가시반디쿠트의 학명은 무엇인가요?,Echymipera kalubu,Echymipera kalubu,1.0,CORRECT,The generated answer matches the actual scientific name exactly.,"
+
+[Passage Chunk 1]
+passage: 같이 보기 
+ 따알 화산
+
+필리핀의 화산 분화
+2020년 필리핀
+2020년 자연재해
+2020년 1월 Title: 2087년 6월 1일 일식 Text:2087년 6월 1일 일식은 달이 지구와 태양 사이를 지나면서 태양의 일부를 가리는 부분일식이다. 지구가 달의 반그림자를 지날 때 일어난다.
+
+2087-06-01
+2087-06-01
+일식 2087-06-01 Title: 가시반디쿠트 Text:가시반디쿠트(학명: Echymipera kalubu, 영어: common spiny bandicoot)는 반디쿠트과에 속하는 유대류의 일종이다. 몸길이는 300mm와 400mm사이로 다양하며, 꼬리는 80~100mm정도이다. 몸무게는 600~2,000g이다. 가시반디쿠트는 뉴기니섬에서 서식한다.
+
+각주
+
+[Passage Chunk 2]
+passage: 분포 
+베넹과 카메룬, 콩고, 콩고민주공화국, 코트디부아르, 적도기니, 가봉, 가나, 기니, 라이베리아, 나이지리아, 시에라리온에서 발견할 수 있다.
+
+서식지 
+자연 서식지는 아열대 또는 열대 기후 지역의 습유 저지대 숲과 플랜테이션이다.
+
+각주 
+
+다람쥐과
+1830년 기재된 포유류 Title: 클레어몬트 맥케나 칼리지 Text:클레어몬트 맥케나 칼리지()는 미국 캘리포니아주 로스앤젤레스군 클레어몬트에 있는 사립 리버럴 아츠 칼리지다. 클레어몬트 칼리지 소속으로, 경제학과 금융학, 국제관계론, 정책학을 특성화한 과정을 제공한다. 캘리포니아주의 다른 대학들과 달리 정치적으로 보수 성향이다.
+
+[Passage Chunk 3]
+passage: 각주 
+
+반디쿠트목
+1829년 기재된 포유류 Title: 고덕동 Text:고덕동(高德洞)은 대한민국 서울특별시 강동구에 위치한 법정동이다.
+
+개요 
+고덕이라는 지명은 고려말 형조참의를 지낸 이양중(李養中)이 조선 태조 이성계의 조선 건국을 반대하여 이곳에 와서 숨어 살면서 벼슬 제의도 거절하는 굳은 절개를 지켜 주위로부터 ""덕이 높은 인물""로 추앙을 받는데서 비롯되었고 전해진다. 한편 일설에는 조선시대 기록된 바 고다지동(古多只洞) 또는 '고더기'라는 옛지명이 원래 이름이며 음운이 변하여 고덕동으로 쓰인 것이라고도 한다."
+2,SOS 해상 구조대에서 데이비드 해셀호프가 맡은 역할의 이름은 무엇인가요?,미치 뷰캐넌,미치 뷰캐넌,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 데이비드 해셀호프 - 미치 뷰캐넌
+ 파커 스티븐슨 - 크레이그 포머로이
+ 숀 웨덜리 - 질 라일리
+ 빌리 워록 - 에디 크레이머
+ 에리카 일레니액 - 쇼니 매클레인
+ 피터 펠프스 - 트레버 콜
+ 브랜던 콜 - 호비 뷰캐넌
+ 홀리 가니에이 - 지나 포머로이
+ 몬티 마컴 - 돈 소프
+ 존 앨런 넬슨 - 존 D. 코트
+ 그레고리 앨런 윌리엄스 - 가너 엘러비
+ 제러미 잭슨 - 호비 뷰캐넌
+ 톰 맥티그 - 하비 밀러
+ 리처드 재컬 - 벤 에드워즈
+ 니콜 에거트 - 서머 퀸
+ 다비드 샤르베 - 맷 브로디
+ 패멀라 앤더슨 - C. J. 파커
+ 켈리 슬레이터 - 지미 슬레이드
+ 알렉산드라 폴 - 스테퍼니 홀든
+ 야스민 블리스 - 캐럴라인 홀든
+ 제이슨 시먼스 - 로건 파울러
+ 데이비드 초카치 - 코디 매디슨
+
+[Passage Chunk 2]
+passage: 알렉산드라 폴 - 스테퍼니 홀든
+ 야스민 블리스 - 캐럴라인 홀든
+ 제이슨 시먼스 - 로건 파울러
+ 데이비드 초카치 - 코디 매디슨
+ 지나 리 놀린 - 닐리 캡쇼
+ 도나 데리코 - 도나 마코
+ 호세 솔라노 - 매니 구티에레스
+ 트레이시 빙햄 - 조던 테이트
+ 낸시 발렌 - 서맨사 토머스
+ 마이클 뉴먼 - 마이클 뉴먼
+ 카먼 일렉트라 - 라니 매켄지
+ 켈리 패커드 - 에이프릴 지민스키
+ 마이클 버긴 - J. D. 데리어스
+ 앤절리카 브리지스 - 테일러 월시
+ 말리스 앤드라다 - 스카일러 버그먼
+ 미치 캡처 - 앨릭스 라이커
+ 브룩 번스 - 제시 오언스
+
+[Passage Chunk 3]
+passage: Title: 4기 맥심배 입신연승최강전 Text:4기 맥심배 입신연승최강전은 TV 속기전이 참가한 9단(입신)만을 대상으로 대결한 국내 바둑 기전이다. 결승에서는 중국 출신 부부기사 대결로 장주주 九단이 루이나이웨이 九단을 2대 0로 역전 우승을 차지했다.
+
+참가자격
+ 한국기원 소속 전문기사(9단만이 참가)
+
+대진표
+
+결선 및 최종 결승전
+
+대국 결과
+
+특이 사항
+
+ 
+04
+2002년 바둑 Title: SOS 해상 구조대 Text:《SOS 해상 구조대》()는 1989년부터 2001년까지 방영된 TV 드라마이다.
+
+출연진"
+2,골변연을 다른 단어로 표현하면 무엇인가요?,리핑(lipping),리핑(lipping),0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 1998년 아시안 게임 메달리스트
+2002년 아시안 게임 메달리스트
+대한민국의 유니버시아드 은메달리스트
+유니버시아드 탁구 메달리스트
+20세기 대한민국 사람
+21세기 대한민국 사람 Title: 리핑 (동음이의) Text:리핑은 다음을 의미한다.
+ 리핑(ripping): 컨테이너의 디지털 콘텐츠 중 일부 또는 전체를 추출하는 과정
+ 리핑(lipping): 골변연
+ 리핑(reaping): 수확
+ 리핑(leaping): 도약
+ 리핑: 10개의 재앙(The Reaping)
+
+[Passage Chunk 2]
+passage: 인접 역 
+
+큐슈여객철도의 철도역
+가라쓰시의 철도역
+1898년 개업한 철도역
+일본국유철도의 철도역 Title: 전새류 Text:전새류(前鰓類, Prosobranchia) 또는 고둥류는 연체동물문 복족류 분류군의 하나이다. 아가미가 심장보다 앞에 있는 복족류의 총칭으로 아가미가 심장 뒷쪽에 위치하는 후새류(後鰓類, Opisthobranchia)와 대비되는 분류군이다. 이전에는 복족강의 하위 아강으로 취급하여 전새아강(前鰓亞綱)으로 분류했지만, 현재는 분기분류학적으로 다계통군으로 간주하여, 하나의 통일된 분류군으로 간주하지 않는다.
+
+각주 
+
+복족류 Title: 조수원 (희극인) Text:조수원(1979년 10월 7일 ~ )은 대한민국의 희극 배우이다.
+
+[Passage Chunk 3]
+passage: 각주 
+
+물쥐족
+1933년 기재된 포유류 Title: 스키드 Text:스키드(skid)는 다음과 같은 뜻이 있다.
+ 스키드: 파렛트의 일종
+ 스키드: 썰매를 타는 사람
+ 스키드: 무한궤도가 있는 차량
+ 스키드: 스크립트 키디의 별명 Title: 안미쓰 Text:안미쓰()는 팥과 흑설탕을 이용하여 만든 일본의 디저트이다.
+
+일본의 후식
+화과자 Title: 애틀랜타 Text:애틀랜타(Atlanta, )는 미국 동남부 조지아주의 주도이자 2021년 미국 센서스국의 ACS 설문조사 결과 기준 도시 내 인구 498,715명, 광역권 인구 6,144,050명으로 미국 내에서 9번째로 규모가 큰 광역도시권의 중심 도시이다."
+2,밴드 콘은 첫 대형 공연에서 어떤 밴드의 오프닝으로 무대에 섰어?,단지그(Danzig),단지그(Danzig),0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 그들은 단지그(Danzig)의 오픈 밴드로서 첫 번째 대형 공연을 하게 되었다. 1995년 동안 메가데스(Megadeth), 311, 피어 팩토리(Fear Factory), 플롯섬 앤 젯섬(Flotsam and Jetsam), KMFDM 등과 함께 공연하였다. 콘의 이름을 가장 많이 알린 공연은 데프톤즈(Deftones)와 함께한 오지 오즈번(Ozzy Osbourne)의 투어였다.
+
+콘은 이후에도 슈거 레이(Sugar Ray) 등과 공연을 펼친 후 두 번째 앨범 작업에 들어간다.
+
+뉴 메탈의 절정기(1996~2001)
+
+음악적 전환과 헤드의 탈퇴(2002~2006)
+
+'무제' 앨범과 데이비드 실버리아의 은퇴(2007~현재)
+
+[Passage Chunk 2]
+passage: 콘의 첫 번째 앨범은 헤비 메탈, 얼터너티브 록, 힙합, 펑크 등의 요소가 잘 결합되어 있다. 첫 번째 싱글로 발표된 Blind는 어느 정도 괜찮은 정도 전파를 탔다. 앨범을 발매한 후 그들은 방송의 도움 없이 공연만으로 자신들의 활동을 이어나갔다. 이들의 열정적인 라이브 공연은 이들을 숭배하는 헌신적인 팬 층을 만들어냈다. 이러한 노력 끝에 콘의 데뷔 앨범은 빌보드 200 차트에 이름을 올릴 수 있었으며, Shoots and Ladders는 그래미 메탈 연주 부문 수상 후보까지 되었다.
+
+[Passage Chunk 3]
+passage: 출연
+
+주연 
+ 신영균
+ 윤정희
+
+외부 링크 
+
+1971년 영화
+대한민국의 영화 작품
+한국어 영화 작품 Title: 콘 (밴드) Text:콘(Korn 또는 KoЯn)은 뉴 메탈의 효시로 알려져 있는 미국 캘리포니아주 베이커즈필드 출신 밴드이다. 콘은 다른 밴드와 함께 1990년대 중반 ~ 2000년대 초반의 뉴 메탈, 얼터너티브 메탈의 인기에 지대한 공헌을 했다.
+
+뉴 메탈 팬이 아닌 사람들에게까지 큰 인기를 누리고 있는 대표곡 'Blind'를 비롯한 수많은 히트곡을 가지고 있는 콘은, 지금까지 미국에서만 2007년 6월 9일까지 1650만장 이상의 판매고를 기록 하고 있는 것은 물론, 그래미상에 6번 노미네이트되었으며, 2번 수상했다.
+
+연혁"
+2,황벽련은 어느 나라에서 태어났나요?,캐나다,캐나다,1.000000238418579,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+ 
+ 코버스 홈페이지 (천안 출발 고속버스 노선 예매)
+ 티머니 시외버스 통합예약시스템 (천안발 시외버스 노선 예매)
+
+1989년 설립
+충청남도의 버스 교통
+천안시의 교통
+천안시의 건축물
+동남구
+대한민국의 버스 터미널 Title: 황벽련 Text:황벽련(黃碧蓮, Linna Huynh, 1991년 1월 1일 ~ )은 중화인민공화국의 배우이다. TVB의 사회자로서 아동용 게임쇼 대지(天地)의 사회를 맡고 있다.
+
+밴쿠버에서 태어났다.
+
+경력
+
+모델 
+ 미스 차이니즈(溫哥華華裔小姐競選)
+
+영화 
+ 비욘드 리뎀션 (2016년)
+
+각주
+
+외부 링크 
+ 
+
+1991년 출생
+살아있는 사람
+캐나다의 여자 영화 배우
+홍콩의 텔레비전 진행자
+베트남계 홍콩인
+
+[Passage Chunk 2]
+passage: 2층 
+ 대통령 집무실
+ 대통령 작전실
+ 대통령 응접실
+ 부통령 응접실
+ 국서(國書) 제출실
+ 대통령 관저
+ 대통령 침실
+ 식당
+ 안뜰
+
+3층 
+ 대통령 부인 응접실
+ 도서실
+ 영사실
+ 게임 실
+ 헬리포트
+
+4층 
+ 댄스 룸
+ 바
+
+지하층 
+ 작전사령실(긴급용)
+ 대통령 침실(긴급용)
+ 사관실
+
+사진
+
+각주
+
+외부 링크 
+
+ 공식 웹사이트
+ 트래블 게릴라
+
+베트남의 궁전
+호찌민시의 박물관
+호찌민시의 역사
+대통령 관저
+1966년 완공된 건축물 Title: 린아 Text:린아(, 1984년 2월 18일 ~ )는 대한민국의 가수 겸 뮤지컬 배우이다. 원래는 이삭N지연이라는 여성 2인조 그룹으로 데뷔했다.
+
+학력 
+ 명지전문대학 실용음악학과 전문학사
+
+연기 활동
+
+[Passage Chunk 3]
+passage: 방송 활동 
+ KBS 《개그콘서트》
+ 〈나타나〉
+ 〈봉숭아학당〉 문교장 경호원 역
+ 〈당황스럽다〉
+
+1994년 출생
+인천광역시 출신
+대한민국의 희극인
+살아있는 사람 Title: 베아트릭스 포터 Text:베아트릭스 포터(, 1866년 7월 28일 ~ 1943년 12월 22일)는 영국의 아동문학 작가이자 일러스트 작가로, 평생 환경 보호에 헌신한 환경 운동가이기도 하다.
+
+포터는 영국 문학계의 살아있는 신화이자, 대표적인 아동 문학 작가로 기억되며, 지난 100년 동안 전 세계 1억 5천만부 이상 판매되며, 30개 언어로 번역된 동화의 《피터 래빗》 작가로 유명하다. 피터 래빗의 캐릭터는 20세기는 물론 21세기에도 아이들의 사랑을 받고 있다."
+2,"""노주현, 문희, 이낙훈, 사미자, 강민호, 방인자 등이 출연한 영화는 몇 년에 개봉되었나요?""",1971년,1971년,0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 그래프족 Title: 말썽난 총각 Text:""말썽난 총각""은 1971년 공개된 대한민국의 영화이다.
+
+배역 
+ 노주현
+ 문희
+ 김지미
+ 박암
+ 이낙훈
+ 황정순
+ 사미자
+ 안인숙
+ 백일섭
+ 한성
+ 강민호
+ 김창숙
+ 방인자
+ 윤희
+ 김로사
+ 이동민
+
+외부 링크 
+
+한국어 영화 작품
+1971년 영화
+대한민국의 영화 작품 Title: 미드나잇 선 (2018년 영화) Text:미드나잇 선(Midnight Sun)은 스콧 스피어 감독의 2018년 미국의 로맨스 영화이다.
+
+출연
+
+주연 
+ 벨라 손
+ 패트릭 슈왈제네거
+
+조연 
+ 롭 리글
+ 퀸 쉐퍼드
+ 니콜라스 쿰베
+ 켄 트렘블렛
+ 젠 그리핀
+ 티에라 스코브예
+ 폴 맥길리언
+
+[Passage Chunk 2]
+passage: 각주 
+
+대한민국의 배우
+살아있는 사람
+20세기 대한민국 사람
+21세기 대한민국 사람 Title: 집행자 (1963년 영화) Text:《집행자》(The Executioner)는 스페인, 이탈리아에서 제작된 루이스 가르시아 베를란가 감독의 1963년 드라마, 코미디 영화이다. 니노 만프레디 등이 주연으로 출연하였다. 스페인의 영화 중 걸작 가운데 하나로 널리 간주된다.
+
+출연
+
+주연 
+ 니노 만프레디
+ 엠마 페넬라
+
+[Passage Chunk 3]
+passage: 2010-2019 
+시바는 현대 타밀 영화 의 장편 패러디 인 타밀어 파담 (2010)에 출연했으며 그의 연기는 극찬을 받았다. 그의 코미디 Va 쿼터 커팅 은 평균적인 수익을 올렸다. 그의 2011년 첫 개봉작은 그의 첫 논코미디 벤처인 오랫동안 연기된 로맨틱 드라마 파티나루 가 되었다. 이 기간 동안 그는 라마 나라야난의 시바 푸자일 카라디라는 또 다른 코미디 영화를 완성했지만 영화는 개봉되지 않았다."
+2,문맥에서 스테판 루가 작화를 담당한 작품을 모두 말하시오.,"위치블레이드, 버즈 오브 프레이, 할리 퀸","위치블레이드, 버즈 오브 프레이, 할리 퀸",0.9999998807907104,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+
+ 
+
+1851년 설립
+지리학 학회
+뉴욕의 단체
+미국의 과학 학회
+미국의 학회 Title: 서울신은초등학교 Text:서울신은초등학교는 서울특별시 양천구 신정3동에 위치한 공립 초등학교다.
+
+학교 연혁 
+ 2011년 9월 1일: ‘서울신은초등학교’ 설립 인가
+ 2011년 10월 28일: 서울신은초등학교 개교
+
+각주
+
+외부 링크 
+ 
+
+2011년 개교
+서울 양천구의 초등학교
+혁신학교 Title: 스테판 루 Text:스테판 루()는 프랑스의 만화가이다. 《위치블레이드》, 《버즈 오브 프레이》, 《할리 퀸》 등의 작화를 담당했다.
+
+외부 링크
+
+[Passage Chunk 2]
+passage: -실망disappointment: (사소한)실망을 가져오는 상황
+ -기이함eccentricity: 규범에서 벗어나는 사람, 이상한 등장 인물
+ -당혹스러움embarrassment: 누군가 불편함이나 창피함을 느끼게 되는 어색한 상황
+ -과장exaggeration: 과장된 말, 과장된 반응, 어떤 사람이나 사물의 질을 과장함
+ -기괴한 외양grotesque appearance : 놀라운 특성을 지닌, 이상하거나 괴물 같은 외양을 가진 사람
+ -무지ignorance: 어리석고 순진하여 속기 쉬운, 유치하게 행동하는 사람
+ -모방imitation: 정체성을 유지하면서 어떤 사람의 모습이나 움직임을 따라 함
+ -분장impersonation: 의도적이든 비의도적이든, 다른 사람의 정체성을 지님
+
+[Passage Chunk 3]
+passage: 덴마크계 미국인
+미국의 여자 연극 배우
+미국의 여자 텔레비전 배우
+유타주 출신 작가 Title: 함재묘 Text:함재묘(艦在猫, )는 대형 선박(상선, 탐험선, 군함 등)에 태우는 고양이이다. 고양이를 배에 태우는 행위의 역사는 고대로까지 거슬러 올라간다. 고양이가 선박에 동승하는 이유는 여러 가지가 있었지만, 가장 중요한 이유는 쥐를 잡기 위함이었다. 배에 기어들어온 쥐는 밧줄과 목재를 갉았고, 기술이 진보한 뒤에는 전선을 갉아 파손했다. 또 배에 싣고 있는 화물에 피해를 끼칠 가능성도 농후하다. 승조원들이 먹을 식량을 축내고, 화물이 식품일 경우 이마저 축내 경제적 손실을 발생시킬 수 있다. 또한 쥐는 여러 질병의 중간숙주로, 오랜 세월에 걸쳐 뱃일이 위험했던 데는 쥐가 매개하는 질병의 영향이 컸다."
+2,어떤 집단이 야요이인이 되었나요?,대륙 지역에서 유래한 여러 집단,야요이인은 대륙 지역에서 유래한 여러 집단.,0.9323776960372925,CORRECT,The generated answer matches the actual answer in meaning and content.,"
+
+[Passage Chunk 1]
+passage: 2008년 결성된 음악 그룹
+대한민국의 록 밴드
+대한민국의 포스트 록 밴드
+SPACE 공감 헬로 루키
+한국대중음악상 수상 음악가 Title: 야요이인 Text:야요이인(弥生人)은 야요이 시대의 사람들로서, 대륙 지역에서 유래한 여러 집단이 야요이인이 되었고, 그들이 야요이시대를 열었다고 한다.
+
+각주
+
+같이 보기 
+ 일본인
+ 도래인
+ 왜인
+ 서복
+ 신석기 시대
+ 벼
+ 반도 일본어
+
+야요이 시대
+일본의 고고학
+일본의 선사 시대
+일본의 고대인 Title: 여륭 Text:여륭(呂隆, ? ~ 416년, 재위：401년 ~ 403년)은 중국 오호 십육국 시대 후량(後凉)의 4대 천왕이자 마지막 군주이다. 시호는 없다.
+
+[Passage Chunk 2]
+passage: 사민된 후슈 
+7세기에서 9세기까지 야마토(大和) 조정과 에미시 사이에 벌어진 전쟁에서, 항복 혹은 귀순한 에미시의 남녀 집단을 야마토 조정은 자국 영내(규슈 지역 및 그 인근)로 사민시키는 강제 이주 정책을 행했다. 조정은 후슈가 사민된 지역의 고쿠시(国司)에게 후슈의 통치를 겸임시켜 그들의 감독과 교화 ・ 보호양육을 맡긴다. 후슈는 사민된 곳에서 정착해 생계가 해결될 때까지 후슈료(俘囚料)라는 명목으로 고쿠시로부터 식량을 지급받았고 용(庸) ・ 조(調)의 세금이 면제되었다. 그러나 후슈들 대부분이 사민된 띵에서 제대로 정착하지 못했기에 후슈료의 지급은 계속됐다.
+
+[Passage Chunk 3]
+passage: 일본 조정의 도호쿠 지방으로의 영토 확장에 따라 후슈로 편입된 자들과, 포로가 되어 일본 영내로 강제이주된 자들이 있었다. 또한 주로 제2차 세계대전 당시 전쟁포로의 신분이 된 자들도 후슈라 불렸다."
+2,more 보다 더 많은 기능을 제공하는 유닉스 계열의 페이저 명령어는 무엇인가요?,less,less,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: IBM 개인용 컴퓨터
+OS/2 Title: More (명령어) Text:명령 프롬프트에서 more는 텍스트 파일의 내용을 한 번에 한 화면씩 보여주기 위한 명령어이다.(터미널 페이저). 이 명령어는 유닉스와 유닉스 계통 시스템, 도스, OS/2, 그리고 윈도우에서 사용된다. 이러한 종류의 프로그램은 페이저라고 불린다. more는 매우 기본적인 페이저로서, 원래는 파일의 앞방향으로 밖에 움직일 수 없지만, 새로운 구현체는 뒷방향으로 움직이는 기능을 제한적으로 제공하고 있다.
+
+[Passage Chunk 2]
+passage: 역사 
+more 명령어는 원래 캘리포니아 대학교 버클리 졸업생인 다니엘 할버트(Daniel Halbert)가 1978년에 작성한 것이다. 이것은 3.0 BSD에 최초로 포함된 이래로 모든 유닉스 시스템에서 표준 프로그램으로 사용되고 있다. 이와 비슷한 명령어인 less는 파일의 앞 방향만이 아닌 앞뒤 방향 모두로 움직일 수 있는 확장된 기능을 제공하는데 1983-85년에 마크(Mark Nudelman)가 작성한 것으로, 현재는 거의 모든 유닉스, 유닉스 계통 시스템에 포함되어 있다.
+
+사용법
+
+유닉스 
+명령문은 다음과 같다:
+
+ more [옵션] [파일 이름]
+
+만약 파일 이름이 주어지지 않는다면 more는 표준 입력으로부터 입력값을 찾는다.
+
+[Passage Chunk 3]
+passage: 다른 명령어들도 문서를 진행시키는 데에 사용될 수 있다. 더 자세한 사항은 more의 매뉴얼 페이지를 참고하라.
+
+옵션 
+옵션들은 일반적으로 파일 이름 앞에 들어가는데, $MORE와 같이 환경 변수안에 들어갈 수도 있다. 실제 명령행 내에 쓰인 옵션은 $MORE 환경 변수 안에 들어간 옵션들보다 우위를 지닌다. 옵션들은 유닉스 시스템에 따라 달라질 수 있지만 일반적인 옵션들은 다음과 같다:"
+2,'maimai'는 어떤 회사의 게임 이름인가요?,세가,세가.,0.9784451127052307,CORRECT,The generated answer correctly identifies '세가' as the company for the game 'maimai'.,"
+
+[Passage Chunk 1]
+passage: 외부 링크 
+
+  도쿄 지하철
+
+2004년 설립된 기업
+도쿄도의 기업
+
+일본의 공기업
+우에노
+일본의 철도 기업 Title: 립서비스 Text:립서비스()는 말로 비위를 맞추는 것을 의미하며, 다른 뜻으로는 다음이 있다.
+
+ 립서비스 (음악 그룹)
+ 립서비스 (드라마)
+ Lipservice: 고타르의 음반
+
+같이 보기 Title: 마이마이 (동음이의) Text:마이마이의 다른 뜻은 다음과 같다.
+
+ 마이마이: 삼성전자의 제품
+ 마이마이 (언어): 소말리아의 방언
+ maimai: 세가의 게임
+ MY MY: 에이핑크의 미니 앨범 Snow Pink 수록곡
+
+[Passage Chunk 2]
+passage: 외부 링크 
+ 
+ 
+
+1978년 영화
+프랑스어 영화 작품
+프랑스의 영화 작품
+프랑스의 범죄 드라마 영화
+캐나다의 영화 작품
+실화를 바탕으로 한 범죄 영화
+1930년대를 배경으로 한 영화
+클로드 샤브롤 감독 영화
+범죄인 전기 영화 Title: 쓰키시마섬 Text:쓰키시마섬()은 일본 도쿄도 주오구에 있는 섬이다. 1892년 도쿄만 매립 계획에 따라 생긴 인공섬이다. 쓰키시마섬은 몬자야키의 본고장이기도 하다.
+
+주오구 (도쿄도)의 지리
+도쿄도의 섬
+일본의 인공섬
+주오구 (도쿄도)의 정명 Title: 얼룩말곰치 Text:얼룩말곰치(zebra moray)는 곰치과 얼룩말곰치속()의 유일종이다. 몸길이는 최대 150 cm까지 자라지만 평균 크기는 50 cm 정도이다. 학명은 김노무라에나 제브라().
+
+[Passage Chunk 3]
+passage: 외부 링크 
+ 
+
+1970년 출생
+살아있는 사람
+일본의 남자 축구 선수
+J1리그의 축구 선수
+J2리그의 축구 선수
+재팬 풋볼 리그의 축구 선수
+사간 도스의 축구 선수
+제프 유나이티드 이치하라 지바의 축구 선수
+가시마 앤틀러스의 축구 선수
+오이타 트리니타의 축구 선수
+나고야 그램퍼스의 축구 선수
+남자 축구 골키퍼
+일본체육대학 동문
+후쿠오카현의 축구 선수 Title: 도쿄 지하철 (기업) Text:도쿄 지하철 주식회사(, )는 일본의 지하철을 운영하는 법인 중 하나이다. 애칭은 도쿄 메트로()이다. 주로 도쿄 내를 운행하는 지하철 노선을 운영한다.
+
+종래의 제도고속도교통영단()를 전신으로 2004년 4월 1일에 일본 정부와 도쿄도가 출자하는 특수 회사로서 발족했다."
+2,송도항이 위치한 도시의 이름을 전부 말하시오.,"사천시, 창원시, 통영시, 신안군, 여수시, 진도군","사천시, 창원시, 통영시, 신안군, 여수시, 진도군.",0.9983507394790649,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 바하마의 구 Title: 송도항 Text:송도항은 다음을 가리키는 말이다.
+
+ 송도항은 경상남도 사천시 서포면 비토리에 있는 어촌정주어항이다.
+ 송도항은 경상남도 창원시 진동면 진동리(섬)에 있는 소규모 어항이다. 
+ 송도항은 경상남도 통영시 산양읍 저림리 송도마을(섬)에 있는 소규모 어항이다. 
+ 송도항은 전라남도 신안군 지도읍 읍내 3구에 있는 지방어항이다.
+ 송도항은 전라남도 여수시 율촌면 여동리(섬)에 있는 소규모 어항이다.
+ 송도항은 전라남도 진도군 조도면 가사리(섬)에 있는 소규모 어항이다.
+
+같이 보기 Title: 시로이시시 Text:시로이시시()는 일본 미야기현 최남단, 자오 연봉의 기슭에 위치하는 시이다.
+
+[Passage Chunk 2]
+passage: 같이 보기 
+ 산지 생태계
+
+산맥
+지형 Title: 서플라이급 고속 전투 지원함 Text:서플라이급 고속 전투 지원함(Supply class fast combat support ship)은 미국 해군의 대형 군수 지원함이다. 세계 최대 크기의 연료 보급함이며 미 함대의 연료 보급을 책임지고 있다.
+
+같이 보기 
+ 마슈급 보급함
+ 헨리 J 카이저급 급유함
+ 도와다급 보급함
+ 천지급 군수지원함
+ 웨이브급 급유함
+ 903형 종합 보급함
+
+미국 해군 Title: 센트럴아바코 Text:센트럴아바코()는 바하마의 구로 아바코 제도에 위치한다.
+
+바하마의 구 Title: 송도항 Text:송도항은 다음을 가리키는 말이다.
+
+[Passage Chunk 3]
+passage: 티쩐
+ 떤뜩 (Tân Túc / 新足)
+
+싸
+ 안푸터이 (An Phú Tây / 安富西)
+ 빈짜인 (Bình Chánh / 平政)
+ 빈흥 (Bình Hưng / 平興)
+ 빈러이 (Bình Lợi / 平利)
+ 다프억 (Đa Phước / 多福)
+ 흥롱 (Hưng Long / 興隆)
+ 레민쑤언 (Lê Minh Xuân / 黎明春)
+ 팜반하이 (Phạm Văn Hai / 范文𠄩)
+ 퐁푸 (Phong Phú / 豐富)
+ 꾸이득 (Quy Đức / 歸德)
+ 떤끼엔 (Tân Kiên / 新堅)
+ 떤늇 (Tân Nhựt / 新日)
+ 떤꾸이떠이 (Tân Quý Tây / 新貴西)
+ 빈록 A (Vĩnh Lộc A / 永祿A)
+ 빈록 B (Vĩnh Lộc B / 永祿B)
+
+각주
+
+외부 링크 
+
+ 빈짜인현"
+2,박진우가 NC 다이노스에서 9승을 기록한 시즌은 언제인가요?,2019년 시즌,2019년입니다.,0.9347869753837585,CORRECT,Both answers state that the season was 2019.,"
+
+[Passage Chunk 1]
+passage: 기타 
+키가 철이에 비해서 장신이라 차이가 나보이기도 한다.
+
+각주 
+
+은하철도 999
+만화 등장인물 Title: 박진우 (야구인) Text:박진우(朴晋佑, 1990년 2월 12일 ~ )는 전 KBO 리그 NC 다이노스의 투수이자, 현 KBO 리그 SSG 랜더스의 스카우트이다.
+
+선수 시절
+
+NC 다이노스 시절
+2013년에 육성선수로 입단했다.
+
+2015년 시즌
+5월 31일 KIA 타이거즈와의 경기에서 구원 등판하며 데뷔 첫 경기를 치렀고, 경기에서 3이닝 2피안타, 1탈삼진, 1볼넷으로 호투하며 데뷔 첫 경기에서 첫 승을 기록했다.
+
+두산 베어스 시절
+2016년 KBO 리그 2차 드래프트를 통해 이적했다.
+
+경찰 야구단 시절
+2017년에 입단하였다.
+
+[Passage Chunk 2]
+passage: 두산 베어스 시절
+2016년 KBO 리그 2차 드래프트를 통해 이적했다.
+
+경찰 야구단 시절
+2017년에 입단하였다.
+
+NC 다이노스 복귀
+2018년 KBO 리그 2차 드래프트를 통해 복귀하였다. 복무 중 지명돼 전역 후 활동하기 시작했다.
+
+2019년 시즌
+선발과 불펜을 가리지 않고 활약했다. 시즌 140.2이닝 3점대 평균자책점, 92탈삼진, 9승 7패, 5홀드를 기록했다. 이동욱 감독은 ""가장 MVP로 꼽고 싶은 선수""라며 칭찬했다.
+
+2020년 시즌
+시즌 43경기에 등판해 2승 2패, 7홀드, 5점대 평균자책점을 기록했다.
+
+2021년 시즌
+시즌 9경기에 등판해 1홀드, 1점대 평균자책점을 기록했다. 2021년 11월에 방출됐다.
+
+[Passage Chunk 3]
+passage: 2021년 시즌
+시즌 9경기에 등판해 1홀드, 1점대 평균자책점을 기록했다. 2021년 11월에 방출됐다.
+
+야구선수 은퇴 후
+2022년부터 SSG 랜더스의 스카우트로 활동한다.
+
+출신 학교 
+ 남부민초등학교
+ 대신중학교
+ 부경고등학교
+ 건국대학교
+
+통산 기록
+
+각주
+
+외부 링크 
+ 
+
+1990년 출생
+살아있는 사람
+대한민국의 야구 선수
+부산광역시 출신
+KBO 리그 투수
+NC 다이노스 선수
+두산 베어스 선수
+경찰 야구단 선수
+남부민초등학교 동문
+부산대신중학교 동문
+부경고등학교 동문
+건국대학교 동문 Title: 범타 Text:범타(凡打)란, 친 타구가 안타가 되지 못하고 내야수나 외야수의 글러브에 들어가 아웃된 것을 일컫는다. 아무리 많은 바운드의 타구라도 안타가 되지 못 했으면 범타다."
+2,바스테르를 주도로 두고 있는 곳은 어디인가?,과들루프,카리브해의 프랑스 령 과들루프,0.9272108674049377,CORRECT,"The generated answer correctly identifies ""과들루프,"" matching the actual answer's location.","
+
+[Passage Chunk 1]
+passage: 신체적*물질적 피해가 지면의 토지나 사람이나 동산에게 비행기의 상승, 하강 또는 비행, 혹은 항공기에서 낙하한 물체로 인하여 가게 된다면 항공기의 조작원에게 손해에 대한 엄격한 책임을 물어야 한다.
+
+미국의 형법
+형법에도 무과실책임 법리가 존재하는데 대표적인 예로 과속의 경우 피고가 과속 사실을 알았는지 아니면 부주의를 하였는지 판단없이 무과실책임을 지운다.
+
+야생동물
+야생동물의 소유자는 야생동물이 일으킨 손해에 대해 과실여부와 관계없이 엄중한 책임을 진다.
+
+같이 보기 
+ 과실책임
+ 제조물책임법
+
+법률 용어 Title: 바스테르 (과들루프) Text:바스테르(Basse-Terre)는 카리브해의 프랑스 령 과들루프의 바스테르 섬에 있는 과들루프의 주도이다.
+
+인구
+
+기후
+
+각주
+
+[Passage Chunk 2]
+passage: | style=""background:#b0e0e6;"" |
+|-
+| 
+! scope=""row"" | 
+| 본토와 밀네란드섬
+|-
+| style=""background:#b0e0e6;"" | 
+! scope=""row"" style=""background:#b0e0e6;"" | 스코레스비순드
+| style=""background:#b0e0e6;"" |
+|-
+| 
+! scope=""row"" | 
+|
+|-valign=""top""
+| style=""background:#b0e0e6;"" | 
+! scope=""row"" style=""background:#b0e0e6;"" | 대서양
+| style=""background:#b0e0e6;"" |  아소르스 제도 상미겔섬 ()  사운더스섬 ()의 바로 동쪽을 지나감  몬타구섬 ()의 바로 동쪽을 지나감
+
+[Passage Chunk 3]
+passage: | style=""background:#b0e0e6;"" |
+|-
+| 
+! scope=""row"" | 
+| 남부 피어리란드
+|-
+| style=""background:#b0e0e6;"" | 
+! scope=""row"" style=""background:#b0e0e6;"" | 인디펜던스 피오르
+| style=""background:#b0e0e6;"" |
+|-
+| 
+! scope=""row"" | 
+|
+|-
+| style=""background:#b0e0e6;"" | 
+! scope=""row"" style=""background:#b0e0e6;"" | 하겐 피오르
+| style=""background:#b0e0e6;"" |
+|-
+| 
+! scope=""row"" | 
+| 본토와 밀네란드섬
+|-"
+2,플레이걸은 창간부터 폐간까지 얼마의 시간이 걸렸나요?,43년,43년,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 각주 
+
+2019년 7월
+2019년 축구 경기
+K리그
+유벤투스 FC
+크리스티아누 호날두 Title: 플레이걸 Text:플레이걸(Playgirl)은 1973년 창간된 미국의 여성용 잡지이다. 2011년까지 뉴욕에 본사를 두었으며, 이후 뉴저지주의 패러머스로 본사를 이전하였다. 2016년 인쇄판 발행을 중단하였다.
+
+각주
+
+외부 링크 
+ 공식 웹사이트
+ 플레이걸 마이스페이스
+
+뉴욕의 잡지
+뉴저지주의 잡지
+포르노 잡지
+여성 잡지
+월간지
+폐간된 잡지
+1973년 창간
+
+[Passage Chunk 2]
+passage: 출전 
+ 사마천, 《사기》권18하 고조공신후자연표(高祖功臣侯者年表)
+
+전한 사람
+생년 미상
+기원전 182년 사망
+기원전 3세기 중국 사람
+기원전 2세기 중국 사람 Title: 오피셜 U.S. 플레이스테이션 매거진 Text:〈오피셜 U.S. 플레이스테이션 매거진〉()은 제프 데이비스 미디어가 발행했던 미국의 잡지이며, 본사는 캘리포니아주 샌프란시스코에 위치했다. 1997년 12월에 창간하였으나 2007년 1월에 폐간되었다.
+
+미국의 비디오 게임 잡지
+샌프란시스코의 잡지
+플레이스테이션 잡지
+월간지
+폐간된 잡지
+1997년 창간
+2007년 폐간 Title: 위어드 테일스 Text:위어드 테일스()는 1923년에 창간된 미국의 펄프 매거진으로, 판타지, SF를 취급했다. 일리노이주 시카고를 기반으로 한다.
+
+[Passage Chunk 3]
+passage: 1기 
+ 기획: ??? (MBC판만)
+ 책임 프로듀서: ??? (MBC판만)
+ 조연출: ??? (MBC판만)
+ 기획: 조규석
+ 프로듀서: 임보라미, 이진숙, 모상준
+ 애니메이션 감독: 박현수
+ 시나리오: 소민선, 허성훈, 조규석, 이진숙, 김필구, 손병조
+ 미술감독: 임보라미
+ 디자인: 홍순상, 정종태, 신꽃샘, 임보라미, 이진숙
+ 연출 / 스토리보드: 홍재성, 원동우, 이명철
+ 배경감독: 박동기
+ 레이아웃: 박동기, 강현아, 최소은
+ 2D 애니메이션: 홍재성, 원동우, 이혜민, 이소망, 이종문, Yvonne Ng (제13~26화)
+ CG 감독: 여성재
+ 촬영: 여성재, 황여울
+ 메카닉: 우민우, 류재훈, 조경철
+ 3D 모델링: 도세민, 조경철"
+2,"""영화 '큰엄마의 미친봉고'에서 유성주가 맡은 역할의 이름은 무엇인가요?"".",유한일,유한일.,0.9910725355148315,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 촬영상 
+ 엘리자베스 - 레미 아데파라신 수상
+
+음향상 
+ 라이언 일병 구하기 - 게리 라이스트롬 수상
+
+의상상 
+ 벨벳 골드마인 - 샌디 포웰 수상
+
+분장상 
+ 엘리자베스 - Jenny Shircore 수상
+
+특수시각효과상 
+ 라이언 일병 구하기 - 스티펜 펭메이어 수상
+
+프로덕션디자인상 
+ 트루먼 쇼 - 데니스 가스너 수상
+
+외국어영화상 
+ 중앙역 - 아서 콘 수상
+
+단편애니메이션작품상 
+ Aida Zyablikova 수상
+
+단편영화작품상 
+ Hannah Lewis 수상
+
+안소니 아스퀴스상 
+ 엘리자베스 - 데이비드 허슈펠더 수상
+
+영국 아카데미 영화상
+1998년 영화상 Title: 큰엄마의 미친봉고 Text:""큰엄마의 미친봉고""는 2021년에 개봉한 대한민국의 영화이다.
+
+[Passage Chunk 2]
+passage: 캐스팅 
+ 정영주 : 이영희 역
+ 김가은 : 최은서 역
+ 황석정 : 임세령 역
+ 유성주 : 유한일 역
+ 조달환 : 유재상 역
+ 정재광 : 유지상 역
+ 하정민 : 유효정 역
+ 송동환 : 유화상 역
+ 유병훈 : 유한삼 역
+ 최민철 : 주상현 역
+ 정은경
+ 이지현
+ 윤선아
+ 신서우 : 유일주 역
+ 곽민석 : 찰스 역
+
+같이 보기 
+ 2021년 대한민국의 영화 목록
+
+외부 링크
+
+[Passage Chunk 3]
+passage: 같이 보기 
+
+ 나폴레옹 1세
+ 나폴레옹 2세
+ 나폴레옹 3세
+ 프랭스 앰페리알 나폴레옹
+
+1822년 출생
+1891년 사망
+프랑스의 정치인
+프랑스의 군인
+이탈리아의 왕족
+프랑스의 크림 전쟁 참전 군인
+제2차 이탈리아 독립 전쟁 관련자
+트리에스테 출신
+보나파르트가 Title: 낙원의 밤 Text:《낙원의 밤》()은 2020년 제작된 대한민국의 영화로, 박훈정이 감독을 맡았다. 2020 베네치아 영화제에서 전 세계 최초로 공개되었다.
+
+등장인물 
+ 엄태구: 박태구 역
+ 전여빈: 재연 역
+ 차승원: 마상길 이사 역
+ 이기영: 쿠토 역
+ 박호산: 양도수 사장 역
+ 이주원: 양 사장 수하 역
+ 현봉식: 북성파 조직원 역
+ 이새로미: 의사 1 역"
+2,페어반츠리가는 모든 지역에서 운영되나요? (Yes or No).,No,No.,0.8284006118774414,CORRECT,"Both answers clearly state ""No"" to the question.","
+
+[Passage Chunk 1]
+passage: 페어반츠리가 
+
+ 페어반츠리가의 일부는 이전부터 다른 명칭으로 운영되어 왔으며 설립연도는 페어반츠리가로 명칭을 변경한 시점이다.
+1 페어반츠리가 자를란트는 2009년 자를란트리가가 새롭게 6부 리그로 등장한 이후 7부 리그의 지위로 강등되었다.
+2 베스트팔렌리가는 팀이 2년마다 지리적 요구에 의해 재배정되는 두 개의 병렬적인 그룹으로 운영되고 있다. 란데스리가의 네 그룹은 지리적 요구에 따라 베스트팔렌리가의 어느 쪽이든 공급할 수 있다.
+3 페어반츠리가 슐레스비히홀슈타인은 2017년 이후부터 새롭게 설립된 란데스리가 슐레스비히홀슈타인으로 인해 7부 리그로 등급이 변경된다.
+
+각주
+
+외부 링크 
+ The German Football State Associations at DFB.de
+
+[Passage Chunk 2]
+passage: 리그 시스템에서 4부 리그인 레기오날리가의 하부 리그부터는 독일 축구 협회(Deutscher Fußball-Bund)의 21개 회원 단체들에 의해 개별적으로 조직되기 때문에 조는 주마다 다르다. 따라서 페어반츠리가는 모든 독일 지역에 존재하지 않는다. 노르트라인베스트팔렌주, 작센주, 튀링겐주, 함부르크 주, 니더작센주, 브레멘주와 바이에른주는 6부 리그를 란데스리가라는 명칭으로 부르는데, 다른 지역에서는 란데스리가가 7부 리그로 운영되고 있다. 노르트라인베스트팔렌 주, 라인란트팔츠주와 바덴뷔르템베르크주는 각각 자체 리그를 운영하는 2~3개의 협회로 나뉜다. 또한 헤센주, 베스트팔렌, 슐레스비히홀슈타인주와 같은 일부 지역에서는 두 개 이상의 페어반츠리가 그룹이 병행되어 운영되고 있다.
+
+[Passage Chunk 3]
+passage: 최근 몇 년간 많은 리그가 '페어반츠'라는 명칭을 제외시켰고 그 대신에 지역이나 주 출신으로 부르기를 선호했다. 페어반츠리가 베를린이 베를린 리가로, 페어반츠리가 브란덴부르크가 브란덴부르크 리가로, 페어반츠리가 베스트팔렌이 리가 베스트팔렌으로, 페어반츠리가 라인란트가 라인란트리가로 명칭을 변경해왔다. 한편 페어반츠리가 미텔라인이 미텔라인리가로, 페어반츠리가 니더라인이 니더라인리가로 명칭을 변경했고 2012년 이후 모두 오버리가로 승격되었다.
+
+페어반츠리가"
+2,하킴 압둘 올라주원의 어린 시절 축구 포지션은 무엇이었나요?,골키퍼,골키퍼입니다.,0.9691804051399231,CORRECT,Both answers state that his childhood football position was goalkeeper.,"
+
+[Passage Chunk 1]
+passage: 어린 시절 
+나이지리아 라고스에서 중류 집안이자 시멘트 사업을 하는 살림과 아비크 부부의 여섯 자녀 중 셋째로 태어났다. '올라주원'은 요루바어로 '항상 정상에 있는'이란 뜻이었다. 어린 시절 축구 팀의 골키퍼로 활약하였는 데 이는 훗날 농구를 하는데 있어서 좋은 풋워크와 신체 조건에 비해 균형있는 민첩성과 근력을 키우는 데 도움을 줬다.
+
+올라주원은 15세의 나이에 농구를 시작하였다.  그의 고등학교 무슬림 교사 칼리지는 소코토에서 열린 나이지리아 전국 교사 스포츠 축제에서 농구 토너먼트에 들어갔으나 올라주원은 핸드볼 팀에 있었다.  동료 선수는 코치에게 접근하여 만약 올라주원이 팀을 위하여 할 수 있는지를 의문하였다.  허락은 인정되고 농구 수퍼스타가 탄생하였다.
+
+대학 경력
+
+[Passage Chunk 2]
+passage: 대학 경력 
+
+2년 후 미국으로 떠나 하킴 압둘 올라주원이란 자신의 본명 아래 휴스턴 대학교에 수학하였다.  그는 NBA에 입단에 대비하여 자신의 중앙 이름에 관련을 떨어뜨리고, 1991년 3월 9일 정식적으로 자신의 첫 이름을 도입하였다.
+
+자신이 스포츠 경력이 축구 골키퍼와 핸드볼 선수로 시작되었어도 그는 휴스턴 대학교에서 빠르게 지배적인 선수가 되었다.  그는 대학에서 3개의 시즌을 활약하여 각해에 쿠가스를 파이널 포로 밀어넣는 도움을 주었다.
+
+[Passage Chunk 3]
+passage: FIBA 명예의 전당 헌액자
+코르도바주 (아르헨티나) 출신
+이탈리아계 아르헨티나인
+그리스에 거주한 아르헨티나인
+스페인에 거주한 아르헨티나인
+미국에 거주한 아르헨티나인 Title: 하킴 올라주원 Text:하킴 압둘 올라주원(, 1963년 1월 21일 ~ )은 나이지리아 출신의 미국의 농구 선수로 전미 농구 협회(NBA) 리그 통산 3,830개의 블록슛을 기록하였다."
+2,《Eye II Eye》 음반에서 독일어로 녹음된 곡의 제목은 무엇인가요?,Dubist so schmutzig,〈Du bist so schmutzig〉,0.9204378128051758,CORRECT,The generated answer matches the actual answer's title despite minor formatting differences.,"
+
+[Passage Chunk 1]
+passage: 벤쿠버 국제 영화제
+2021년 영화제 Title: Eye II Eye Text:《Eye II Eye》는 1999년에 발매된 독일의 하드 록 밴드 스콜피언스의 열네 번째 스튜디오 음반이다. 싱글 〈Mysterious〉가 《빌보드》 메인스트림 록 트랙 차트에서 26위에 올랐음에도 불구하고 일부 팬들을 소외시켰던 전작보다 《Eye II Eye》가 훨씬 더 팝 지향적이라는 점에서 급진적인 이탈이다. 이 음반은 드럼에 제임스 코탁이 참여한 최초의 스튜디오 음반이자 베이스 기타에 랄프 리커만이 참여한 마지막 스콜피언스 스튜디오 음반이다.
+
+스콜피언스는 처음으로 (그리고 지금까지 유일하게) 독일어로 주로 녹음된 노래인 〈Dubist so schmutzig〉(〈넌 너무 더럽다〉)를 발표했다.
+
+[Passage Chunk 2]
+passage: 음악속도가 빨라지거나 느려지는 러쉬모드는 여전히 오리지널 곡만 가능하다. 곡명의 배경색으로 빨간색이 펌프잇업의 오리지널 곡, 파란색이 가요(K-Pop), 노란색이 월드 뮤직(World Music), 그리고 새롭게 추가된 일본곡(J-Music)은 초록색으로 구성되었다. 곡 제목의 굵은 글씨는 펌프 잇 업의 인기 명곡, 기울인 글씨는 비인기 명곡, “”표시는 인기곡이 재등장하지 못한 곡, ‘’표시는 인기곡으로 끌려고 했던 곡이다. 일부 오리지널 곡, 대부분의 가요곡, 세계곡은 대거 삭제되었으나 초기 오리지널곡인 이그니션 스타츠와 힙노시스가 10년만에 부활하였다. 또한 2PM의 핸즈업은 저작권 문제로 피에스타2만 수록되었고 프라임에서 삭제되었다. 이얍은 피에스타까지 오리지널 곡을 참여한 이후 프라임에서
+
+[Passage Chunk 3]
+passage: 수록 곡"
+2,클라인 병과 뫼비우스 띠의 차이점은 무엇인가요?,"클라인 병은 영다양체가 아닌 해다양체이고, 뫼비우스 띠는 비콤팩트 해다양체이다.","클라인 병은 콤팩트 해다양체이며, 뫼비우스 띠는 비콤팩트 해다양체입니다.",0.9910669326782227,INCORRECT,"The generated answer incorrectly states that the Klein bottle is not a manifold, contradicting the actual answer that it is a compact manifold.","
+
+[Passage Chunk 1]
+passage: 모든 해다양체는 비구형 공간()이다. 즉, 해다양체 의 모든 2차 이상 호모토피 군은 자명군이다.
+
+콤팩트 동차공간에 대하여, 다음 두 조건이 서로 동치이다.
+ 해다양체이다.
+ 비구형 공간이며, 그 기본군은 가해군이다.
+
+예 
+멱영 리 군은 가해 리 군이므로, 모든 영다양체는 해다양체이다. 특히, 모든 원환면은 해다양체이다.
+
+클라인 병은 영다양체가 아닌 해다양체이다. 뫼비우스 띠는 비콤팩트 해다양체의 예이며, 이는 (자명하게 해다양체인) 원 위의 자명하지 않은 실수 선다발이다.
+
+2차원 푸앵카레 군 은 3차원 가해 리 대수이며, 콤팩트 몫공간을 갖는다. 이 몫공간들은 콤팩트 해다양체의 예이다. 이는 기하화 추측에 등장하는 8개의 기하들 가운데 하나이다.
+
+참고 문헌
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 수상 
+ 자랑스런 한국인 인물대상 문화발전공헌부분 대상 (2019)
+ 제4회 럭셔리브랜드 모델어워드 라이징 스타상 (2018)
+대한민국의 가수
+대한민국의 뮤지컬 배우
+살아있는 사람
+너의 목소리가 보여 참가자 Title: 구면 뒤집기 Text:미분위상수학에서 구면 뒤집기()는 3차원 공간에서 구면의 안쪽 면과 바깥 쪽 면을 서로 뒤집어 바꾸는 과정이다. 놀랍게도, 구를 자르거나 찢거나 주름을 만들지 않고 자기 교차를 허용하여 매끄럽게 뒤집을 수 있다. 이것은 수학자가 아닌 사람과 정규 호모토피를 이해하는 사람 모두에게 놀라운 일이며 역설로 볼 수 있다.
+
+더 정확하게는
+
+ 
+
+표준 묻기이어야 한다. 그러면 이고 인 몰입의 정규 호모토피
+
+ 
+
+가 있다.
+
+[Passage Chunk 3]
+passage: 참고 문헌
+
+외부 링크 
+ 
+ 
+
+미분기하학
+대수적 위상수학
+끈 이론 Title: 총담관낭 Text:총담관낭(, bile duct cyst)은 담관의 낭포 확장을 수반하는 선천성 질환이다. 서부 국가에서는 흔하지 않으며 일본과 중국같은 동아시아 국가에서는 드물지 않다.
+
+증상 
+대부분의 환자는 생애 중 5년에 걸쳐 증상이 있다. 성인이 될 때까지 증상을 감지하지 못하는 경우는 드물며 일반적으로 성인들에게는 연관 합병증이 있다. 간헐적인 복통, 황달 등은 소수의 환자에게서만 발견된다.
+
+진단
+
+유형 
+1977년 토다니(Todani)가 5가지 유형으로 분류하였다.
+ 유형 I
+ 유형 II
+ 유형 III (총담관류)
+ 유형 IVa
+ 유형 IVb
+ 유형 V
+ 유형 VI"
+2,현대 A 엔진은 몇 년부터 생산되었나요?,2002년,2002년부터입니다.,0.9392713308334351,CORRECT,Both answers state the engine production started in 2002.,"
+
+[Passage Chunk 1]
+passage: 현대자동차와 미쓰비시자동차공업이 공동 개발하여 1999년에 출시한 전륜구동 방식의 대형차이다. 기존에 판매되던 데보네어를 대체하며, 대한민국에서는 현대자동차가 에쿠스로 판매하였다. 직접 분사 방식(GDI)의 V8 4,500cc 엔진(280마력)과 V6 3,500cc 엔진(240마력)을 탑재하였다. 전장이 긴 스트레치드 리무진의 경우 현대자동차에서는 에쿠스 리무진으로 출시되었으나, 미쓰비시자동차공업에서는 디그니티라는 별도의 차명이 붙어 출시되었다. 이후 현대자동차는 제네시스의 후륜구동 플랫폼을 이용해서 독자 개발한 2세대 에쿠스까지 출시하였으나, 미쓰비시자동차공업에서는 1999년 383대, 2000년 759대, 2001년 85대 등 불과 1,227대만 생산되어 판매가 부진하였다. 2001년 생산되던
+
+[Passage Chunk 2]
+passage: 《Piano Man》은 빌리 조엘이 1973년에 발표한 음악 앨범이다.
+〈Piano Man〉은 동명 앨범에 실린 노래이다. 
+ 피아노 맨은 빌리 조엘의 별명이다.
+ 《피아노 맨》은 1996년에 개봉한 대한민국의 영화이다.
+ 〈Piano Man〉은 마마무가 2014년에 발표한 싱글 음반이자 동명의 노래이다. Title: 현대 A엔진 Text:현대 A 엔진()은 2002년부터 현재까지 현대자동차그룹에서 생산 중인 2.5L 디젤 4기통 자동차 엔진이다.
+
+각주 
+
+현대자동차
+4기통 직렬 엔진 Title: 황당한 외계인: 폴 Text:황당한 외계인: 폴(Paul)은 2011년 공개된 SF 코미디 영화이다.
+
+줄거리
+
+출연
+
+[Passage Chunk 3]
+passage: 1999년 383대, 2000년 759대, 2001년 85대 등 불과 1,227대만 생산되어 판매가 부진하였다. 2001년 생산되던 공장이었던 오에 공장마저 폐쇄되었을 때 현대 에쿠스를 가져와 조립생산하는 것도 검토되었지만 리콜 은폐 문제 때문에 내부 상황이 악화되어 디그니티와 함께 단종되었다."
+2,연기의 원인 중 하나는 무엇인가요?,불완전 연소,불완전 연소.,0.9915894269943237,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 같이 보기 Title: 아쿠아 착이온 Text:아쿠아 착이온(Aquacomplex ion, Metal aquo complex)이란 금속이온이 수용액에 포함될 때 극히 일부의 이온이 물분자가 리간드로 작용하여 배위결합하여 존재하는 것을 말한다.
+
+예를 들자면 미량의 구리이온은 물 분자와 결합하여 사아쿠오구리 이온(II) 상태로 존재하며 알루미늄의 경우 육아쿠아알루미늄 이온 상태로 존재한다.
+
+배위 화합물
+무기화학 Title: 연기 (화학) Text:연기(煙氣, smoke)는 가연성 물질이 연소할 때 생기는 고체, 액체 상태의 미립자이다.
+
+[Passage Chunk 2]
+passage: 불완전 연소의 결과로 발생한다. 유해한 미립자가 많기 때문에, 의도적으로 만들어지는 것이 아닌 경우가 많다.
+난로나 엔진 등에서 만들어진 연기는 주로 배기관이나 굴뚝으로 배출된다.
+화재로 인한 사망 사례의 상당수는, 연기를 들이마셔 호흡이 곤란하게 되기 때문에 발생한다.
+
+ 
+폐기물 Title: 영광군의 농어촌버스 Text:영광군의 농어촌버스는 전라남도 영광군을 중심으로 운행하는 버스를 이용한 대중교통 수단으로, 운수업체로는 영광교통이 유일하다.
+
+운수 업체 
+2015년 11월 기준이다.
+
+2019년 1월부터 구간요금제를 폐지하고 단일요금제를 시행한다. 요금은 1,000원이다.
+
+운행 노선
+
+각주
+
+외부 링크 
+ 영광군의 농어촌버스 안내
+
+[Passage Chunk 3]
+passage: 게임 모드 
+곡 선택이나 배속 및 랜덤모드 등 각종 설정시 발판이 아닌 전면부 버튼을 사용해 설정하게 된다.
+게임의 난이도는 다음과 같다.
+ Easy
+ Mideum(본가쪽 노말에 해당된다.)
+ Hard
+ Crazy
+ Nigntmare
+ Routine(현재 피에스타 EX, 피에스타 2에서의 합플모드에 해당된다)
+
+이전 버전과 다음 버전 
+
+댄스 게임
+펌프 잇 업 Title: 포스포아미데이트 Text:포스포아미데이트()는 NR2에 대한 OR의 치환을 통해 인산염(또는 유기인산염)과 구조적으로 관련되는 인 화합물의 부류이다. 아미도인산염()이라고도 한다. 포스포아미데이트는 포스포아미드산() (O=P(OH)(NR2)2, O=P(OH)2(NR2)의 유도체이다."
+2,"밀양 조선 성종 왕녀 태실은 무엇을 보관하는 곳이었으며, 현재 어떤 이름으로 불리고 있나요?","조선시대 어느 왕녀의 태항아리를 보관하는 곳이며, 현재 이름은 밀양 조선 성종 왕녀 태실이다.","태실은 왕녀의 태항아리를 보관하는 곳이었으며, 현재 ""밀양 조선 성종 왕녀 태실""로 불리고 있습니다.",0.9694784283638,CORRECT,"The generated answer correctly states that it is a place storing a princess's 태항아리 and is currently called 밀양 조선 성종 왕녀 태실, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 일본의 웹코믹
+연애 만화
+일본의 웹 애니메이션
+2015년 애니메이션
+2016년 애니메이션
+고등학교를 배경으로 한 만화
+고등학교를 배경으로 한 애니메이션
+란티스 애니메이션
+이바라키현을 배경으로 한 작품
+미토시
+Comico
+이바라키현을 배경으로 한 만화
+이바라키현을 배경으로 한 애니메이션 Title: 밀양 조선 성종 왕녀 태실 Text:밀양 조선 성종 왕녀 태실(密陽 朝鮮 成宗 王女 胎室)은 경상남도 밀양시 무안면 화봉리에 있는 태실이다. 1975년 2월 12일 경상남도의 기념물 제29호 성화 17년 왕녀태실로 지정되었다가, 2018년 12월 20일 현재의 명칭으로 변경되었다.
+
+개요 
+태실은 왕이나 왕실 자손의 태를 모셔두는 돌로 만든 방으로, 이곳은 조선시대 어느 왕녀의 태항아리를 보관했던 곳이다.
+
+[Passage Chunk 2]
+passage: 개요 
+태실은 왕이나 왕실 자손의 태를 모셔두는 돌로 만든 방으로, 이곳은 조선시대 어느 왕녀의 태항아리를 보관했던 곳이다. 
+
+태실의 주인공은『밀주구지』의 기록으로 보아 조선 성종 때의 신숙공주로 짐작되나 확실하게 밝혀진 것은 없다. 오래전에 도굴되어 태항아리와 함께 윗부분이 없어진 채 태실 앞에 세운 두 개의 표석과 원형의 아래 일부만 남아있다. 표석은 앞면에 ‘왕녀태실’이라는 글자를 새겨 놓았고, 뒷면에는 ‘성화십칠년시월십일’이라는 연대를 적어 놓았다.
+
+태실의 제작연대는 표석에 새긴 '성화 17년'이라는 기록으로 보아 조선 성종 12년(1481)임을 알 수 있다.
+
+각주
+
+참고 문헌
+
+[Passage Chunk 3]
+passage: 태실의 제작연대는 표석에 새긴 '성화 17년'이라는 기록으로 보아 조선 성종 12년(1481)임을 알 수 있다.
+
+각주
+
+참고 문헌 
+ 
+
+경상남도의 기념물
+조선 성종 왕녀 태실
+태실
+1481년 작품
+조선 성종 Title: 박선 (1596년) Text:박선(朴璿, 1596년 ~ 1669년)은 조선 시대의 유학자이다.
+
+본관은 무안(務安), 자(字)는 계헌(季獻), 호(號)는 도와(陶窩)이다.
+
+생애"
+2,"영화 ""누구나 비밀은 있다""의 감독은 누구인가요?
 
 A) 박찬욱  
 B) 장현수  
 C) 강우석  
-D) 최동훈  .","영화 ""누구나 비밀은 있다""의 감독은 장현수입니다. 정답은 B) 장현수입니다.",B) 장현수,0.8632308840751648,CORRECT,The generated answer correctly identifies the director as 장현수 and matches the actual answer.
-89,대서양나무쥐속(Phyllomys)은 몇 종으로 구성되어 있나요?.,대서양나무쥐속(Phyllomys)은 모두 13종으로 이루어져 있습니다.,13종으로 구성되어 있습니다.,0.9105514287948608,CORRECT,"Both answers state that there are 13 species, conveying the same meaning."
-90,외기권의 주된 기체는 무엇이고 바닥층에는 어떤 원소가 존재하나요?,"외기권의 주된 기체는 수소와 헬륨이며, 바닥층에는 일부 원자 상태의 산소가 존재합니다.",수소와 헬륨이 주된 기체이며 바닥층에는 원자 상태의 산소가 존재합니다.,0.9461276531219482,CORRECT,The generated answer conveys the same meaning as the actual answer with minor additional detail.
-91,발디비아는 칠레의 어떤 주에 속해 있나요?,발디비아는 칠레 로스리오스 주에 속해 있습니다.,로스리오스 주,0.8757113218307495,CORRECT,"Both answers identify ""로스리오스 주"" as the relevant region, with the generated answer providing additional context without contradiction."
-92,상괴리가 위치한 두 지역의 읍 이름은 무엇인가요?,상괴리가 위치한 두 지역의 읍 이름은 단양군 매포읍과 문경시 가은읍입니다.,"매포읍, 가은읍",0.8968831896781921,CORRECT,"The generated answer correctly identifies the two towns, matching the actual answer."
-93,"법학자란 누구이며, 주로 어디에서 활동하는가?","법학자란 국가의 고등교육기관인 대학 등지에서 법학에 관한 학위를 취득하고 법학을 연구하는 자를 말하며, 주로 대학에서 법학을 가르치는 교수로 활동한다.","법학자는 대학 등지에서 법학 연구를 행하는 연구자이며, 주로 고등교육기관인 대학에서 활동한다.",0.9590732455253601,CORRECT,"Both answers describe a 법학자 as a researcher of law primarily active in universities, with the generated answer adding that they obtain a degree and often teach, which aligns with the actual answer's meaning."
-94,정다슬이라는 이름의 실존 인물은 어떤 직업을 가졌나요?,정다슬이라는 이름의 실존 인물은 전직 축구 선수입니다.,전직 축구 선수.,0.9046363830566406,CORRECT,"The generated answer conveys the same meaning as the actual answer, specifying that 정다슬 is a former soccer player."
-95,《Silencing the Singing》 출시 연도는?,2001년입니다.,2001년.,0.9837387800216675,CORRECT,"Both answers provide the same year ""2001"" with no difference in meaning."
-96,국가공인민간자격이 공인되기 위해 검정 이력이 몇 번 있어야 하나요?,국가공인민간자격이 공인되기 위해서는 신청일 현재 1년 이상 시행된 것으로서 3회 이상의 자격 검정 실적이 있어야 합니다.,3회 이상의 자격 검정 실적이 있어야 합니다.,0.922666072845459,CORRECT,"The generated answer includes the key requirement of having at least three qualification test results, matching the actual answer."
-97,마크론 스타디움은 어느 해에 유니버시티 오브 볼튼 스타디움으로 이름이 변경되었나요?,마크론 스타디움은 2018년에 유니버시티 오브 볼튼 스타디움으로 이름이 변경되었다.,2018년.,0.8304710388183594,INCORRECT,"The generated answer provides a statement about a name change in 2018, but the actual answer only specifies the year ""2018"" without mentioning the name change."
-98,조광기를 사용할 때 백열등과 LED 조명의 작동 방식 차이는 무엇인가요? 각 조명에서의 에너지 소비 이점과 단점은 무엇인가요?,"The passage does not contain information about the operational differences between incandescent bulbs and LED lights when using a dimmer, nor does it discuss the energy consumption advantages and disadvantages for each type of lighting.","백열등은 전압 감소로 빛의 밝기를 줄이며, 에너지 소비가 많고 효율성이 낮습니다. LED는 전류 조절로 빛을 조정하며, 에너지 효율이 높고 긴 수명을 가집니다. 백열등은 에너지 낭비가 크고, LED는 초기 비용이 상대적으로 높지만 장기적으로 비용이 절감됩니다.",0.7972980737686157,INCORRECT,"The generated answer states that the passage lacks information on the topic, while the actual answer provides detailed differences between incandescent bulbs and LEDs regarding dimming operation and energy consumption."
-99,루이스 해밀턴은 2020 아이펠 그랑프리에서 어떤 스타트 포지션을 받고 우승했나요?,루이스 해밀턴은 2020 아이펠 그랑프리에서 2번 스타트 포지션을 받고 우승하였습니다.,2번 스타트 포지션.,0.8698189854621887,CORRECT,"The generated answer correctly states the 2nd starting position and adds that Lewis Hamilton won the race, which does not contradict the actual answer."
+D) 최동훈  .",장현수,B) 장현수,0.9486318826675415,CORRECT,"The generated answer correctly identifies the director as 장현수, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 각주
+
+외부 링크 
+ Full lyrics for the song at the Beatles' official website 
+
+1969년 노래
+1970년 싱글
+1971년 싱글
+1976년 싱글
+비틀즈의 노래
+팝 발라드
+애플 레코드 싱글
+애니메이션 영화 노래 Title: 누구나 비밀은 있다 Text:""누구나 비밀은 있다""는 2004년 개봉한 장현수 감독의 로맨스 코미디 영화이다.
+
+출연배우
+ 이병헌
+ 최지우
+ 김효진
+ 추상미
+ 선우용녀
+ 김해곤
+ 전재형
+ 탁재훈
+ 공형진
+ 이재훈
+
+외부 링크
+
+[Passage Chunk 2]
+passage: 천년의 기도 - 웨인 왕
+ 하이드아웃 - 푸피 아바티
+ 할람 포 - 데이빗 맥킨지
+ 주머니 속의 꽃 - 셍 탓 리우
+ Black ice - 페트리 코트위카
+ 원더풀 타운 - 아딧야 아사랏
+ Miracle of Berlin - 롤란드 수소 리흐터
+ 엘리트 스쿼드 - 호세 파딜라
+ 아리엘 - 아키 카우리스마키
+ No Stars in the Jungl - 아르만도 로블레스 고도이
+ The Enclosure - Armand Gatti
+ Winter of our dreams - 존 듀이건
+ We Were Young - Binka Zhelyazkova
+ Camera buff - Krzysztof Kieslowski
+ 바닷가 마을 콕테벨 - 보리스 흘레브니코프 외 1명
+ 루시아 - 움베르토 솔라스
+
+[Passage Chunk 3]
+passage: Birds of paradise - Roman Balayan
+ The Cherry orchard - Sergi Ovcharov
+ The Home of the dark butterflies - Dome karukoski
+ Cumbia connection - Rene U. Villarrreal
+ One shot - Linda Wendel
+ Park Shanghai - Huang Kai Kevin
+ Under the snow - Maitena Muruzabal 외 1명
+ Dawn / Sunset - Vitaly Mansky
+ Rerberg and Tarkovsky. Reverse side of «Stalker» - Igor Maiboroda"
+2,대서양나무쥐속(Phyllomys)은 몇 종으로 구성되어 있나요?.,13종,13종으로 구성되어 있습니다.,0.9324933290481567,CORRECT,Both answers state that Phyllomys consists of 13 species.,"
+
+[Passage Chunk 1]
+passage: 사진
+
+같이 보기 
+ 닭고기
+ 돼지 껍데기
+ 뼈 없는 고기
+
+닭고기 Title: 대서양나무쥐속 Text:대서양나무쥐속(Phyllomys)은 가시쥐과에 속하는 남아메리카 설치류 속이다. 나무 위에서 생활하는 종으로 모두 3종으로 이루어져 있다. 지리적으로 브라질 동부 숲에 제한적으로 분포한다. 13종으로 이루어져 있다. 가시나무쥐속(Echimys)으로 분류하기도 한다.
+
+하위 종 
+
+ 황금대서양나무쥐 (P. blainvilii)
+ 붉은코나무쥐 (P. brasiliensis)
+ 담갈색대서양나무쥐 (P. dasythrix)
+ 커대서양나무쥐 (P. kerri)
+ 엷은색대서양나무쥐 (P. lamarum)
+ 룬드대서양나무쥐 (P. lundi)
+ 만티케이라대서양나무쥐 (P. mantiqueirensis)
+
+[Passage Chunk 2]
+passage: 긴털대서양나무쥐 (P. medius)
+ 검은가시대서양나무쥐 (P. nigrispinus)
+ 붉은옆줄대서양나무쥐 (P. pattoni)
+ 남부대서양나무쥐 (P. sulinus)
+ 자이언트대서양나무쥐 (P. thomasi)
+ 짧은털대서양나무쥐 (P. unicolor)
+
+계통 분류
+
+각주
+
+외부 링크 
+ 
+
+가시쥐과 Title: 디케이터 (일리노이주) Text:디케이터(Decatur)는 일리노이주의 도시로, 인구는 76,122명(2010)이다.
+
+인구
+
+기후
+
+각주 
+
+ 
+일리노이주의 도시
+일리노이주의 군청 소재지
+일리노이주의 도시권 Title: 마리나 베르티 Text:마리나 베르티(Marina Berti, 1924년 9월 29일 ~ 2002년 10월 28일)는 잉글랜드 태생 이탈리아의 배우이다.
+
+[Passage Chunk 3]
+passage: 생태 
+한국 고유종으로 경상북도, 강원특별자치도, 경기도의 산이나 들의 습지 그늘진 곳에 난다. 높이는 30-60cm. 전체에 털이 거의 없고, 땅속줄기는 뻗으며, 줄기는 곧게 서고, 길이로 모가 진다. 잎은 마주나며 또는 3장씩 윤생하고 잎자루가 있다. 넓은 타원형, 긴 타원형, 길이 2.5-9cm, 가장자리에 톱니가 없고, 연한 털이 있다. 꽃은 노란색으로, 줄기 끝 또는 잎겨드랑이에 붙으며, 꽃자루는 가늘고 길다. 꽃받침과 화관은 깊게 5갈래로 갈라진다. 수술은 5개, 암술은 1개, 열매는 삭과로 둥근 모양이다.
+
+참고 문헌"
+2,외기권의 주된 기체는 무엇이고 바닥층에는 어떤 원소가 존재하나요?,"수소와 헬륨, 산소",수소와 헬륨이 주된 기체이며 바닥층에는 원자 상태의 산소가 존재합니다.,0.912543773651123,CORRECT,"The generated answer correctly identifies hydrogen and helium as the main gases and mentions oxygen, aligning with the actual answer.","
+
+[Passage Chunk 1]
+passage: 이 층의 대기는 극히 희박하게나마 존재하기 때문에, 인공 위성이 약간의 마찰력을 받기는 하지만 궤도를 유지하면서 지구 주위를 선회할 수 있다.
+
+외기권 바닥층은 다음 두 가지 중의 하나로 정의된다.
+
+ 대기 입자간의 충돌이 무시될 수 있을만한 수준인 높이
+ 내부의 원자가 순수한 탄도 궤도를 따라 움직이는 높이
+
+외기권이 끝나고 우주가 시작되는 정확한 높이는 완전히 정의되어 있지 않아 우주 공간과 동일하게 취급되는 경우가 많은데, 정확한 값을 정하는 것 역시 그다지 의미가 없다.
+
+[Passage Chunk 2]
+passage: 제과류(Breads)
+
+스콘 
+
+ 고메버터 스콘
+ 크랜베리 스콘
+ 파&치즈 스콘
+
+기타 
+
+ 레몬 마들렌
+ 오레오 브라우니
+ 크로플
+
+대한민국의 음료회사
+2008년 설립된 기업 Title: 외기권 Text:외기권(外氣圈), 또는 외권(外圈)(, )은 지구 대기권의 최외곽을 형성하는 대기층이다. 아래로는 열권을 접하고 있으며, 외기권 바깥은 우주 공간이다. 지표면으로부터 500 - 1000km 정도에서 시작하며, 대략 10,000km 정도까지가 외기권인 것으로 추정된다. 사실상 우주 공간이 시작되는 구간이며, 외기권의 주된 기체는 수소와 헬륨이며, 외기권 바닥층에는 일부 원자 상태의 산소도 존재한다. 외기권을 나타내는 영어인 exosphere는 ""바깥""을 뜻하는 그리스어인 exo로부터 유래했다.
+
+[Passage Chunk 3]
+passage: 낮은 경계 
+열권 또는 exobase로 알려져 있는 외기권의 낮은 경계의 고도는 그 범위가 약 250km에서 500km로 태양의 활동에 따라 달라진다. 열권의 가장자리에서 외기권의 낮은 경계는 때때로 지구의 표면 위로 500km에서 1000km로 측정된다. 외기권의 가장 낮은 고도인 외기권은 또한 임계의 단계로 불리며 두 가지 방법 중 하나로 명백히 정의된다:
+ 그 위의 높이에서 입자들 사이의 보잘 것 없는 원자 충돌이 일어나고
+ 그 위의 높이를 구성하는 원자들은 단순히 탄도의 궤도에 있다."
+2,발디비아는 칠레의 어떤 주에 속해 있나요?,로스리오스 주,로스리오스 주,1.0,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 대한민국의 음악 그룹 Title: 발디비아 Text:발디비아(Valdivia)는 칠레 로스리오스 주에 위치한 도시이다.
+
+기후
+
+각주 
+
+칠레의 코무나
+로스리오스주 (칠레)의 취락
+칠레의 항구 도시
+칠레의 주도 Title: 비성소수자 Text:비성소수자(非性少數者, )는 트랜스젠더, 젠더퀴어, 간성, 동성애자, 양성애자, 범성애자, 무성애자 등과 같은 성소수자가 아닌 이를
+말한다. 현재 시점에는 이성애자이면서 시스젠더인 이가 해당된다. 성소수자 권리를 위해 함께 싸우는 비성소수자를 엘라이라고 한다.
+
+[Passage Chunk 2]
+passage: MC 
+ 김성주
+ 붐
+ 김민아 (파일럿)
+
+에피소드 목록
+
+각주
+
+외부 링크 
+ 
+
+tvN의 예능 프로그램
+장애물 경주 텔레비전 게임 쇼 Title: 콩키스타도르 Text:콩키스타도르(, 스페인 정복자)는 특히 15세기부터 17세기에 걸쳐 아메리카 대륙에 침입한 스페인인들을 이르는 말이다. 포르투갈인 침략자들을 지칭하기도 한다. 페루의 잉카 제국과 아스텍 왕국을 침략한 것이 가장 대표적인 예이다. 그들은 황금을 약탈하고 원주민들을 대량 학살하기도 하면서, 잉카 문명과 아스텍 문명 등 아메리카 대륙의 고유 문명들을 파괴했다.
+
+[Passage Chunk 3]
+passage: 각주
+
+같이 보기 
+ 잉카 문명
+ 아스테카 문명
+
+ 
+스페인의 대항해시대사
+스페인 제국
+포르투갈의 대항해시대사
+포르투갈 제국
+기독교화
+20세기 이전의 병과
+스페인어 낱말
+포르투갈의 아메리카 식민화 Title: 쿠보타 미유 Text:쿠보타 미유(, 1995년 1월 31일 ~ )는 일본의 성우이다. 사이타마현 출신. 81프로듀스 소속. i☆Ris의 구성원이다.
+
+각주
+
+같이 보기 
+
+ i☆Ris"
+2,상괴리가 위치한 두 지역의 읍 이름은 무엇인가요?,"매포읍, 가은읍","매포읍, 가은읍",0.9999999403953552,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 지바현의 폐지된 시정촌
+가이조군
+아사히시의 역사 Title: 상괴리 Text:상괴리(上槐里)는 다음 지역에 위치한 대한민국의 리이다.
+
+ 충청북도 단양군 매포읍 상괴리
+ 경상북도 문경시 가은읍 상괴리
+
+같이 보기 
+ 
+
+대한민국의 리 Title: 안드레 에밋 Text:안드레 에밋(Andre Emmett, 1982년 8월 27일 ~ 2019년 9월 23일)은 미국 프로 농구 선수였다.
+
+[Passage Chunk 2]
+passage: 갤러리
+
+각주 
+
+ 
+지요다구의 정명 Title: 도원리 Text:도원리는 다음 지역에 위치한 대한민국의 리이다.
+
+ 경기도 양평군 청운면 도원리(桃源里)
+ 강원특별자치도 고성군 토성면 도원리(桃院里)
+ 강원특별자치도 영월군 무릉도원면 도원리(桃源里)
+ 충청북도 괴산군 청천면 도원리(桃源里)
+ 충청북도 보은군 내북면 도원리(桃源里)
+ 충청북도 청주시 상당구 문의면 도원리(桃源里)
+ 충청북도 청주시 청원구 내수읍 도원리(挑源里)
+ 충청남도 당진시 송악읍 도원리(桃源里)
+ 충청남도 천안시 동남구 병천면 도원리(桃源里)
+ 경상북도 의성군 봉양면 도원리(桃源里)
+
+같이 보기 
+ 
+ 도원동
+
+대한민국의 리 Title: 동명리 (동음이의) Text:동명리는 다음 지역에 위치한 대한민국의 리이다.
+
+[Passage Chunk 3]
+passage: 같이 보기 
+ 
+ 도원동
+
+대한민국의 리 Title: 동명리 (동음이의) Text:동명리는 다음 지역에 위치한 대한민국의 리이다.
+
+ 제주특별자치도 제주시 한림읍 동명리(東明里)
+
+기타
+
+ 둥밍리()
+
+같이 보기 Title: 동튀르키스탄의 문장 Text:동튀르키스탄의 문장()은 동튀르키스탄 망명 정부에 의해 1933년 11월 12일 제정되었다. 오늘날에는 신장 독립운동에 사용되고 있다.
+
+상세 
+1933년 11월 12일 최초의 동튀르키스탄 공화국이 수립되면서 공개되었다."
+2,"법학자란 누구이며, 주로 어디에서 활동하는가?","법학자란 법학에 관한 학위를 취득하고 법학을 연구하는 연구자이며, 주로 대학 등 고등교육기관에서 활동한다.","법학자는 대학 등지에서 법학 연구를 행하는 연구자이며, 주로 고등교육기관인 대학에서 활동한다.",0.9597578048706055,CORRECT,"The generated answer accurately defines a 법학자 and states they mainly work at universities or higher education institutions, matching the actual answer.","
+
+[Passage Chunk 1]
+passage: 법학자 
+법학자(法學者)는 학문 분야 중 법학 영역에서 연구를 행하는 연구자, 학자, 법률가를 말한다.
+
+1. 개요:
+법학자란 국가의 고등교육기관인 대학 등지에서 법학에 관한 학위를 취득하고 법학을 연구하는 자를 이르는 말로, 법학교수를 통상 법학자라고 말한다.
+
+2.법학교수:
+대학등지에서 법학이라는 학문을 가르치는 교수로, 통상 법학자라 함은 이들을 가리키는 말이라고도 할 수 있다.
+
+법조인
+
+판사 
+
+재판을 원하는 경우 원고는 검찰, 법원에 고소장을 접수하고, 재판의 성격에 따라 그 절차가 정해진다. 판사는 재판 절차에서 가장 중추적인 역할을 담당하며 최종 판결을 내리는 결정적인 위치에 있다.
+
+검사 
+
+형사 재판의 경우 원고측에는 국가를 대표하여 검사가 자리하게 된다.
+
+변호사
+
+[Passage Chunk 2]
+passage: 외부 링크 
+
+살아있는 사람
+나이지리아계 미국인
+나이지리아의 남자 영화 배우
+미국의 남자 영화 배우
+미국의 남자 텔레비전 배우
+20세기 미국의 남자 성우
+21세기 미국의 남자 성우
+1984년 출생 Title: 법률가 Text:법률가(法律家)는 일반적으로 법률을 적용하는 법률 업무 종사자인 법조인과 대학에서 법학박사학위를 취득하고 법학을 연구하는 법학자를 의미한다고 할 수 있다.
+
+법률가의 개념 
+법학자(학식법률가)와 법조인(실무법률가)을 일컫는다.
+
+법학자 
+법학자(法學者)는 학문 분야 중 법학 영역에서 연구를 행하는 연구자, 학자, 법률가를 말한다.
+
+[Passage Chunk 3]
+passage: 검사 
+
+형사 재판의 경우 원고측에는 국가를 대표하여 검사가 자리하게 된다.
+
+변호사 
+
+변호사는 재판의 성격에 따라 그 분야가 매우 다양하다. 현대에는 형사, 민사 등등 각기 분야에 맞는 전문 변호사가 있으며, 국가 소속의 국선 변호사와 개인 변호사, 로펌을 통한 기업형 변호사, 그리고 일반 기업체에서 회사원의 형태로 근무하며 법률 자문 등의 일을 하는 변호사 등이 있다. 법정에 서지 않는, 그 외의 다양한 법률 서비스를 제공하진 않는데, 계약에 따른 공증을 포함하여 여러 법적인 상담 등 그 종류는 세세한 부분까지 매우 좁다. 변호사의 이와 같은 역할은 각 나라마다 차이가 있다.
+
+같이 보기 
+ 법학자
+ 입법부
+
+참조"
+2,정다슬이라는 이름의 실존 인물은 어떤 직업을 가졌나요?,전직 축구 선수,전직 축구 선수.,0.9856241345405579,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 실존 인물 
+ 정다슬: 대한민국의 전직 축구 선수
+
+가공 인물 
+ 마지막 승부의 등장 인물
+ 라디오 로맨스의 등장 인물
+
+같이 보기 Title: 지라 (소프트웨어) Text:지라(JIRA)는 아틀라시안이 개발한 사유 이슈 추적 제품이다. 버그 추적, 이슈 추적, 프로젝트 관리 기능을 제공하는 소프트웨어이다.
+
+이름 
+지라(JIRA)라는 이름은 고지라라는 일본식 이름에서 따왔다. 2002년부터 지금까지 개발되고 있다.
+
+[Passage Chunk 2]
+passage: 선제의 뒤를 이어 즉위한 원제는 유하의 또 다른 아들 유대종에게 해혼후 작위를 회복시켜 주었고, 이는 후한 때까지 이어졌다.
+
+2011년, 중화인민공화국 장시성 난창 시 신젠 구에서 해혼후의 무덤이 발견되었다. 발굴조사 끝에, 유하의 것으로 최종 확인되었다. 피장자 유하의 뱃속에서 소화되지 않은 멜론 씨앗이 발견되어, 여름에 사망한 것으로 추정된다.
+
+각주
+
+가계 
+ 전한 무제
+ 창읍애왕 유박
+ 창읍왕 유하
+ 유충국(劉充國)
+ 유봉친(劉奉親)
+ 해혼희후 유대종
+
+기원전 1세기 중국 사람
+류씨
+기원전 92년 출생
+기원전 59년 사망
+전한의 황제
+폐위된 중국의 황제
+기원전 1세기 중국의 군주 Title: 정다슬 (동음이의) Text:정다슬의 다른 뜻은 다음과 같다.
+
+[Passage Chunk 3]
+passage: 외부 링크 
+ 에듀모아 홈페이지
+행복나눔재단 홈페이지
+
+대한민국의 웹사이트
+교육 웹사이트 Title: 에이콘 Text:에이콘은 다음과 같은 의미가 있다.
+
+ 에이콘(Akon)은 미국의 뮤지션이다.
+ ACORN은 미국 내 진보적 색채를 띄고 있는 지역공동체 조직이다.
+ 에이콘 출판은 대한민국의 출판사이다.
+
+같이 보기 Title: 이찬영 (동음이의) Text:이찬영의 다른 뜻은 다음과 같다.
+
+실존 인물 
+ 이찬영: 대한민국의 배우
+ 이찬영: 윤상의 아들이다.
+
+가공 인물 
+ 세상 어디에도 없는 착한남자의 등장 인물
+ 피고인의 등장 인물
+ 결혼하고 싶은 여자의 등장 인물
+ 다시 만난 세계: 쩌미문의 등장 인물"
+2,《Silencing the Singing》 출시 연도는?,2001년,2001년.,0.991162896156311,CORRECT,The generated answer matches the actual answer exactly in content and meaning.,"
+
+[Passage Chunk 1]
+passage: 곡 목록
+
+평가 
+
+2006년 음반
+할리우드 레코드 음반 Title: Silencing the Singing Text:《Silencing the Singing》는 2001년 12월 4일에 발매된 울베르의 음반이다.
+
+곡 목록
+
+평가 
+
+2001년 EP Title: The Red Wheel-Barrow Text:The Red Wheel-Barrow(붉은 손수레에)는 윌리엄 카를로스 윌리엄스의 대표시이다.
+
+원문 
+so much depends
+
+upon
+
+a red wheel
+
+barrow
+
+glazed with rain
+
+water
+
+beside the white
+
+chickens.
+
+[Passage Chunk 2]
+passage: 싱글 
+ 〈〉 - 1993년 8월 4일, ZADL-1013
+ 〈〉 - 1993년 12월 8일, ZADL-1023
+ 〈〉 - 1994년 3월 16일, ZADL-1028
+ 〈〉 - 1994년 7월 30일, ZADL-1032
+ 〈)〉 - 1995년 1월 16일, ZADL-1039
+ 〈〉 - 1995년 6월 12일, ZADL-1044
+ 〈〉 - 1996년 6월 10일, ZADL-1060
+ 〈〉 - 1996년 8월 5일, ZADL-1062
+ 〈〉 - 1997년 5월 14일, ZADL-1070
+ 〈〉 - 1997년 8월 13일, ZADL-1073
+ 〈〉 - 1998년 6월 17일, ZADL-1076
+ 〈〉 - 1998년 8월 26일, ZADL-1079
+ 〈〉 - 1999년 5월 19일, ZACL-3003
+
+[Passage Chunk 3]
+passage: 개요 
+전작 〈스완송〉 이래, 약 1년 1개월 만의 싱글이다. 싱글 발매 간격은 과거 최장이 되었다.
+
+오리콘 주간 싱글 차트(2010년 12월 13일 자)에서 제1위를 획득해, 데뷔 이래 30작 연속 선두 획득이 되어, 자신이 가지는 기네스 기록을 갱신했다.
+
+수록곡"
+2,국가공인민간자격이 공인되기 위해 검정 이력이 몇 번 있어야 하나요?,3회 이상,3회 이상의 자격 검정 실적이 있어야 합니다.,0.925532877445221,CORRECT,Both answers state that at least three qualification tests must have been conducted.,"
+
+[Passage Chunk 1]
+passage: 공인 기준 
+ 국가직무능력표준에의 부합할 것
+ 자격체제에의 부합할 것
+ 교육훈련과정과의 연계할 것
+ 산업계 수요에의 부응할 것
+ 평생학습·능력중심사회 정착에 기여할 것
+ 자격 간의 호환성과 국제적 통용성을 확보할 것
+ 신청일 현재 1년 이상 시행된 것으로서 3회 이상의 자격 검정 실적이 있을 것
+ 관련 국가 자격이 있는 경우에는 해당 민간 자격의 검정 기준·검정 과목 및 응시 자격 등 검정수 준이 관련 국가 자격과 동일하거나 이에 상당하는 수준일 것
+
+참고 문헌
+
+같이 보기 
+ 국가전문자격
+ 국가기술자격
+ 등록민간자격
+ 민간자격
+
+외부 링크 
+ 민간 자격 정보 서비스
+
+[Passage Chunk 2]
+passage: 각주
+
+같이 보기 
+ 신칸센 E3계 전동차
+ 도키 (열차)
+
+외부 링크 
+
+  JR 동일본 누리집 산하 겐비 신칸센 공식 사이트 
+  GENBI SHINKANSEN - JR 동일본 한국어 누리집 산하 
+
+일본의 특급 열차
+신칸센의 열차
+조에쓰 신칸센
+동일본 여객철도의 신칸센 차량 Title: 국가공인민간자격 Text:국가공인민간자격(國家公認民間資格)은 대한민국 정부가 민간에서 운영하는 자격을 공인하는 제도이다.
+
+[Passage Chunk 3]
+passage: 참고 문헌
+
+같이 보기 
+ 국가전문자격
+ 국가기술자격
+ 등록민간자격
+ 민간자격
+
+외부 링크 
+ 민간 자격 정보 서비스 
+
+ 
+자격 Title: 노노그램 Text:노노그램(, )은 일본의 퍼즐 게임이다. 각각 적혀있는 숫자를 보면서 숨겨져 있는 숫자를 예상하여 지워나가면서 그림을 그리는 게임이다. NP-완전 문제이다. 한국에서는 네모네모로직이라고 불린다.
+
+기본적인 규칙
+
+숫자가 하나인 경우 
+1개의 숫자는 연속해서 검게 칠하는 칸(이하 ‘검은 칸’)의 수를 나타내고 있다. 단, 위치까지 나타내고 있는 것은 아니다.
+
+(예시
+
+에 대해서는 다음의 3개의 가능성을 생각할 수 있다.
+
+숫자가 여러개인 경우
+
+‘빈칸’에 대해서 
+숫자가 둘 이상인 경우에 각각이 검은 칸의 수를 나타내며"
+2,마크론 스타디움은 어느 해에 유니버시티 오브 볼튼 스타디움으로 이름이 변경되었나요?,2018년,2018년.,0.989769697189331,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 대한민국의 가수
+20세기 대한민국 사람
+21세기 대한민국 사람
+살아있는 사람
+1980년 출생
+내일은 미스트롯 참가자 Title: 유니버시티 오브 볼튼 스타디움 Text:유니버시티 오브 볼튼 스타디움(University 
+of Boltom Stadium)은 영국 잉글랜드 볼턴에 있는 축구 경기장으로, EFL 리그 투에 참여하고 있는 볼턴 원더러스 FC의 홈구장으로 사용되고 있다. 1997년에 당시 볼튼 원더러스의 유니폼 스폰서였던 리복의 이름을 붙여 리복 스타디움이라는 이름으로 개장하였다. 2014년에는 구장 명명권을 이탈리아 스포츠용품 회사인 마크론이 사들이면서 마크론 스타디움으로 바꾸었다가 2018년에 현재의 유니버시티 오브 볼튼 스타디움으로 바뀌었다.
+
+[Passage Chunk 2]
+passage: 미국 세인트루이스 (1904년)
+ 미국 애틀랜타 (1996년)
+ 미국 뉴욕 (유엔 본부 소재지)
+ 캐나다 몬트리올 (1976년)
+ 벨기에 안트베르펜 (1920년)
+ 벨기에 브뤼셀 (유럽 연합 본부 소재지)
+ 네덜란드 암스테르담 (1928년)
+ 스위스 제네바
+ 스위스 로잔 (국제 올림픽 위원회 본부 소재지/2020년)
+ 프랑스 파리 (1900년/1924년/이후 2024년 하계 올림픽의 개최지로 결정됨)
+ 영국 런던 (1908년/1948년/2012년)
+ 스페인 마드리드
+ 스페인 바르셀로나 (1992년)
+ 이탈리아 로마 (1960년)
+ 독일 뮌헨 (1972년)
+ 독일 베를린 (1936년)
+ 스웨덴 스톡홀름 (1912년)
+ 핀란드 헬싱키 (1952년)
+ 러시아 모스크바 (1980년)
+ 우크라이나 키예프
+
+[Passage Chunk 3]
+passage: 오스트레일리아 시드니 (2000년)
+ 오스트레일리아 멜버른 (1956년)
+ 일본 도쿄 (1964년/이후 2020년 하계 올림픽의 개최지로 선정됨)
+ 대한민국 서울 (1988년)
+ 중화인민공화국 베이징 (2008년/이후 2022년 동계 올림픽의 개최지로 선정됨)
+ 인도 델리
+ 이집트 카이로 (북아프리카 / 중동)
+ 남아프리카 공화국 케이프타운 (남아프리카)
+ 브라질 리우데자네이루 (남아메리카/이후 2016년 하계 올림픽의 개최지로 선정됨)
+ 멕시코 멕시코시티 (1968년)
+ 미국 로스앤젤레스 (1932년/1984년/이후 2028년 하계 올림픽의 개최지로 결정됨)
+ 미국 세인트루이스 (1904년)
+ 미국 애틀랜타 (1996년)
+ 미국 뉴욕 (유엔 본부 소재지)
+ 캐나다 몬트리올 (1976년)"
+2,조광기를 사용할 때 백열등과 LED 조명의 작동 방식 차이는 무엇인가요? 각 조명에서의 에너지 소비 이점과 단점은 무엇인가요?,NOT_FOUND,"백열등은 전압 감소로 빛의 밝기를 줄이며, 에너지 소비가 많고 효율성이 낮습니다. LED는 전류 조절로 빛을 조정하며, 에너지 효율이 높고 긴 수명을 가집니다. 백열등은 에너지 낭비가 크고, LED는 초기 비용이 상대적으로 높지만 장기적으로 비용이 절감됩니다.",0.6831302642822266,INCORRECT,"The generated answer states ""NOT_FOUND"" despite the actual answer being provided.","
+
+[Passage Chunk 1]
+passage: 외부 링크 
+
+ 
+
+제임스 본드 영화
+제임스 본드의 등장인물
+가공의 영국 사람
+가공의 암살자
+가공의 간첩
+가공의 이중간첩
+가공의 도박사
+가공의 군인
+액션 영화 등장인물
+스릴러 영화 등장인물
+첩보 영화 등장인물 Title: 조광기 Text:조광기 또는 디머(dimmer)는 조명의 명도를 낮추기 위해 사용되는, 조명기구에 연결된 장치이다. 램프에 부착된 전압 파형을 변경함으로써 빛 출력의 강도를 낮출 수 있다. 가변 전압 장치들이 다양한 목적으로 사용됨에도 불구하고 디머(dimmer)라는 용어는 일반적으로 백열등, 할로젠등, CFL, 발광 다이오드(LED)의 빛 출력을 통제하기 위한 장치의 의미로 사용된다. 더 특수한 장비는 형광등, 수은등, 고태 조명, 기타 호광등의 조명을 조광하는데 필수적이다.
+
+[Passage Chunk 2]
+passage: (단, G:데시벨로 환산한 입력/출력비 x:입력, y:출력)
+
+전압비의 제곱이 전력비이므로, 앞의 전력비의 정의식을 전압비로 다시 쓰면 로그의 계수가 2배의 20이 된다. 입력과 출력의 차이는 0에 가까운 수치에서부터 100만 단위의 큰 수치까지 폭넓은 범위를 가질 수 있으므로, 이러한 방법을 쓴다.
+
+전력은 전압(혹은 전류)의 제곱에 비례하므로, 10배의 전압(전류)비는 100배의 전력비가 되고, 데시벨로 나타내면 20dB가 된다. 음압 레벨에 대해서도 같다. 음압 레벨, 진동 가속도 레벨은 각각 음압(Pa) 및 진동의 가속도(m/s²)에 기초해 정의된, 레벨화하여 표현한 양(절대데시벨)이다. 전자파의 감쇠량은 상대비를 데시벨로 표현한 것(상대데시벨)이다.
+
+[Passage Chunk 3]
+passage: 개요 
+기존의 전력시스템은 발전소에서 생산된 전기를 소비자에게 전달하는 단방향 구성이었다. 하지만 기존의 소비자 중에서 직접 전기를 생산하여 공급자 역할까지 하는 프로슈머가 등장하였다. 기존의 전력시스템에서 이들은 자급자족만 하였고, 전체 계통망에는 기여하지 않았다. 생산되고 남은 전기는 대부분 버릴 수밖에 없어 효율성이 떨어졌다.
+
+마이크로그리드는 이들이 생산하는 전기에너지를 활용하여 전체 네트워크의 에너지를 극대화 시키기 위한 기술로, 발전소에서만 전기를 생산하는 것이 아니라 양방향 송배전을 바탕으로 다수의 프로슈머가 전력망의 전력생산을 맡게 되는 것이다. 전원이 분산됨에 따라 안정적인 전기공급이 가능해지고, 재생가능 에너지의 효율적인 이용도 가능할 것으로 예상된다.
+
+같이 보기"
+2,루이스 해밀턴은 2020 아이펠 그랑프리에서 어떤 스타트 포지션을 받고 우승했나요?,2번 스타트 포지션,2번 스타트 포지션.,0.9958952069282532,CORRECT,The generated answer matches the actual answer exactly.,"
+
+[Passage Chunk 1]
+passage: 그랑프리는 2번 스타트 포지션을 받은 루이스 해밀턴이 차지하였고 루이스 해밀턴은 이번 그랑프리 우승으로 F1 그랑프리 최다 우승 기록을 가지고 있는 미하엘 슈마허와 91회로 동률을 이뤘다.
+
+외부 링크 
+ 공식홈페이지 대회 정보
+
+2020년 포뮬러 원 시즌
+아이펠 그랑프리 
+2020년 모터스포츠 Title: 2023년 영국 그랑프리 Text:2023 영국 그랑프리(공식 명칭: 포뮬러 1 아람코 브리티시 그랑프리 2023)는 영국에 위치한 실버스톤 서킷에서 열린 포뮬러 원 대회로 영국 그랑프리의 74번째 대회이다. 이번 그랑프리는 2023년 포뮬러 원 시즌의 11번째 라운드로 7월 7일부터 9일까지 열렸다.
+
+외부 링크 
+  웹사이트 정보
+
+[Passage Chunk 2]
+passage: 대회 결과
+
+순위 
+
+ 드라이버 챔피언십 순위
+
+컨스트럭터 챔피언십 순위
+
+1971년 포뮬러 원 시즌
+오스트리아 그랑프리
+1971년 모터스포츠
+1971년 8월 Title: 2020년 아이펠 그랑프리 Text:2020 아이펠 그랑프리(공식 명칭: 포뮬러 1 아람코 그로서 프라이스 데아 아이펠 2020)는 독일 라인란트팔츠주 뉘르부르크 에 위치한 뉘르부르크링에서 열린 포뮬러 원 대회이다. 이번 그랑프리는 2020년 포뮬러 원 시즌의 11번째 라운드로 10월 9일부터 11일까지 열렸으며 2013년 시즌 이후로 뉘르부르크링에서 7년만에 열리는 F1 그랑프리임과 동시에 아이펠 그랑프리의 첫 대회이다.
+
+[Passage Chunk 3]
+passage: Q3에서는 소프트 타이어가 사용되었다. 세르히오 페레즈는 두 달 전 열린 마이애미 그랑프리 이후 처음으로 Q3에 진출했으며, 니코 휠켄베르크에 앞선 9위를 차지했다. 루이스 해밀턴은 잠정 폴포지션에 있던 막스 페르스타펀을 마지막 주행에서 0.003초로 누르며 2021년 사우디아라비아 그랑프리 이후 약 20개월만에 폴 포지션에 올랐고, 페르스타펀이 마이애미 그랑프리부터 기록한 연속 폴 포지션 기록을 깼다. 한편 저우관위는 팀 동료인 발테리 보타스가 샤를 르클레르에 이어 7위를 차지한 가운데 5위를 기록하며 자신의 커리어에서 가장 높은 퀄리파잉 성적을 기록했다. 랜도 노리스와 오스카 피아스트리는 각각 3위와 4위를 차지하면서 맥라렌 MCL60의 새로운 페이스를 계속 보여주었다.
+
+순위표"
