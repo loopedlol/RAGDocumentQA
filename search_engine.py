@@ -32,7 +32,7 @@ class Engine():
     def query_llm(self, query: str, context: str) -> str:
         template = ChatPromptTemplate.from_messages(
             [
-                ("system", "Answer the question using only the provided passage. If the passage does not contain the answer, say that the answer is not found in the passage."),
+                ("system", "Answer the question using only the provided passage. If the passage does not contain the answer, say that the answer is not found in the passage. Be as concise as possible in your answer."),
                 ("human", "The passage is as follows: \n{context} \n\nThe question is as follows: \n{question}")
             ]
         )
