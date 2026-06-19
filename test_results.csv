@@ -1,0 +1,21 @@
+test_number,question,generated_answer,actual_answer,semantic_score,llm_review
+0,알파시르는 어느 주의 주도인가요?,알파시르는 수단 북다르푸르 주의 주도입니다.,북다르푸르 주,0.9188252091407776,"Grade: CORRECT
+Reason: The generated answer correctly identifies Al-Fashir as the capital of North Darfur state, matching the actual answer's reference to North Darfur state."
+1,한국 신발 산업에서 1985년 이후 수출이 증가한 원인은 무엇인가요?,"1985년 이후 한국 신발 산업에서 수출이 증가한 원인은 아시안과 올림픽 특수에 국내업계의 이미지 제고와 연구개발 및 소재개발 노력 덕분으로, 이로 인해 1988년까지 연평균 30% 이상의 수출신장을 기록하였기 때문입니다.","아시안게임과 올림픽 특수에 힘입어 이미지 제고, 연구개발 및 소재개발 노력 때문입니다.",0.8688974976539612,"Grade: CORRECT
+Reason: The generated answer conveys the same reasons for the export increase, including the Asian Games and Olympics effect, image improvement, and R&D efforts, with additional details that do not contradict the actual answer."
+2,게르하르트 슈퇴크가 1936년 베를린 올림픽에서 창던지기에서 이룬 성과는 무엇인가요?,"게르하르트 슈퇴크는 1936년 베를린 올림픽에서 창던지기에서 4개의 라운드 후 5위에 있었으나, 아돌프 히틀러 총통의 경기장 도착과 격렬하게 응원하는 팬들에 의해 영감을 받아 71.84m의 대단한 던지기를 하여 금메달을 획득하였다.",금메달을 획득하였습니다.,0.8463606834411621,"Grade: CORRECT
+Reason: The generated answer confirms the gold medal win, matching the actual answer's key information."
+3,무엇이 DME를 통해 조종사에게 제공됩니까?,DME를 통해 조종사에게 항공기와 VOR 기지국과의 거리가 제공됩니다.,거리 정보,0.8348928093910217,"Grade: CORRECT
+Reason: Both answers indicate that distance information is provided to the pilot via DME."
+4,히틀러가 괴벨스와 총력전에 관해 이야기를 나눈 후 법령에 서명하는 데에 소요된 시간은 얼마였나요?,히틀러가 괴벨스와 총력전 개념에 대해 이야기한 후 법령에 서명하는 데에 소요된 시간은 거의 1년이었다.,거의 1년.,0.8585258722305298,"Grade: CORRECT
+Reason: Both answers state that the time taken was nearly one year."
+5,"""장미의 고백""의 감독 이름이 뭐예요?","""장미의 고백""의 감독 이름은 김영식입니다.",김영식,0.8878951668739319,"Grade: CORRECT
+Reason: The generated answer correctly identifies 김영식 as the director, matching the actual answer."
+6,한국잠종협회 설립 연도는?,한국잠종협회는 1961년 12월 6일 설립되었다.,1961년.,0.8438531756401062,"Grade: CORRECT
+Reason: The generated answer provides the exact year of establishment along with the specific date, which matches the actual answer's year."
+7,도리이 다다하루의 아버지 이름은 무엇인가요?.,도리이 다다하루의 아버지 이름은 도리이 다다마사입니다.,도리이 다다마사,0.8905684947967529,"Grade: CORRECT
+Reason: The generated answer correctly provides the father's name, matching the actual answer."
+8,2016년에 개봉한 '테러'라는 영화의 감독은 누구인가?,2016년에 개봉한 '테러'라는 영화의 감독은 사티시 카세티입니다.,사티시 카세티,0.8318883180618286,"Grade: CORRECT
+Reason: The generated answer correctly identifies the director as Satish Kasetty, matching the actual answer."
+9,"최소영은 고백, 화려한 휴가, 빙점, 과다수면 중 어떤 작품에 등장하지 않나요?","최소영은 고백, 화려한 휴가, 빙점에는 등장하지만 과다수면에는 등장하지 않습니다.",최소영은 '과다수면'에 등장하지 않습니다.,0.9527270793914795,"Grade: CORRECT
+Reason: Both answers state that 최소영 does not appear in '과다수면', with the generated answer providing additional context without contradiction."

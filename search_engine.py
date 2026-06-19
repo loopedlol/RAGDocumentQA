@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_openai import ChatOpenAI
@@ -30,7 +29,7 @@ class Engine():
         results = vector_store.similarity_search(f"query: {query}", k)
         return results
     
-    def query_llm(self, query: str, context: str):
+    def query_llm(self, query: str, context: str) -> str:
         template = ChatPromptTemplate.from_messages(
             [
                 ("system", "Answer the question using only the provided passage. If the passage does not contain the answer, say that the answer is not found in the passage."),
@@ -46,4 +45,4 @@ class Engine():
         )
 
         llm_message = llm.invoke(prompt_value)
-        return llm_message
+        return str(llm_message.content)
