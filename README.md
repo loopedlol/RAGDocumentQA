@@ -1,0 +1,1 @@
+This readme is very rushed, but it is important to note that in this current version, the code will create and destroy Chroma vector database files in order to save memory. The code could and should also be refactored since I was solely focused on creating a functional sample when making this.
