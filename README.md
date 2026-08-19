@@ -1,66 +1,161 @@
-# RAGTester
+# RAG Document QA
 
-A compact evaluation harness for experimenting with retrieval-augmented generation (RAG) on long-form, multilingual question-answering data.
+This is a small project I made while learning how **retrieval-augmented generation (RAG)** works.
 
-RAGTester builds temporary Chroma vector stores from each document, retrieves the most relevant chunks with multilingual E5 embeddings, generates an answer with an OpenAI model, and records both semantic and LLM-based evaluation results.
+The basic question I wanted to explore was simple:
 
-## What it does
+> **Can an AI find the right information inside a long document and use it to answer a question correctly?**
 
-For each example in the evaluation dataset, the project:
+A normal language model has to rely mostly on what it already knows. RAG works more like an **open-book test**: first the program searches through source material for useful information, and then it gives that information to the language model before asking it to answer.
 
-1. Splits the source context into article-aware overlapping chunks.
-2. Embeds those chunks with `intfloat/multilingual-e5-small`.
-3. Stores the embeddings in a temporary Chroma database.
-4. Retrieves the most relevant chunk and its neighboring chunks.
-5. Generates a grounded answer using only the retrieved context.
-6. Compares the generated answer with the reference answer.
-7. Saves the evaluation output to `test_results.csv`.
-8. Deletes the temporary vector database before continuing.
+For this project, I used long Korean documents from the Ko-LongRAG dataset and built a simple pipeline that searches the documents, generates an answer, and then checks how close that answer is to the provided correct answer.
 
-## Architecture
+## What the project does
+
+In simple terms, the process looks like this:
+
+```text
+Long document
+     ↓
+Break it into smaller pieces
+     ↓
+Turn the pieces into searchable embeddings
+     ↓
+Find the pieces most related to the question
+     ↓
+Give those pieces to the language model
+     ↓
+Generate an answer
+     ↓
+Compare it with the correct answer
+```
+
+The goal was not to build a finished product. I mainly wanted to understand each part of the RAG process instead of only using a library that handled everything for me.
+
+## My first experiment
+
+I tested the system on the first **100 questions** from the `LGAI-EXAONE/Ko-LongRAG` test dataset.
+
+The saved run in this repository produced:
+
+- **100 questions tested**
+- **93 answers graded correct**
+- **7 answers graded incorrect**
+
+The program also records a semantic similarity score for every answer and saves the passages that were retrieved, which made it much easier for me to look back at failures and figure out what may have gone wrong.
+
+### Example
+
+One test asked which state Al-Fashir is the capital of.
+
+```text
+Question: 알파시르는 어느 주의 주도인가요?
+AI answer: 북다르푸르 주
+Correct answer: 북다르푸르 주
+Result: CORRECT
+```
+
+The important part is that the answer model was not supposed to know this on its own. The program first searched through the source material and found the passage containing the answer.
+
+## What I learned
+
+### 1. RAG is more than just asking an AI a question
+
+Before this project, it was easy to think of RAG as simply "giving an AI documents." Building the pieces separately helped me understand that there are really multiple problems involved: splitting the document, representing its meaning, searching it, deciding how much context to include, prompting the model, and evaluating the final answer.
+
+### 2. Retrieval quality matters a lot
+
+Even a strong language model cannot give a grounded answer if the useful information never reaches it. This made me realize that improving a RAG system is not only about changing the language model. The search process can be just as important.
+
+I currently retrieve the three most similar chunks and also include the chunks immediately before and after them. I added the neighboring chunks because useful information can be split across chunk boundaries, although this also means more unrelated text can sometimes enter the prompt.
+
+### 3. Similar wording does not always mean a correct answer
+
+One of the most interesting things I noticed was that **semantic similarity is not the same as factual correctness**.
+
+For example, one answer in my saved results was graded incorrect even though its semantic similarity score was about **0.99**. The generated response was worded very similarly to the reference answer, but it changed an important fact.
+
+That is why I ended up using two kinds of evaluation:
+
+- an embedding-based similarity score;
+- a second language-model check that decides whether the factual answer is actually correct.
+
+Neither method is perfect, but using both gave me more information than relying on a single number.
+
+### 4. Looking at failures is more useful than only looking at the final score
+
+The incorrect examples were not all the same. Some answers missed an important detail, some returned the wrong number or entity, and some seemed to use related information without finding the exact fact the question asked for.
+
+Because I save the retrieved context in `test_results.csv`, I can inspect whether a mistake came from the search step or from the answering step. That was one of the most useful parts of the experiment for me.
+
+### 5. A simple implementation can be easier to learn from
+
+This version rebuilds a temporary Chroma database for every test question and deletes it afterward. That is definitely not the fastest way to run a large benchmark, but it kept each experiment isolated and made the process easier for me to understand while I was learning.
+
+If I continued developing this into a larger system, caching and reusing embeddings would be one of the first things I would improve.
+
+## How it works technically
+
+The project is split into four main Python files:
+
+```text
+data_embedder.py
+    Splits the source text into chunks and creates embeddings.
+
+search_engine.py
+    Searches Chroma for relevant chunks and asks the language model
+    to answer using only the retrieved information.
+
+answer_checker.py
+    Compares the generated answer with the reference answer using
+    semantic similarity and a separate LLM grader.
+
+model_tester.py
+    Runs the experiment over the dataset and saves the results.
+```
+
+The current pipeline is:
 
 ```text
 Ko-LongRAG dataset
-        |
-        v
- data_embedder.py
- chunking + embeddings
-        |
-        v
- temporary Chroma store
-        |
-        v
- search_engine.py
- retrieval + answer generation
-        |
-        v
- answer_checker.py
- semantic + LLM grading
-        |
-        v
- model_tester.py
- experiment orchestration + CSV output
+        ↓
+   data_embedder.py
+        ↓
+Temporary Chroma database
+        ↓
+   search_engine.py
+        ↓
+Generated answer
+        ↓
+  answer_checker.py
+        ↓
+   test_results.csv
 ```
 
-## Project structure
+## Current settings
 
-```text
-RAGTester/
-├── answer_checker.py   # Semantic similarity and LLM-based grading
-├── data_embedder.py    # Article splitting, chunking, and vector-store creation
-├── model_tester.py     # Runs the evaluation loop and writes results
-├── search_engine.py    # Retrieves context and generates grounded answers
-├── requirements.txt    # Python dependencies
-└── test_results.csv    # Example evaluation output
-```
+These are the main settings I used for the saved experiment:
 
-## Setup
+| Setting | Value |
+| --- | --- |
+| Embedding model | `intfloat/multilingual-e5-small` |
+| Vector database | Chroma |
+| Answer model | `gpt-4.1-mini` |
+| Chunk size | 400 characters |
+| Chunk overlap | 80 characters |
+| Initial retrieved chunks | 3 |
+| Extra context | Immediate neighboring chunks |
+| Questions in saved run | 100 |
+
+I chose these as reasonable starting values rather than claiming they are optimal. Testing different chunk sizes, retrieval counts, and models would be a useful next experiment.
+
+## Running it yourself
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/loopedlol/RAGTester.git
-cd RAGTester
+git clone https://github.com/loopedlol/RAG-Document-QA.git
+cd RAG-Document-QA
 ```
 
 ### 2. Create a virtual environment
@@ -76,13 +171,13 @@ On Windows:
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 3. Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure your API key
+### 4. Add an OpenAI API key
 
 Copy the example environment file:
 
@@ -90,63 +185,61 @@ Copy the example environment file:
 cp .env.example .env
 ```
 
-Then add your OpenAI API key to `.env`:
+Then replace the placeholder in `.env`:
 
 ```env
 OPENAI_API_KEY=your_api_key_here
 ```
 
-## Run the evaluation
+### 5. Run the experiment
 
 ```bash
 python model_tester.py
 ```
 
-The script currently evaluates the first 100 examples from the `LGAI-EXAONE/Ko-LongRAG` test split and writes the results to `test_results.csv`.
+The program currently runs examples `0` through `99` and saves the detailed output in `test_results.csv`.
 
-## Evaluation output
+> Running the evaluation uses an OpenAI API and may cost money depending on the model and number of questions tested.
 
-Each row in `test_results.csv` includes:
+## What is saved in the results?
 
-- the test number;
-- the original question;
-- the generated answer;
-- the reference answer;
-- embedding-based semantic similarity;
-- an LLM-generated correctness grade;
-- the grader's explanation;
-- the retrieved context supplied to the answer model.
+For every question, `test_results.csv` records:
 
-## Current design choices
+- the question;
+- the answer generated by the system;
+- the reference answer from the dataset;
+- the semantic similarity score;
+- whether the LLM grader marked it correct or incorrect;
+- the grader's short explanation;
+- the exact retrieved context given to the answer model.
 
-- **Embedding model:** `intfloat/multilingual-e5-small`
-- **Vector database:** Chroma
-- **Answer model:** `gpt-4.1-mini`
-- **Chunk size:** 400 characters
-- **Chunk overlap:** 80 characters
-- **Retrieved seed chunks:** 3
-- **Context expansion:** each retrieved chunk is supplemented with its immediate neighbors
-
-Temporary Chroma databases are created under `chroma_dbs/` and removed after each test case. This keeps stored artifacts small, but it also means embeddings are recomputed every time the experiment runs.
+I kept the retrieved context because I wanted the results to be useful for debugging, not just for producing a final accuracy number.
 
 ## Limitations
 
-This repository is an experimental benchmark rather than a production RAG service.
+This is still a learning project, and there are several things I would not treat as solved:
 
-- Evaluation currently uses a fixed range of dataset rows.
-- Model and retrieval settings are defined directly in the source files.
-- LLM grading is useful for qualitative evaluation but is not a perfect ground-truth metric.
-- Rebuilding the vector store for every example prioritizes isolation over runtime efficiency.
-- API usage may incur costs.
+- I only tested a fixed set of 100 questions in the saved run.
+- The retrieval and chunking settings were chosen manually and have not been systematically optimized.
+- The LLM grader can make mistakes, so the 93/100 result should not be treated as perfect ground truth.
+- Rebuilding the vector database for every example is slow and repetitive.
+- The current script has most experiment settings written directly in the source code.
+- I have not yet separated retrieval errors from answer-generation errors with a dedicated retrieval benchmark.
 
-## Possible next steps
+## What I would try next
 
-- Add command-line options for model, retrieval depth, and test range.
-- Record aggregate accuracy and latency statistics.
-- Separate configuration from implementation.
-- Add automated tests for chunk boundaries and neighbor retrieval.
-- Cache embeddings for repeatable large-scale experiments.
+If I continue this project, I would like to experiment with:
 
-## Dataset attribution
+1. comparing several chunk sizes and overlap amounts;
+2. changing how many passages are retrieved;
+3. measuring whether the correct evidence was actually retrieved before grading the final answer;
+4. caching embeddings so repeated experiments run much faster;
+5. adding command-line settings instead of editing the Python files for every experiment;
+6. comparing different embedding and answer models;
+7. creating a small results summary automatically after each run.
 
-The evaluation script loads the public `LGAI-EXAONE/Ko-LongRAG` dataset through Hugging Face. Review the dataset's own documentation and license before redistributing or using it beyond experimentation.
+## Dataset
+
+The evaluation data comes from the public `LGAI-EXAONE/Ko-LongRAG` dataset, loaded through Hugging Face.
+
+This repository only contains my experiment code and the saved evaluation output. Anyone reusing the dataset should also check its original documentation and license.
