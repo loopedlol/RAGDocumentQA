@@ -1,6 +1,10 @@
 # RAG Document QA
 
-This is a small project I made while learning how **retrieval-augmented generation (RAG)** works.
+A retrieval-augmented generation (RAG) experiment for answering questions over long Korean documents, built to make both **retrieval quality** and **answer correctness** easy to inspect.
+
+**Stack:** Python · Chroma · multilingual-e5-small · OpenAI API · Hugging Face
+
+**Saved evaluation:** 93 of the first 100 Ko-LongRAG test questions were graded correct. The score is useful as an experiment result, not a claim of benchmark-quality accuracy; the limitations are documented below.
 
 The basic question I wanted to explore was simple:
 
@@ -154,8 +158,8 @@ I chose these as reasonable starting values rather than claiming they are optima
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/loopedlol/RAG-Document-QA.git
-cd RAG-Document-QA
+git clone https://github.com/loopedlol/RAGDocumentQA.git
+cd RAGDocumentQA
 ```
 
 ### 2. Create a virtual environment
