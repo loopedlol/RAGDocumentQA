@@ -2,6 +2,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/portfolio/hero-dark.svg">
   <img src="docs/assets/portfolio/hero-light.svg" alt="RAG Document QA — find the passage, inspect the answer." width="1200">
 </picture>
+
 [Colin's portfolio](https://github.com/loopedlol) · [Pipeline](#pipeline) · [Saved results](#results) · [Run the experiment](#start)
 
 A compact retrieval-augmented question-answering experiment over long Korean documents. It keeps **retrieved evidence, generated answers, reference answers, and grading explanations together**, so a score can be followed back to an individual case.
