@@ -1,4 +1,8 @@
-# RAGDocumentQA
+<a id="ragdocumentqa"></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/banner-dark.svg">
+  <img src="docs/assets/readme/banner-light.svg" alt="RAGDocumentQA — Questions over long Korean documents." width="100%">
+</picture>
 
 I built this experiment to answer questions using information from long Korean documents. Instead of sending the entire document to the language model, it searches for relevant passages first. This is retrieval-augmented generation, or RAG.
 
@@ -20,7 +24,7 @@ Each row includes the question, retrieved passages, generated answer, reference 
 
 The [results guide](docs/RESULTS.md) explains the saved failures and the limits of reproducing the run.
 
-[PLACEHOLDER — one annotated example showing the question, the retrieved passage containing the relevant fact, the generated answer, and the reference answer. Use an actual row from the saved CSV.]
+> [PLACEHOLDER — one annotated example showing the question, the retrieved passage containing the relevant fact, the generated answer, and the reference answer. Use an actual row from the saved CSV.]
 
 <a id="start"></a>
 ## Run it
