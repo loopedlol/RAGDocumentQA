@@ -1,20 +1,26 @@
 # RAGDocumentQA
 
-I built this experiment to see how an AI could answer questions using information from long Korean documents. It first finds relevant passages, then gives them to a language model along with the question. This approach is called retrieval-augmented generation, or RAG.
+I built this experiment to answer questions using information from long Korean documents. Instead of sending the entire document to the language model, it searches for relevant passages first. This is retrieval-augmented generation, or RAG.
 
 <a id="pipeline"></a>
-## How it works
+## What happens before the answer
 
-The program splits documents into smaller pieces, searches for pieces related to the question, and uses them to generate an answer. It saves the passages, answer, reference answer, and automated feedback together so I can look into mistakes.
+The program splits each document into overlapping chunks and stores numerical representations of the text in Chroma for searching. It retrieves three matching chunks, adds their neighbors, and puts them back in document order before asking the model to answer.
 
-**Built with:** Python, Chroma, multilingual text embeddings, and the OpenAI API.
+Including neighboring chunks gives the model more context, but can bring in unrelated text too. The program saves that context alongside each answer so the retrieval step can be examined separately from the model's response.
+
+**Built with:** Python, Chroma, multilingual E5 embeddings, and the OpenAI API.
 
 <a id="results"></a>
-## Saved results
+## What the saved run shows
 
-The repository includes a [saved run of 100 questions](test_results.csv) from the Ko-LongRAG dataset. You can read it without running the program or making API calls.
+The [saved CSV](test_results.csv) contains 100 Ko-LongRAG questions. An automated grader labeled 93 answers correct and seven incorrect. These are the grader's labels, not independently verified accuracy.
 
-The answers were graded by another AI call, not independently checked by a person. Those grades are useful for exploring errors, but they aren't proof of accuracy. The [results guide](docs/RESULTS.md) explains what to look for and points out examples where the scores disagree.
+Each row includes the question, retrieved passages, generated answer, reference answer, text-similarity score, and grading explanation. In test 84, a similarity score of about 0.991 still accompanies an incorrect grade—a useful reason to inspect the actual answer rather than trust one score.
+
+The [results guide](docs/RESULTS.md) explains the saved failures and the limits of reproducing the run.
+
+[PLACEHOLDER — one annotated example showing the question, the retrieved passage containing the relevant fact, the generated answer, and the reference answer. Use an actual row from the saved CSV.]
 
 <a id="start"></a>
 ## Run it
